@@ -9,7 +9,7 @@ export const expertDiscussionChapter: Chapter = {
   subSections: [
     {
       id: "expert-discussion-full",
-      title: "【専門家会議 徹底解説】BMS（口腔灼熱痛症候群）の病態生理と薬物療法",
+      title: "BMS（口腔灼熱痛症候群）の病態生理と薬物療法（2026年）",
       content: (
         <div className="space-y-8">
           <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
@@ -253,7 +253,7 @@ export const expertDiscussionChapter: Chapter = {
     },
     {
       id: "expert-discussion-beginner",
-      title: "初心者向けの優しい解説",
+      title: "初心者向け解説",
       content: (
         <div className="space-y-6">
           <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">

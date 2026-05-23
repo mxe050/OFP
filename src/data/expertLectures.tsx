@@ -1643,11 +1643,5 @@ export const expertLecturesChapter: Chapter = {
   title: '予備室２（パスワード）',
   icon: <Presentation className="w-5 h-5" />,
   password: 'yuasa2026',
-  subSections: [
-    {
-      id: 'expert-lectures-tabs',
-      title: '講義一覧',
-      content: <TabContainer />,
-    },
-  ],
+  subSections: TAB_DEFS,
 };
