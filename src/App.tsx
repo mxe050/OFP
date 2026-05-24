@@ -15,7 +15,7 @@ import { SubSection } from './types';
 
 const PASSWORD = 'yuasa2026';
 const UNLOCK_STORAGE_KEY = 'ofp-reserved-room-unlocked';
-const AAOP_ARCHIVE_PATH = './aaop2026/video-lecture-guide.html';
+const AAOP_ARCHIVE_PATH = './aaop2026/index.html';
 
 type ContentSection = SubSection & {
   group: '講演' | 'メーリングリスト記録';
@@ -24,12 +24,48 @@ type ContentSection = SubSection & {
 type MenuItem = {
   id: string;
   title: string;
+  description: [string, string];
   href?: string;
   sectionId?: string;
 };
 
 const buttonClass =
-  'flex w-full items-center justify-between gap-3 rounded-lg border border-slate-200 bg-white px-4 py-3 text-left text-sm font-semibold leading-snug text-slate-900 shadow-sm transition hover:border-cyan-300 hover:bg-cyan-50 hover:text-cyan-950';
+  'flex w-full items-start justify-between gap-3 rounded-lg border border-slate-200 bg-white px-4 py-3 text-left text-sm font-semibold leading-snug text-slate-900 shadow-sm transition hover:border-cyan-300 hover:bg-cyan-50 hover:text-cyan-950';
+
+const menuDescriptions: Record<string, [string, string]> = {
+  'aaop-2026': [
+    'AAOP 50周年大会報告と和嶋先生の慢性疼痛パートを、画像と本文で読める資料集です。',
+    '動画本体を使わず、前半の学会報告と後半の慢性痛講義を順番に追えます。',
+  ],
+  famous: [
+    '非歯原性歯痛、ICOP、筋筋膜性疼痛、神経障害性疼痛を総論として整理します。',
+    '口腔顔面痛診療の全体像をつかむための基礎講義です。',
+  ],
+  clark: [
+    'Glenn Clark先生の症例検討と文献レビューを、診断推論の流れとして読めます。',
+    '頭痛・TMD・非歯原性歯痛を鑑別し、治療選択へつなげる内容です。',
+  ],
+  pasternak: [
+    'Amy Pasternak先生の薬理遺伝学講義を、疼痛薬物療法の視点で整理します。',
+    '患者ごとの代謝・副作用・反応差を、処方判断にどう反映するかを学びます。',
+  ],
+  'muraoka-2026-04': [
+    '2026年4月の慶應OFPオープンセミナー、村岡渡先生の講義記録です。',
+    '日本の臨床現場でOFPをどう説明し、どう診療へ落とすかを確認できます。',
+  ],
+  'retractions-2026-04-29': [
+    '疼痛医学の撤回論文を題材に、研究の読み方と注意点を整理します。',
+    'エビデンスを臨床へ使う前に、信頼性と限界を点検するための資料です。',
+  ],
+  'expert-discussion-full': [
+    'BMSの病態生理と薬物療法を、専門家会議の記録として詳しく整理します。',
+    '末梢神経、痛覚変調、薬剤選択、患者説明を臨床目線で読めます。',
+  ],
+  'expert-discussion-beginner': [
+    'BMSと口腔顔面痛の考え方を、初学者にも分かりやすく説明します。',
+    '専門用語に入る前の入口として、患者説明にも使いやすい資料です。',
+  ],
+};
 
 export default function App() {
   const lectureSections = useMemo<ContentSection[]>(
@@ -81,11 +117,13 @@ export default function App() {
     {
       id: 'aaop-2026',
       title: '2026年AAOP総会講演録・和嶋先生慢性疼痛',
+      description: menuDescriptions['aaop-2026'],
       href: AAOP_ARCHIVE_PATH,
     },
     ...lectureSections.map((section) => ({
       id: section.id,
       title: section.title,
+      description: menuDescriptions[section.id],
       sectionId: section.id,
     })),
   ];
@@ -93,6 +131,7 @@ export default function App() {
   const mailingListMenuItems: MenuItem[] = mailingListSections.map((section) => ({
     id: section.id,
     title: section.title,
+    description: menuDescriptions[section.id],
     sectionId: section.id,
   }));
 
@@ -146,7 +185,16 @@ export default function App() {
           <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-cyan-700 text-white">
             <FileText className="h-5 w-5" />
           </span>
-          <span className="min-w-0">{item.title}</span>
+          <span className="min-w-0">
+            <span className="block text-sm font-semibold leading-snug text-slate-950">
+              {item.title}
+            </span>
+            <span className="mt-1 block text-xs font-normal leading-relaxed text-slate-500">
+              {item.description[0]}
+              <br />
+              {item.description[1]}
+            </span>
+          </span>
         </span>
         <ChevronRight className="h-5 w-5 shrink-0 text-cyan-700" />
       </>
