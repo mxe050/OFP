@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { Presentation } from 'lucide-react';
 import { Chapter } from '../types';
 import { QAAccordion, pasternakQAGroups } from './expertLecturesPasternakQA';
-import { gradeThresholdsContent } from './gradeThresholds';
 
 const famousLectureContent = (
         <div className="space-y-8">
@@ -1612,7 +1611,6 @@ const TAB_DEFS = [
   { id: 'pasternak', title: 'Amy Pasternak, PharmD：Pharmacogenetics of Orofacial Pain', content: <PasternakContent /> },
   { id: 'muraoka-2026-04', title: '2026年4月の慶應OFPオープンセミナー：村岡渡先生', content: muraokaContent },
   { id: 'retractions-2026-04-29', title: '20260429Retracted Publications in Pain Medicine', content: retractionsContent },
-  { id: 'grade-thresholds-2026-05', title: 'Thresholds and rating the certainty of evidence using GRADE', content: gradeThresholdsContent },
 ];
 
 function TabContainer() {

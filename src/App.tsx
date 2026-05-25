@@ -57,10 +57,6 @@ const menuDescriptions: Record<string, [string, string]> = {
     '疼痛医学の撤回論文を題材に、研究の読み方と注意点を整理します。',
     'エビデンスを臨床へ使う前に、信頼性と限界を点検するための資料です。',
   ],
-  'grade-thresholds-2026-05': [
-    'Cochrane Learning Live の GRADE thresholds 講義を、確実性評価の実務として整理します。',
-    '二値・連続アウトカムの閾値設定、imprecision、SoF と EtD への接続を詳しく読めます。',
-  ],
   'expert-discussion-full': [
     'BMSの病態生理と薬物療法を、専門家会議の記録として詳しく整理します。',
     '末梢神経、痛覚変調、薬剤選択、患者説明を臨床目線で読めます。',
