@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Presentation } from 'lucide-react';
 import { Chapter } from '../types';
 import { QAAccordion, pasternakQAGroups } from './expertLecturesPasternakQA';
+import { muraokaTmd202605Content } from './muraokaTmd202605';
 
 const famousLectureContent = (
         <div className="space-y-8">
@@ -622,6 +623,27 @@ function PasternakContent() {
   );
 }
 
+const muraoka202604ImageBase = './images/muraoka-202604';
+
+function Muraoka202604Figure({
+  src,
+  alt,
+  caption,
+}: {
+  src: string;
+  alt: string;
+  caption: string;
+}) {
+  return (
+    <figure className="overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm">
+      <img src={`${muraoka202604ImageBase}/${src}`} alt={alt} className="w-full" loading="lazy" />
+      <figcaption className="border-t border-gray-100 px-3 py-2 text-xs leading-relaxed text-gray-600">
+        {caption}
+      </figcaption>
+    </figure>
+  );
+}
+
 const muraokaContent = (
   <div className="space-y-8">
     <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
@@ -662,6 +684,11 @@ const muraokaContent = (
           <p>
             口腔顔面痛（Orofacial Pain）は、もともと<strong>「顎関節症（TMD）と他の疾患を鑑別する必要性」</strong>から生まれた領域です。アメリカン・アカデミー・オブ・オロフェイシャルペイン（AAOP）が中心となって体系化し、Gary Heir先生らがその普及に尽力。村岡先生は、AAOPで活躍するヘア先生たちを<strong>「現代のシャーロック・ホームズ」</strong>と表現し、患者が診察室に入ってきた瞬間からの観察・推理が口腔顔面痛診療の本質であると強調しました。
           </p>
+          <Muraoka202604Figure
+            src="01_ofp_scope.jpg"
+            alt="口腔顔面痛の領域を説明するスライド"
+            caption="OFPはTMDを他疾患から鑑別する必要性から生まれ、口腔顔面部に痛みを生じさせる疾患を診断・治療する領域として説明された。"
+          />
           <div className="bg-orange-50 border-l-4 border-orange-400 p-4 rounded">
             <p className="font-bold text-orange-900 mb-1">最新の TMD コンセンサス</p>
             <p>
@@ -683,6 +710,11 @@ const muraokaContent = (
           <p>
             講義冒頭、村岡先生は<strong>「右側の頬の一部だけ髭が剃り残されている男性」</strong>の写真を示し、研修医（新藤先生）に観察を促しました。この一枚から推理可能な疾患は：
           </p>
+          <Muraoka202604Figure
+            src="02_trigeminal_trigger_zone.jpg"
+            alt="典型的三叉神経痛のトリガー部位"
+            caption="髭剃りで触れるオトガイ部付近がトリガーとなる典型的三叉神経痛の例。皮膚刺激から疾患を推理する講義冒頭の象徴的なスライド。"
+          />
           <ul className="list-disc pl-5 space-y-1 bg-gray-50 p-4 rounded-lg border border-gray-200">
             <li><strong>帯状疱疹後神経痛（PHN）</strong>：高齢男性で同部位に過去の帯状疱疹既往</li>
             <li><strong>三叉神経痛（TN：第2枝）</strong>：洗顔・髭剃り・歯磨きが「トリガー」となる</li>
@@ -734,6 +766,18 @@ const muraokaContent = (
           <p>
             臨床現場では患者から「疾患名」が与えられることはなく、必ず<strong>痛みの表現から疾患を逆推論</strong>します。よって、患者の言語表現を医学用語・診断基準上の用語に置き換える訓練が必要です。
           </p>
+          <div className="grid md:grid-cols-2 gap-4">
+            <Muraoka202604Figure
+              src="03_pain_classification.jpg"
+              alt="痛みの分類の基本図"
+              caption="体性痛と神経障害性疼痛を大きく分け、表在痛・深部痛、発作性・持続性へ展開する講義内の基本図。"
+            />
+            <Muraoka202604Figure
+              src="04_pain_classification_words.jpg"
+              alt="痛みの質と言葉の対応"
+              caption="患者が使う「ひりひり」「にぶい」「ずきずき」「電気が走る」などの表現を、痛みの質の分類へつなげる図。"
+            />
+          </div>
         </div>
       </section>
 
@@ -755,6 +799,11 @@ const muraokaContent = (
               実際の組織損傷もしくは組織損傷が起こりうる状態に付随する、<strong>あるいはそれに類似した</strong>不快な感覚情動体験。
             </blockquote>
           </div>
+          <Muraoka202604Figure
+            src="05_pain_definition.jpg"
+            alt="IASPによる痛みの新しい定義"
+            caption="2020年改定の要点。旧定義で補足的に扱われた内容が定義本文に取り込まれ、組織損傷がなくても痛みとして扱う方向へ拡張された。"
+          />
           <p>
             最大の変化は、<strong>「実際に組織損傷がなくとも、それに類似した不快体験は痛みとなりうる」</strong>と明記された点です。fMRI 研究では、針刺し動画を視聴するだけで脳内の痛み関連領域が活性化することが確認されており、新定義はこうした知見と整合します。さらに付録には「痛みは人生経験を通じて学習される」「患者の訴えは尊重されるべき」など、<strong>哲学的・文化的記述</strong>が追加されています。
           </p>
@@ -787,6 +836,11 @@ const muraokaContent = (
               このうち <strong>1 と 4</strong> を満たせば「可能性あり」、<strong>1〜4 すべて</strong>を満たせば「おそらく痛覚変調性疼痛」と判断します。
             </p>
           </div>
+          <Muraoka202604Figure
+            src="06_nociplastic_criteria.jpg"
+            alt="Nociplastic pain 痛覚変調性疼痛"
+            caption="痛覚変調性疼痛を、侵害受容性疼痛・神経障害性疼痛と並ぶ痛みの機構として整理したスライド。BMSやPIDAPを理解する土台になる。"
+          />
           <p>
             これまで原因不明だった慢性痛（線維筋痛症、IBS、慢性骨盤痛、口腔灼熱痛症候群（BMS）、持続性特発性歯痛など）の説明枠組みとして、痛覚変調性疼痛は革新的な概念です。
           </p>
@@ -802,6 +856,11 @@ const muraokaContent = (
           <p>
             日本の医学部・歯学部の<strong>モデル・コア・カリキュラム</strong>を調査すると、「頭痛」の記載は平成28年度版で医学部5件のみ、最新版でも医学部2件・歯学部では<strong>「慢性痛」という語が出てこない</strong>ことが判明しています。
           </p>
+          <Muraoka202604Figure
+            src="07_dental_pain_education.jpg"
+            alt="歯科における痛み教育の現状"
+            caption="モデル・コア・カリキュラム上、歯学部では慢性疼痛教育が薄いことを示したスライド。卒後教育の必要性を裏づける。"
+          />
           <p>
             つまり<strong>歯科学生は学部教育で慢性痛を体系的に習わない</strong>ということになります。卒後の自己研鑽（このようなオープンセミナー、JSOP の認定医・専門医試験など）が必須となる背景がここにあります。
           </p>
@@ -828,6 +887,11 @@ const muraokaContent = (
               <strong>TACs（Trigeminal Autonomic Cephalalgias：三叉神経・自律神経性頭痛）</strong>には群発頭痛（cluster headache）が含まれ、群発発作中に上顎臼歯部の歯痛として感じられる「歯痛様症状」が知られています。
             </p>
           </div>
+          <Muraoka202604Figure
+            src="08_ichd3.jpg"
+            alt="国際頭痛分類第3版 ICHD-3"
+            caption="ICHD-3の全体構造。口腔顔面痛を頭痛分類との連続性の中で理解するための前提として提示された。"
+          />
           <div className="bg-indigo-50 border border-indigo-200 rounded-lg p-4">
             <h5 className="font-bold text-indigo-800 mb-2">ICOP（International Classification of Orofacial Pain, 1st ed., 2020）</h5>
             <ol className="list-decimal pl-5 space-y-1">
@@ -860,6 +924,18 @@ const muraokaContent = (
               <li>無害刺激（軽い接触・洗顔・歯磨き・髭剃り）で誘発</li>
               <li>他の疾患でうまく説明できない</li>
             </ul>
+          </div>
+          <div className="grid md:grid-cols-2 gap-4">
+            <Muraoka202604Figure
+              src="09_trigeminal_criteria.jpg"
+              alt="三叉神経痛の診断基準"
+              caption="三叉神経痛の診断基準。片側顔面痛、数秒から2分の発作、電撃様・刺すような性質、非侵害刺激による誘発が並ぶ。"
+            />
+            <Muraoka202604Figure
+              src="10_icop_trigeminal_classification.jpg"
+              alt="ICOPにおける三叉神経痛分類"
+              caption="ICOP-1における三叉神経痛の分類。典型的、二次性、特発性を区別し、持続性顔面痛を伴う型も整理する。"
+            />
           </div>
           <p>
             鑑別の要点：
@@ -895,9 +971,19 @@ const muraokaContent = (
             <li>歯の痛み：<strong>約45%</strong>（歯痛＋歯肉痛）</li>
             <li>顔面の痛み・関節の痛み・歯肉の痛み</li>
           </ul>
+          <Muraoka202604Figure
+            src="17_nonodontogenic_stats.jpg"
+            alt="非歯原性歯痛の原疾患の臨床統計"
+            caption="非歯原性歯痛の臨床統計。筋筋膜痛による歯痛が大きな割合を占め、患者の訴える部位だけでは原因を特定できないことを示す。"
+          />
           <p>
             非歯原性歯痛は「歯に原因がないのに歯が痛い」状態の<strong>疾患群（Disease Group）</strong>であり、単一の診断名ではありません。誘導される病態（鑑別）：
           </p>
+          <Muraoka202604Figure
+            src="12_nonodontogenic_toothache_states.jpg"
+            alt="非歯原性歯痛を誘導しやすい病態"
+            caption="筋筋膜痛、神経障害性疼痛、神経血管性頭痛、上顎洞疾患、心臓疾患、精神疾患、特発性歯痛など、非歯原性歯痛を誘導する病態の一覧。"
+          />
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
             <ul className="list-disc pl-5 space-y-1">
               <li><strong>筋筋膜性痛</strong>（咬筋・側頭筋トリガーポイントからの関連痛）</li>
@@ -922,6 +1008,11 @@ const muraokaContent = (
               Nixdorf らの予測因子分析では、「治療開始前の痛みの期間が長いほど」「治療への期待が大きいほど」治療後痛みが残りやすいと報告されています。元々非歯原性だった患者ほど追加処置で慢性化しやすいという解釈ができます。
             </p>
           </div>
+          <Muraoka202604Figure
+            src="13_nixdorf_root_canal_pain.jpg"
+            alt="根管治療後に半年以上続く痛みに関するスライド"
+            caption="根管治療後に6か月以上痛みが続く患者の一部は、歯そのものではなく非歯原性歯痛で説明される可能性がある、という疫学的根拠。"
+          />
         </div>
       </section>
 
@@ -944,6 +1035,18 @@ const muraokaContent = (
             <li>随伴症状は？</li>
             <li>痛い時の行動は？</li>
           </ol>
+          <div className="grid md:grid-cols-2 gap-4">
+            <Muraoka202604Figure
+              src="14_source_site_pain.jpg"
+              alt="疼痛発生部位と疼痛感受部位のずれ"
+              caption="原疾患が見つかりにくい理由。患者が痛みを感じる部位と、痛みを発生させる病変・発生源が一致しないことを示す。"
+            />
+            <Muraoka202604Figure
+              src="15_pain_interview_table.jpg"
+              alt="疼痛構造化問診表"
+              caption="痛みの場所、性質、強さ、持続時間、頻度、増悪・軽減因子などを横断的に聞くための疼痛構造化問診表。"
+            />
+          </div>
           <div className="bg-red-50 border-l-4 border-red-400 p-4 rounded">
             <p className="font-bold text-red-900 mb-1">最大の落とし穴は <strong>1 番</strong>「痛みの場所」</p>
             <p>
@@ -982,6 +1085,11 @@ const muraokaContent = (
           <p>
             研修医（新藤先生）は鑑別として「咬合痛」「筋膜痛」を挙げました。慶應入院中に「テグレトール」が処方されていた経緯から、過去の医師らは三叉神経痛も疑っていたと推察されます。
           </p>
+          <Muraoka202604Figure
+            src="16_case_exam_photo.jpg"
+            alt="症例検討中の診察場面"
+            caption="症例検討で示された診察場面。訴えの部位だけではなく、触診や誘発、局所麻酔で発生源を検証する必要がある。"
+          />
           <div className="bg-indigo-50 border border-indigo-200 rounded-lg p-4">
             <h5 className="font-bold text-indigo-800 mb-2">確定診断のプロセス</h5>
             <ol className="list-decimal pl-5 space-y-1">
@@ -993,6 +1101,11 @@ const muraokaContent = (
           <p>
             治療：マッサージ＋ストレッチ＋経過長期化と頭痛併存のため<strong>少量アミトリプチリン（10〜20mg）</strong>を併用し、約 1〜2 か月で著明改善。
           </p>
+          <Muraoka202604Figure
+            src="18_muscle_referred_mechanism.jpg"
+            alt="筋筋膜痛からの関連痛のメカニズム"
+            caption="咀嚼筋などの疼痛発生部位から、三叉神経系を介して歯や顔面へ関連痛が投射されるメカニズム。"
+          />
         </div>
       </section>
 
@@ -1049,6 +1162,11 @@ const muraokaContent = (
           <p>
             診断は ICOP の<strong>「外傷後三叉神経ニューロパチー（PTTN：Painful Post-Traumatic Trigeminal Neuropathy）」</strong>。これは ICHD-3 の診断基準に準拠して判定します。
           </p>
+          <Muraoka202604Figure
+            src="20_pttn_icop_classification.jpg"
+            alt="ICOPにおける外傷後三叉神経障害性疼痛"
+            caption="ICOP-1における外傷後三叉神経障害性疼痛の位置づけ。帯状疱疹関連疼痛などと並ぶ三叉神経障害性疼痛として整理される。"
+          />
           <div className="bg-indigo-50 border border-indigo-200 rounded-lg p-4">
             <h5 className="font-bold text-indigo-800 mb-2">薬物療法（村岡先生の処方戦略）</h5>
             <ul className="list-disc pl-5 space-y-1">
@@ -1066,6 +1184,11 @@ const muraokaContent = (
               定量感覚検査（QST：Quantitative Sensory Testing）は<strong>セムショット・モノフィラメント</strong>を用いて行い、しびれの有無に有用。一方<strong>痛みやアロディニアの評価は定性感覚検査</strong>（綿棒・ピン・冷温刺激）が重要です。「<strong>歯科末梢神経機能検査</strong>」の保険算定には JSOP の研修受講が必須で、毎年研修会が開催されています。
             </p>
           </div>
+          <Muraoka202604Figure
+            src="23_qst_sensory_testing.jpg"
+            alt="しびれの検査と定量感覚検査"
+            caption="しびれの検査。ブラシ・筆・綿棒などによる定性感覚検査と、von Freyなどを使う定量感覚検査を目的別に使い分ける。"
+          />
         </div>
       </section>
 
@@ -1097,6 +1220,11 @@ const muraokaContent = (
               アミトリプチリン（トリプタノール）の保険適用は<strong>「末梢性神経障害性疼痛」と「夜尿症」</strong>。<strong>筋膜痛への使用はオフラベル</strong>です。慢性筋膜痛・中枢感作改善目的での処方は、保険算定上の注意（病名選択）が必要です。
             </p>
           </div>
+          <Muraoka202604Figure
+            src="24_medication_precautions.jpg"
+            alt="主な薬物の使用上の注意点"
+            caption="アミトリプチリン、プレガバリン、ミロガバリン、ガバペンチン、デュロキセチンの用量・禁忌・副作用を比較したスライド。"
+          />
         </div>
       </section>
 
@@ -1106,6 +1234,11 @@ const muraokaContent = (
           16. JSOP・AOOFP・AAOP 学会活動の年間スケジュール
         </h4>
         <div className="space-y-3 text-sm text-gray-700 leading-relaxed">
+          <Muraoka202604Figure
+            src="25_annual_schedule.jpg"
+            alt="2026年度口腔顔面痛セミナー年間スケジュール"
+            caption="2026年度の口腔顔面痛セミナー年間スケジュール。オンライン、対面、オンデマンド配信を組み合わせた卒後教育の全体像。"
+          />
           <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
             <h5 className="font-bold text-gray-800 mb-2">日本口腔顔面痛学会（JSOP）</h5>
             <ul className="list-disc pl-5 space-y-1">
@@ -1115,6 +1248,18 @@ const muraokaContent = (
               <li><strong>神経障害性痛シンポジウム</strong>：3 月開催</li>
               <li><strong>学術大会</strong>：12/3〜5 東京ビッグサイトで Pain Japan Pain Week として合同開催。12/6 に大崎で口腔顔面痛単独サテライト・シンポジウム</li>
             </ul>
+          </div>
+          <div className="grid md:grid-cols-2 gap-4">
+            <Muraoka202604Figure
+              src="21_jsop_website.jpg"
+              alt="日本口腔顔面痛学会Webサイト"
+              caption="日本口腔顔面痛学会の認定医・専門医制度やセミナー情報は、学会Webサイトから確認する流れとして紹介された。"
+            />
+            <Muraoka202604Figure
+              src="22_clinical_reasoning_workshop.jpg"
+              alt="臨床推論実習セミナーの様子"
+              caption="臨床推論実習セミナーの様子。症例検討、筋触診、神経検査などを実地で学ぶ卒後教育の場として説明された。"
+            />
           </div>
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
             <h5 className="font-bold text-blue-900 mb-2">アジア（AOOFP & TMD）</h5>
@@ -1128,6 +1273,11 @@ const muraokaContent = (
               <strong>フロリダ・ディズニーワールド内ホテル</strong>で開催（村岡先生発表時点で「明後日始まる」とのこと）。日大の大久保先生らが日本から参加予定。
             </p>
           </div>
+          <Muraoka202604Figure
+            src="26_aaop_2026.jpg"
+            alt="AAOP 2026の開催案内"
+            caption="AAOP 2026の開催案内。国際的なOFP教育・交流の場として、米国学会への参加も紹介された。"
+          />
         </div>
       </section>
 
@@ -1610,6 +1760,7 @@ const TAB_DEFS = [
   { id: 'clark', title: 'Glenn Clark, DDS：Case Studies and Literature Reviews in Orofacial Pain and Headache', content: clarkContent },
   { id: 'pasternak', title: 'Amy Pasternak, PharmD：Pharmacogenetics of Orofacial Pain', content: <PasternakContent /> },
   { id: 'muraoka-2026-04', title: '2026年4月の慶應OFPオープンセミナー：村岡渡先生', content: muraokaContent },
+  { id: 'muraoka-tmd-2026-05', title: '2026年5月セミナー村岡先生口腔顔面痛からみた顎関節症について', content: muraokaTmd202605Content },
   { id: 'retractions-2026-04-29', title: '20260429Retracted Publications in Pain Medicine', content: retractionsContent },
 ];
 
