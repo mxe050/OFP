@@ -3,6 +3,7 @@ import { Presentation } from 'lucide-react';
 import { Chapter } from '../types';
 import { QAAccordion, pasternakQAGroups } from './expertLecturesPasternakQA';
 import { muraokaTmd202605Content } from './muraokaTmd202605';
+import { wajimaOnline202607Content } from './wajimaOnline202607';
 
 const famousLectureContent = (
         <div className="space-y-8">
@@ -1761,6 +1762,7 @@ const TAB_DEFS = [
   { id: 'pasternak', title: 'Amy Pasternak, PharmD：Pharmacogenetics of Orofacial Pain', content: <PasternakContent /> },
   { id: 'muraoka-2026-04', title: '2026年4月の慶應OFPオープンセミナー：村岡渡先生', content: muraokaContent },
   { id: 'muraoka-tmd-2026-05', title: '2026年5月セミナー村岡先生口腔顔面痛からみた顎関節症について', content: muraokaTmd202605Content },
+  { id: 'wajima-online-2026-07', title: '2026年7月口腔顔面痛On-lineセミナー：和嶋浩一先生', content: wajimaOnline202607Content },
   { id: 'retractions-2026-04-29', title: '20260429Retracted Publications in Pain Medicine', content: retractionsContent },
 ];
 
