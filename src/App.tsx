@@ -16,6 +16,7 @@ import { SubSection } from './types';
 const PASSWORD = 'yuasa2026';
 const UNLOCK_STORAGE_KEY = 'ofp-reserved-room-unlocked';
 const AAOP_ARCHIVE_PATH = './aaop2026/index.html';
+const IAOFP_GUIDE_PATH = './IAOFP_global_orofacial_pain_complete_guide_v3_axisII.html';
 
 type ContentSection = SubSection & {
   group: '講演' | 'メーリングリスト記録';
@@ -36,6 +37,10 @@ const menuDescriptions: Record<string, [string, string]> = {
   'aaop-2026': [
     'AAOP 50周年大会報告と和嶋先生の慢性疼痛パートを、画像と本文で読める資料集です。',
     '動画本体を使わず、前半の学会報告と後半の慢性痛講義を順番に追えます。',
+  ],
+  'iaofp-global-orofacial-pain': [
+    'IAOFP\u30df\u30c3\u30c9\u30b5\u30de\u30fc\u30fb\u30e9\u30a6\u30f3\u30c9\u30c6\u30fc\u30d6\u30eb\u3092\u3001\u4e16\u754c\u5404\u5730\u57df\u306e\u81e8\u5e8a\u30fb\u6559\u80b2\u30fb\u8a8d\u5b9a\u30fb\u7814\u7a76\u304b\u3089\u8aad\u307f\u89e3\u304f\u5b8c\u5168\u89e3\u8aac\u3067\u3059\u3002',
+    '\u95a2\u7bc0\u5186\u677f\u8ee2\u4f4d\u306e\u8a3a\u65ad\u30fb\u753b\u50cf\u6240\u898b\u30fb\u75bc\u75db\u539f\u56e0\u30fb\u75c5\u56e0\u3092\u3001\u8a0e\u8ad6\u5168\u6587\u3068\u5897\u88dc\u89e3\u8aac\u3067\u78ba\u8a8d\u3067\u304d\u307e\u3059\u3002',
   ],
   famous: [
     '非歯原性歯痛、ICOP、筋筋膜性疼痛、神経障害性疼痛を総論として整理します。',
@@ -127,6 +132,12 @@ export default function App() {
       title: '2026年AAOP総会講演録・和嶋先生慢性疼痛',
       description: menuDescriptions['aaop-2026'],
       href: AAOP_ARCHIVE_PATH,
+    },
+    {
+      id: 'iaofp-global-orofacial-pain',
+      title: 'IAOFP \u4e16\u754c\u306e\u53e3\u8154\u9854\u9762\u75db\u5206\u91ce\uff1a\u5b8c\u5168\u89e3\u8aac\u30fb\u8a0e\u8ad6\u9010\u8a9e\u8a18\u9332',
+      description: menuDescriptions['iaofp-global-orofacial-pain'],
+      href: IAOFP_GUIDE_PATH,
     },
     ...lectureSections.map((section) => ({
       id: section.id,
