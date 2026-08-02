@@ -17,6 +17,8 @@ const PASSWORD = 'yuasa2026';
 const UNLOCK_STORAGE_KEY = 'ofp-reserved-room-unlocked';
 const AAOP_ARCHIVE_PATH = './aaop2026/index.html';
 const IAOFP_GUIDE_PATH = './IAOFP_global_orofacial_pain_complete_guide_v3_axisII.html';
+const SCHIFFMAN_GUIDE_PATH = './2026_tmj_eric_schiffman_dc_tmd.html';
+const TMD_RESKILLING_GUIDE_PATH = './2026_tmj_tmd_reskilling_complete_guide.html';
 
 type ContentSection = SubSection & {
   group: '講演' | 'メーリングリスト記録';
@@ -37,6 +39,14 @@ const menuDescriptions: Record<string, [string, string]> = {
   'aaop-2026': [
     'AAOP 50周年大会報告と和嶋先生の慢性疼痛パートを、画像と本文で読める資料集です。',
     '動画本体を使わず、前半の学会報告と後半の慢性痛講義を順番に追えます。',
+  ],
+  '2026-tmj-eric-schiffman': [
+    'Eric Schiffman教授によるDC/TMD講演を、診断妥当性・臨床的有用性・Axis IIの予後予測まで体系的に整理した資料です。',
+    'PBRN前向き研究、フラグによるトリアージ、臨床実装、講演後ディスカッション全3問を確認できます。',
+  ],
+  '2026-tmj-tmd-overview': [
+    '第39回日本顎関節学会のRe-skilling 1〜8を、診断・保存療法・外科・咬合・小児・口腔顔面痛まで横断して読み解く完全解説です。',
+    '全セッションの要点、臨床的含意、批判的吟味、総合討論Q&A索引を検索しながら確認できます。',
   ],
   'iaofp-global-orofacial-pain': [
     'IAOFP\u30df\u30c3\u30c9\u30b5\u30de\u30fc\u30fb\u30e9\u30a6\u30f3\u30c9\u30c6\u30fc\u30d6\u30eb\u3092\u3001\u4e16\u754c\u5404\u5730\u57df\u306e\u81e8\u5e8a\u30fb\u6559\u80b2\u30fb\u8a8d\u5b9a\u30fb\u7814\u7a76\u304b\u3089\u8aad\u307f\u89e3\u304f\u5b8c\u5168\u89e3\u8aac\u3067\u3059\u3002',
@@ -132,6 +142,18 @@ export default function App() {
       title: '2026年AAOP総会講演録・和嶋先生慢性疼痛',
       description: menuDescriptions['aaop-2026'],
       href: AAOP_ARCHIVE_PATH,
+    },
+    {
+      id: '2026-tmj-eric-schiffman',
+      title: '2026TMJ学会 Eric Schiffman, University of Minnesota',
+      description: menuDescriptions['2026-tmj-eric-schiffman'],
+      href: SCHIFFMAN_GUIDE_PATH,
+    },
+    {
+      id: '2026-tmj-tmd-overview',
+      title: '2026TMJ学会TMD全体',
+      description: menuDescriptions['2026-tmj-tmd-overview'],
+      href: TMD_RESKILLING_GUIDE_PATH,
     },
     {
       id: 'iaofp-global-orofacial-pain',

@@ -1,0 +1,1555 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DC/TMD の妥当性と臨床的有用性 ― Eric Schiffman 教授 講演 完全解説</title>
+<style>
+:root{
+  --bg:#f6f7fb;
+  --card:#ffffff;
+  --ink:#1c2333;
+  --ink-sub:#4a5568;
+  --line:#e2e6ef;
+  --brand:#1f4e79;
+  --brand-2:#2f7fbf;
+  --brand-light:#eaf2fa;
+  --accent:#b3541e;
+  --green:#2e7d32;
+  --green-bg:#e8f5e9;
+  --yellow:#c79100;
+  --yellow-bg:#fff8e1;
+  --orange:#e07b00;
+  --orange-bg:#fff1e0;
+  --red:#c62828;
+  --red-bg:#fdecea;
+  --purple:#5e35b1;
+  --purple-bg:#efe9fb;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth; scroll-padding-top:70px;}
+body{
+  margin:0;
+  font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic",YuGothic,"Noto Sans JP",Meiryo,system-ui,-apple-system,"Segoe UI",sans-serif;
+  background:var(--bg);
+  color:var(--ink);
+  line-height:1.9;
+  font-size:16px;
+  -webkit-text-size-adjust:100%;
+}
+.wrap{max-width:1120px; margin:0 auto; padding:0 18px 100px;}
+
+/* ===== HEADER ===== */
+header.hero{
+  background:linear-gradient(135deg,#123a5c 0%,#1f4e79 45%,#2f7fbf 100%);
+  color:#fff; padding:54px 18px 46px; position:relative; overflow:hidden;
+}
+header.hero::after{
+  content:""; position:absolute; right:-90px; top:-90px; width:340px; height:340px;
+  background:rgba(255,255,255,.07); border-radius:50%;
+}
+.hero-inner{max-width:1120px; margin:0 auto; position:relative; z-index:2;}
+.kicker{
+  display:inline-block; background:rgba(255,255,255,.16); border:1px solid rgba(255,255,255,.35);
+  padding:5px 14px; border-radius:999px; font-size:.8rem; letter-spacing:.08em; margin-bottom:16px;
+}
+header.hero h1{font-size:2.0rem; margin:0 0 10px; line-height:1.45; font-weight:800; letter-spacing:.01em;}
+header.hero .sub{font-size:1.02rem; opacity:.93; margin:0 0 22px;}
+.meta-grid{
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:12px; margin-top:22px;
+}
+.meta-item{
+  background:rgba(255,255,255,.10); border:1px solid rgba(255,255,255,.22);
+  border-radius:10px; padding:12px 14px; font-size:.88rem;
+}
+.meta-item b{display:block; font-size:.72rem; opacity:.8; letter-spacing:.1em; margin-bottom:4px; font-weight:600;}
+
+/* ===== NAV ===== */
+nav.sticky{
+  position:sticky; top:0; z-index:50; background:rgba(255,255,255,.96);
+  backdrop-filter:blur(8px); border-bottom:1px solid var(--line);
+  box-shadow:0 1px 8px rgba(0,0,0,.05);
+}
+nav.sticky ul{
+  max-width:1120px; margin:0 auto; padding:8px 12px; list-style:none;
+  display:flex; gap:4px; overflow-x:auto; white-space:nowrap;
+}
+nav.sticky a{
+  display:inline-block; padding:7px 12px; font-size:.82rem; color:var(--ink-sub);
+  text-decoration:none; border-radius:7px; font-weight:600;
+}
+nav.sticky a:hover{background:var(--brand-light); color:var(--brand);}
+nav.sticky a.menu-return{background:var(--brand); color:#fff;}
+nav.sticky a.menu-return:hover{background:#123a5c; color:#fff;}
+
+/* ===== SECTION ===== */
+section{
+  background:var(--card); border:1px solid var(--line); border-radius:14px;
+  padding:30px 30px 34px; margin:26px 0; box-shadow:0 1px 3px rgba(20,30,60,.05);
+}
+section > h2{
+  font-size:1.42rem; margin:0 0 6px; color:var(--brand); font-weight:800;
+  border-bottom:3px solid var(--brand-light); padding-bottom:12px; line-height:1.5;
+}
+.sec-num{
+  display:inline-flex; align-items:center; justify-content:center;
+  width:32px; height:32px; background:var(--brand); color:#fff; border-radius:8px;
+  font-size:.95rem; margin-right:10px; vertical-align:middle; font-weight:700;
+}
+h3{
+  font-size:1.1rem; margin:32px 0 10px; color:#123a5c; font-weight:700;
+  padding-left:12px; border-left:5px solid var(--brand-2); line-height:1.6;
+}
+h4{font-size:.98rem; margin:22px 0 8px; color:var(--accent); font-weight:700;}
+p{margin:.7em 0;}
+strong{color:#0f2f4c;}
+mark{background:#fff3b0; padding:1px 4px; border-radius:3px;}
+
+/* ===== TOC ===== */
+.toc{
+  background:linear-gradient(180deg,#fbfcfe,#f2f6fb); border:1px solid var(--line);
+  border-radius:14px; padding:24px 28px; margin:26px 0;
+}
+.toc h2{border:none; margin-bottom:14px; font-size:1.15rem;}
+.toc ol{margin:0; padding-left:22px; columns:2; column-gap:34px;}
+.toc li{margin:6px 0; break-inside:avoid;}
+.toc a{color:var(--brand); text-decoration:none; font-size:.92rem; font-weight:600;}
+.toc a:hover{text-decoration:underline;}
+@media(max-width:760px){ .toc ol{columns:1;} }
+
+/* ===== CALLOUTS ===== */
+.box{border-radius:10px; padding:16px 18px; margin:18px 0; border-left:6px solid; font-size:.95rem;}
+.box .box-t{font-weight:800; display:block; margin-bottom:6px; font-size:.95rem;}
+.box.key{background:var(--brand-light); border-color:var(--brand-2); }
+.box.key .box-t{color:var(--brand);}
+.box.warn{background:var(--red-bg); border-color:var(--red);}
+.box.warn .box-t{color:var(--red);}
+.box.tip{background:var(--green-bg); border-color:var(--green);}
+.box.tip .box-t{color:var(--green);}
+.box.note{background:var(--yellow-bg); border-color:var(--yellow);}
+.box.note .box-t{color:#8a6500;}
+.box.quote{background:#f4f6f9; border-color:#94a3b8; font-style:normal;}
+.box.quote .box-t{color:#475569;}
+.box.quote .said{font-size:1.0rem; color:#334155; font-weight:600;}
+
+/* ===== TABLE ===== */
+.tbl-wrap{overflow-x:auto; margin:18px 0; border-radius:10px; border:1px solid var(--line);}
+table{border-collapse:collapse; width:100%; font-size:.9rem; background:#fff; min-width:560px;}
+caption{caption-side:top; text-align:left; font-size:.86rem; color:var(--ink-sub); padding:8px 4px 10px; font-weight:600;}
+th,td{border-bottom:1px solid var(--line); padding:10px 12px; text-align:left; vertical-align:top;}
+thead th{background:var(--brand); color:#fff; font-weight:700; border-bottom:none; font-size:.86rem; white-space:nowrap;}
+tbody tr:nth-child(even){background:#fafbfd;}
+tbody tr:hover{background:var(--brand-light);}
+td.num{text-align:center; font-variant-numeric:tabular-nums; white-space:nowrap;}
+
+/* ===== BADGES ===== */
+.badge{
+  display:inline-block; padding:2px 9px; border-radius:999px; font-size:.76rem;
+  font-weight:700; letter-spacing:.02em; white-space:nowrap;
+}
+.b-green{background:var(--green-bg); color:var(--green); border:1px solid #a5d6a7;}
+.b-yellow{background:var(--yellow-bg); color:#8a6500; border:1px solid #ffe082;}
+.b-orange{background:var(--orange-bg); color:var(--orange); border:1px solid #ffcc80;}
+.b-red{background:var(--red-bg); color:var(--red); border:1px solid #ef9a9a;}
+.b-blue{background:var(--brand-light); color:var(--brand); border:1px solid #b3d4f0;}
+.b-gray{background:#eef1f5; color:#556; border:1px solid #d7dde5;}
+.b-purple{background:var(--purple-bg); color:var(--purple); border:1px solid #c9b8ef;}
+
+/* ===== CARDS ===== */
+.cards{display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:14px; margin:18px 0;}
+.card{
+  background:#fbfcfe; border:1px solid var(--line); border-radius:11px; padding:16px 18px;
+}
+.card h5{margin:0 0 8px; font-size:.98rem; color:var(--brand);}
+.card p{margin:.35em 0; font-size:.9rem;}
+
+/* ===== FLAG CARDS ===== */
+.flags{display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:14px; margin:20px 0;}
+.flag{border-radius:11px; padding:16px 18px; border:1px solid; }
+.flag h5{margin:0 0 6px; font-size:1.0rem; display:flex; align-items:center; gap:8px;}
+.flag .dot{width:14px; height:14px; border-radius:3px; display:inline-block;}
+.flag p{font-size:.88rem; margin:.3em 0;}
+.f-red{background:var(--red-bg); border-color:#f1b0ab;} .f-red h5{color:var(--red);} .f-red .dot{background:var(--red);}
+.f-orange{background:var(--orange-bg); border-color:#f5cb96;} .f-orange h5{color:var(--orange);} .f-orange .dot{background:var(--orange);}
+.f-yellow{background:var(--yellow-bg); border-color:#f0dc9a;} .f-yellow h5{color:#8a6500;} .f-yellow .dot{background:#e8c33a;}
+.f-green{background:var(--green-bg); border-color:#a9d5ab;} .f-green h5{color:var(--green);} .f-green .dot{background:var(--green);}
+
+/* ===== FORMULA ===== */
+.formula{
+  background:#0f2f4c; color:#e8f2fb; border-radius:10px; padding:18px 22px; margin:16px 0;
+  font-family:"SF Mono",Consolas,Menlo,monospace; font-size:.95rem; text-align:center; line-height:2;
+}
+.formula .lbl{display:block; font-size:.78rem; opacity:.75; margin-bottom:6px; font-family:inherit;}
+
+/* ===== FLOW ===== */
+.flow{display:flex; flex-wrap:wrap; align-items:stretch; gap:10px; margin:20px 0;}
+.flow .step{
+  flex:1 1 170px; background:#fff; border:2px solid var(--brand-2); border-radius:10px;
+  padding:12px 14px; font-size:.86rem; position:relative;
+}
+.flow .step b{display:block; color:var(--brand); font-size:.8rem; margin-bottom:4px;}
+.arrow{align-self:center; color:var(--brand-2); font-size:1.4rem; font-weight:bold;}
+
+/* ===== Q&A ===== */
+.qa{border:1px solid var(--line); border-radius:12px; margin:16px 0; overflow:hidden; background:#fff;}
+.qa summary{
+  cursor:pointer; list-style:none; padding:16px 20px; font-weight:700;
+  background:linear-gradient(180deg,#f7fafd,#eef4fa); color:var(--brand);
+  display:flex; gap:12px; align-items:flex-start; font-size:1.0rem; line-height:1.6;
+}
+.qa summary::-webkit-details-marker{display:none;}
+.qa summary::before{
+  content:"Q"; background:var(--brand); color:#fff; border-radius:6px;
+  width:26px; height:26px; min-width:26px; display:inline-flex; align-items:center;
+  justify-content:center; font-size:.85rem; margin-top:2px;
+}
+.qa[open] summary{border-bottom:1px solid var(--line);}
+.qa .qa-body{padding:18px 22px 22px;}
+.qa .asker{
+  font-size:.82rem; color:var(--ink-sub); background:#f1f4f8; border-radius:6px;
+  padding:4px 10px; display:inline-block; margin-bottom:12px;
+}
+.answer{display:flex; gap:12px; margin-top:6px;}
+.answer::before{
+  content:"A"; background:var(--accent); color:#fff; border-radius:6px;
+  width:26px; height:26px; min-width:26px; height:26px; display:inline-flex;
+  align-items:center; justify-content:center; font-size:.85rem; font-weight:700; margin-top:3px;
+}
+.answer > div{flex:1;}
+
+details.more{
+  border:1px dashed #c3cddb; border-radius:9px; padding:0; margin:14px 0; background:#fbfcfe;
+}
+details.more summary{
+  cursor:pointer; padding:11px 16px; font-size:.88rem; font-weight:700; color:var(--brand-2);
+}
+details.more .inner{padding:0 18px 16px; font-size:.92rem;}
+
+/* ===== misc ===== */
+ul.clean{padding-left:22px;} ul.clean li{margin:6px 0;}
+.two-col{display:grid; grid-template-columns:1fr 1fr; gap:20px;}
+@media(max-width:760px){ .two-col{grid-template-columns:1fr;} section{padding:22px 18px 26px;} header.hero h1{font-size:1.45rem;} }
+.svg-wrap{background:#fbfcfe; border:1px solid var(--line); border-radius:11px; padding:14px; margin:18px 0; text-align:center;}
+.svg-wrap figcaption{font-size:.83rem; color:var(--ink-sub); margin-top:8px;}
+footer{text-align:center; color:var(--ink-sub); font-size:.85rem; padding:30px 12px 60px;}
+.totop{
+  position:fixed; right:18px; bottom:18px; background:var(--brand); color:#fff;
+  border-radius:50%; width:46px; height:46px; display:flex; align-items:center;
+  justify-content:center; text-decoration:none; box-shadow:0 3px 10px rgba(0,0,0,.2); z-index:60; font-size:1.1rem;
+}
+.legend{font-size:.82rem; color:var(--ink-sub); margin-top:-8px;}
+hr.soft{border:none; border-top:1px dashed var(--line); margin:26px 0;}
+@media print{
+  nav.sticky,.totop{display:none;} section{break-inside:avoid; box-shadow:none;} body{background:#fff;}
+  .qa{break-inside:avoid;} details{open:true;}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <span class="kicker">LECTURE FULL COMMENTARY ／ 講演完全解説</span>
+    <h1>DC/TMD(顎関節症の診断基準)は<br>「信頼でき、妥当で、そして役に立つ」のか?</h1>
+    <p class="sub">― Axis I の診断精度から、Axis II による予後予測、そして「フラグ」による患者トリアージまで ―</p>
+    <div class="meta-grid">
+      <div class="meta-item"><b>演者</b>Eric Schiffman 教授(米国ミネソタ州/ミネソタ大学)<br>DC/TMD 2014 筆頭著者</div>
+      <div class="meta-item"><b>主題</b>DC/TMD Axis I・Axis II の妥当性(validity)と<br>臨床的有用性(clinical utility)</div>
+      <div class="meta-item"><b>中核データ</b>National Dental PBRN による<br>前向きコホート研究(n=1,911/6か月追跡)</div>
+      <div class="meta-item"><b>利益相反</b>なし(演者申告)<br><b>謝辞</b>開催手配を担当した Taro 氏へ</div>
+      <div class="meta-item"><b>元動画</b><a href="https://youtu.be/d6iHTe0yIsQ" style="color:#cfe6fb;">https://youtu.be/d6iHTe0yIsQ</a></div>
+      <div class="meta-item"><b>本資料の構成</b>第1〜13章の詳細解説 ＋<br>講演後ディスカッション全3問のQ&amp;A</div>
+    </div>
+  </div>
+</header>
+
+<nav class="sticky">
+  <ul>
+    <li><a class="menu-return" href="./index.html">&larr; 講演一覧へ戻る</a></li>
+    <li><a href="#summary">要約</a></li>
+    <li><a href="#s1">1.背景</a></li>
+    <li><a href="#s2">2.診断精度</a></li>
+    <li><a href="#s3">3.疼痛性疾患</a></li>
+    <li><a href="#s4">4.関節疾患</a></li>
+    <li><a href="#s5">5.妥当性≠有用性</a></li>
+    <li><a href="#s6">6.AxisIの有用性</a></li>
+    <li><a href="#s7">7.AxisII</a></li>
+    <li><a href="#s8">8.PBRN研究</a></li>
+    <li><a href="#s9">9.予測因子</a></li>
+    <li><a href="#s10">10.無関係因子</a></li>
+    <li><a href="#s11">11.フラグ</a></li>
+    <li><a href="#s12">12.臨床実践</a></li>
+    <li><a href="#s13">13.限界・今後</a></li>
+    <li><a href="#qa" style="color:var(--accent);">★Q&amp;A全収録</a></li>
+    <li><a href="#glossary">用語集</a></li>
+  </ul>
+</nav>
+
+<div class="wrap">
+
+<!-- ============ SUMMARY ============ -->
+<section id="summary">
+  <h2><span class="sec-num">◎</span>エグゼクティブ・サマリー(3分で読む講演の骨子)</h2>
+  <div class="cards">
+    <div class="card">
+      <h5>① Axis I は「診断できる」</h5>
+      <p>疼痛性疾患(筋痛・関節痛・関連痛を伴う筋筋膜痛)は感度0.86以上・特異度0.98以上と極めて良好。一方、関節内障の多くは臨床所見だけでは診断精度が不足し、<strong>画像(MRI/CT)が基準</strong>となる。</p>
+    </div>
+    <div class="card">
+      <h5>② しかし「妥当性」だけでは足りない</h5>
+      <p>妥当性=検査がどれだけ正確か。<strong>臨床的有用性=その検査が介入を促し、健康アウトカムを改善するか</strong>。演者は「役に立たなければ意味がない」と全編を通じて主張。</p>
+    </div>
+    <div class="card">
+      <h5>③ Axis II は「予後」を当てる</h5>
+      <p>米国6地域の一般歯科・専門医 185名、患者1,911名の前向き研究。<strong>6か月後の不良転帰は47%</strong>。ベースラインの心理的苦痛への対処困難、高い痛み強度、広汎痛などが強力な予測因子だった。</p>
+    </div>
+    <div class="card">
+      <h5>④ 「フラグ」で単純化する</h5>
+      <p>赤(身体的緊急/医科紹介)・橙(メンタルヘルス紹介)・黄(予後不良リスク)・緑(そのまま進めてよい)。フラグの数と色で<strong>単純症例か複雑症例かをトリアージ</strong>する。</p>
+    </div>
+    <div class="card">
+      <h5>⑤ 10分で終わる問診票へ</h5>
+      <p>PBRNの要請で「患者が10分以内に記入できる」ことが必須条件。研究では大成功したDC/TMDが臨床でほぼ使われていない現状を、簡略版で打開したいというのが演者の悲願。</p>
+    </div>
+    <div class="card">
+      <h5>⑥ 非特異的効果を最大化せよ</h5>
+      <p>疼痛治療にはどれも20〜60%のプラセボ(非特異的)効果がある。落ち着いて話を聴き、共感を示すこと自体が治療成績を左右する、というのが最後のメッセージ。</p>
+    </div>
+  </div>
+  <div class="box key">
+    <span class="box-t">演者の一言でいうと</span>
+    「Axis I の診断は概ね臨床的有用性がある。Axis II の因子は治療<em>前</em>に評価する必要がある。なぜならそれらは臨床の場で有意な<strong>予後予測価値</strong>を持つからだ。」
+  </div>
+</section>
+
+<!-- ============ TOC ============ -->
+<div class="toc">
+  <h2>目次</h2>
+  <ol>
+    <li><a href="#s1">DC/TMD 2014 の成り立ちと二軸構造</a></li>
+    <li><a href="#s2">診断精度(妥当性)の基礎 ― 感度と特異度</a></li>
+    <li><a href="#s3">Axis I ①:疼痛性疾患の診断アルゴリズムと精度</a></li>
+    <li><a href="#s4">Axis I ②:関節疾患 ― なぜ画像が必要なのか</a></li>
+    <li><a href="#s5">「妥当性」と「臨床的有用性」は別物である</a></li>
+    <li><a href="#s6">Axis I 各診断の臨床的有用性(疾患別詳解)</a></li>
+    <li><a href="#s7">Axis II ― 評価ツールの構成と改変点</a></li>
+    <li><a href="#s8">National Dental PBRN 前向きコホート研究の全容</a></li>
+    <li><a href="#s9">不良転帰を予測した因子(オッズ比一覧)</a></li>
+    <li><a href="#s10">予測因子にならなかったもの(重要な陰性所見)</a></li>
+    <li><a href="#s11">フラグ・システムとトリアージ、生物心理社会モデル</a></li>
+    <li><a href="#s12">演者の40年の臨床フローと学際的チーム医療</a></li>
+    <li><a href="#s13">研究の限界・今後の展望・出版状況</a></li>
+    <li><a href="#qa">【全収録】講演後ディスカッション Q&amp;A</a></li>
+    <li><a href="#appendix">付録:講演中に演者が投げかけた問い</a></li>
+    <li><a href="#glossary">用語集・略語一覧</a></li>
+    <li><a href="#takeaway">明日から使えるチェックリスト</a></li>
+  </ol>
+</div>
+
+<!-- ============ 1 ============ -->
+<section id="s1">
+  <h2><span class="sec-num">1</span>DC/TMD 2014 の成り立ちと二軸構造</h2>
+
+  <h3>1-1. 世界中の専門家を集めて作られた基準</h3>
+  <p>演者は冒頭で、<strong>2014年に世界中の専門家を招集し、その意見を統合して顎関節症の診断基準(DC/TMD:Diagnostic Criteria for Temporomandibular Disorders)を作成した</strong>と述べています。この作業には最終的に34名もの著者が名を連ねました。後のQ&amp;A(<a href="#qa2">Q2</a>)で明かされるように、これには「専門知を集める」という学術的な目的と、「名前を載せてしまえば後から反対しにくい」という<em>政治的</em>な目的の両方があった、というのが演者の率直な述懐です。</p>
+
+  <h3>1-2. 二つの軸(Axis)</h3>
+  <p>DC/TMD は前身である RDC/TMD(Dworkin &amp; LeResche, 1992)を踏襲し、二軸構造をとります。この「身体診断」と「心理社会的評価」を必ずセットで行うという設計思想こそが、DC/TMD の本質です。</p>
+
+  <div class="two-col">
+    <div class="card">
+      <h5>Axis I ― 身体的診断(Physical)</h5>
+      <p><b>A. 疼痛性疾患</b></p>
+      <ul class="clean" style="font-size:.9rem;">
+        <li>筋痛(Myalgia)とそのサブタイプ<br><span class="badge b-gray">局所性筋痛</span> <span class="badge b-gray">波及痛を伴う筋筋膜痛</span> <span class="badge b-gray">関連痛を伴う筋筋膜痛</span></li>
+        <li>関節痛(Arthralgia)</li>
+        <li>TMDに起因する頭痛(Headache attributed to TMD)</li>
+      </ul>
+      <p><b>B. 関節内・関節外疾患</b></p>
+      <ul class="clean" style="font-size:.9rem;">
+        <li>関節円板転位(復位性/非復位性)</li>
+        <li>変形性関節症(DJD)</li>
+        <li>亜脱臼(Subluxation)</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h5>Axis II ― 心理社会的評価(Psychosocial)</h5>
+      <ul class="clean" style="font-size:.9rem;">
+        <li>疼痛の程度・段階付け(Graded Chronic Pain Scale)</li>
+        <li>全身の疼痛部位(広汎痛の探索)</li>
+        <li>顎機能の制限</li>
+        <li>心理状態(PHQ-4:不安・抑うつ)</li>
+        <li>口腔習癖のレベル(Oral Behaviors Checklist)</li>
+      </ul>
+      <p style="margin-top:10px; font-size:.88rem;">演者はこれを<mark>「Axis 2 こそ目を通す価値がある」</mark>と強調し、講演の後半すべてをこれに費やしました。</p>
+    </div>
+  </div>
+
+  <div class="box note">
+    <span class="box-t">解説:なぜ二軸なのか</span>
+    慢性疼痛は「組織の損傷の程度」だけでは説明できません。同じ画像所見・同じ診断名でも、ある患者は3か月で寛解し、別の患者は何年も苦しみます。その差を生むのが Axis II の因子であり、本講演の最大の主張は「<strong>Axis II を測ることで、その差を治療前に予測できる</strong>」という点にあります。
+  </div>
+</section>
+
+<!-- ============ 2 ============ -->
+<section id="s2">
+  <h2><span class="sec-num">2</span>診断精度(妥当性)の基礎 ― 感度と特異度</h2>
+
+  <p>演者は本題に入る前に、聴衆と用語の定義を揃えます。<strong>診断精度(diagnostic accuracy)は「妥当性(validity)」とも呼ばれる</strong>ものです。</p>
+
+  <div class="tbl-wrap">
+  <table>
+    <caption>2×2 表による感度・特異度の定義</caption>
+    <thead>
+      <tr><th></th><th>疾患が実際にある</th><th>疾患が実際にない</th></tr>
+    </thead>
+    <tbody>
+      <tr><th style="background:#f2f6fb;">診断基準が「陽性」</th>
+        <td><b>真陽性(TP)</b><br>正しく病気を捉えた</td>
+        <td>偽陽性(FP)<br><span style="color:var(--red);">過剰診断</span></td></tr>
+      <tr><th style="background:#f2f6fb;">診断基準が「陰性」</th>
+        <td>偽陰性(FN)<br><span style="color:var(--red);">見逃し</span></td>
+        <td><b>真陰性(TN)</b><br>正しく否定できた</td></tr>
+      <tr><th style="background:#f2f6fb;">指標</th>
+        <td><b>感度 = TP /(TP+FN)</b><br>「病気がある人を、あると言えるか」</td>
+        <td><b>特異度 = TN /(TN+FP)</b><br>「病気がない人を、ないと言えるか」</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3>2-1. 目標値はなぜ「感度0.70/特異度0.95」なのか</h3>
+  <p>Dworkin と LeResche が RDC/TMD を作った際に設定した目標値は <strong>感度 ≧ 0.70、特異度 ≧ 0.95</strong> でした。演者はこの非対称性の理由を明快に説明します。</p>
+  <div class="box key">
+    <span class="box-t">特異度を高く設定する理由=過剰診断を避けるため</span>
+    「もしこれが<strong>がん</strong>であれば、我々はこの数値を<strong>逆にする</strong>だろう。感度95・特異度70にする。しかし、通常TMDで人は死なない。」<br>
+    <span style="font-size:.88rem; color:var(--ink-sub);">――致死的疾患では「見逃し(偽陰性)」の代償が命であるため感度を優先します。一方TMDでは、健常者を患者にしてしまう「偽陽性」の害(不要な不可逆的治療、患者の病者化)のほうが大きい。だから特異度を高く取る、という臨床疫学の原則です。演者はここで「私はドライなユーモアの持ち主でね」と自嘲していました。</span>
+  </div>
+</section>
+
+<!-- ============ 3 ============ -->
+<section id="s3">
+  <h2><span class="sec-num">3</span>Axis I ①:疼痛性疾患の診断アルゴリズムと精度</h2>
+
+  <h3>3-1. 筋痛(Myalgia)を例に ― 診断の4ステップ</h3>
+  <p>演者は「全員の認識を揃えるために」として、筋痛を例に診断アルゴリズムを解説しました。これは他の疼痛性疾患にもそのまま応用できる思考の型です。</p>
+
+  <div class="flow">
+    <div class="step"><b>STEP 1 ― 病歴①</b>患者が<strong>咀嚼構造の領域(顎・こめかみ)に痛み</strong>があると訴える。他部位にも痛みがある場合でも、ここが最も強い痛みであること。</div>
+    <div class="arrow">→</div>
+    <div class="step"><b>STEP 2 ― 病歴②</b><strong>顎の運動・機能・パラファンクション(食いしばり等)で痛みが変化する</strong>。これがTMDの<em>ハルマーク(特徴的所見)</em>。</div>
+    <div class="arrow">→</div>
+    <div class="step"><b>STEP 3 ― 診察①</b>痛みの部位が咀嚼筋領域であることを<strong>視診・触診で確認</strong>する。</div>
+    <div class="arrow">→</div>
+    <div class="step"><b>STEP 4 ― 診察②</b><strong>「いつもの痛み(familiar pain)」の再現</strong>。側頭筋・咬筋の触診、または最大自力開口・最大他動開口で普段の痛みが誘発される。</div>
+  </div>
+
+  <div class="box tip">
+    <span class="box-t">🔧 明日から使えるベッドサイド・テスト:1分間クレンチ</span>
+    「実に良い検査がある。<strong>患者に1分間食いしばってもらい、それが普段の痛みを誘発するかを見る</strong>のだ。」――パラファンクションによる痛みの修飾を、その場で確認する簡便な負荷試験です。
+  </div>
+
+  <div class="box tip">
+    <span class="box-t">🔧 触診の鉄則:「患者の話を聴け」</span>
+    「患者が特定の部位を指さしたら、<strong>私はそこから触診を始める</strong>。彼らは自分の痛みの場所を知っているのだから。痛みは目に見えない。」――教科書的な触診順序よりも、患者の指し示す一点を優先する。演者の40年の臨床から出た実践的助言です。
+  </div>
+
+  <h4>「Familiar pain(いつもの痛み)」という概念の重要性</h4>
+  <p>DC/TMD の中核をなす概念です。触診で「痛い」だけでは不十分で、それが<strong>患者が主訴として訴えている痛みと同じ性質・同じ場所の痛みであること</strong>が要求されます。単なる圧痛は健常者でも生じるため、この一段階を入れることで特異度が劇的に向上します。</p>
+
+  <h3>3-2. 疼痛性疾患の診断精度</h3>
+  <p>演者の説明:「このように診断すれば、<mark>あると診断したときの90%は正しく、ないと判定したときの99%は正しい</mark>。非常に良い感度・特異度である。」</p>
+
+  <div class="tbl-wrap">
+  <table>
+    <caption>DC/TMD Axis I ― 疼痛性疾患の診断精度(画像なし・臨床診断のみ)</caption>
+    <thead>
+      <tr><th>診断名</th><th>感度</th><th>特異度</th><th>評価</th><th>臨床的な読み方</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><b>筋痛</b> Myalgia</td><td class="num">0.90</td><td class="num">0.99</td><td><span class="badge b-green">目標達成</span></td><td>陽性でも陰性でも高い確度で信頼できる</td></tr>
+      <tr><td><b>関連痛を伴う筋筋膜痛</b><br>Myofascial pain with referral</td><td class="num">0.86</td><td class="num">0.98</td><td><span class="badge b-green">目標達成</span></td><td>触診による関連痛の誘発が鍵</td></tr>
+      <tr><td><b>関節痛</b> Arthralgia</td><td class="num">0.89</td><td class="num">0.98</td><td><span class="badge b-green">目標達成</span></td><td>TMJ触診・運動時の familiar pain</td></tr>
+      <tr><td><b>TMDに起因する頭痛</b><br>Headache attributed to TMD</td><td class="num">0.89</td><td class="num">0.87</td><td><span class="badge b-yellow">特異度やや低い</span></td><td>演者いわく「<strong>『頭痛はTMDと無関係だ』と言ったとき、13%は間違える</strong>。悪くはない」</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="legend">※TMDに起因する頭痛の診断には、前提として筋痛または関節痛の一次診断が必要です(側頭部の頭痛が顎運動で修飾され、側頭筋の触診や顎運動で「いつもの頭痛」が再現されること)。</p>
+
+  <div class="box note">
+    <span class="box-t">サブタイプについて</span>
+    筋痛には「局所性筋痛」「波及痛(spreading)を伴う筋筋膜痛」「関連痛(referral)を伴う筋筋膜痛」の3サブタイプがあります。このうち<strong>感度・特異度が確立しているのは「関連痛を伴う筋筋膜痛」のみ</strong>で、他の2つは未確立です。この事実が、後述する「関連痛サブタイプにこそ臨床的意味がある」という議論につながります。
+  </div>
+</section>
+
+<!-- ============ 4 ============ -->
+<section id="s4">
+  <h2><span class="sec-num">4</span>Axis I ②:関節疾患 ― なぜ画像が必要なのか</h2>
+
+  <h3>4-1. 検証方法(リファレンス・スタンダード)</h3>
+  <div class="box key">
+    <span class="box-t">研究デザインの厳密さ</span>
+    <strong>関節円板転位の基準=MRI、変形性関節症の基準=CT</strong>。画像は<strong>2名のブラインド(盲検)化された放射線科医</strong>が読影し、<strong>意見が食い違った場合は両者が協議して合意に至るまで議論した</strong>――という厳格な手順が取られました。臨床所見の精度を語る前に、比較対象の質が担保されている点が重要です。
+  </div>
+
+  <h3>4-2. 関節疾患の診断精度一覧</h3>
+  <div class="tbl-wrap">
+  <table>
+    <caption>DC/TMD Axis I ― 関節疾患の診断精度(画像を用いない臨床診断の場合)</caption>
+    <thead>
+      <tr><th>診断名</th><th>感度</th><th>特異度</th><th>判定</th><th>演者のコメント</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><b>復位性関節円板転位</b><br>DD with reduction</td>
+        <td class="num">0.34</td><td class="num">0.92</td>
+        <td><span class="badge b-yellow">感度不足<br>特異度に救われる</span></td>
+        <td>雑音があれば高確率で診断できる。<strong>なければ何も分からない</strong></td>
+      </tr>
+      <tr>
+        <td><b>復位性円板転位+間欠ロック</b><br>DDwR with intermittent locking</td>
+        <td class="num">0.38</td><td class="num">0.98</td>
+        <td><span class="badge b-yellow">感度不足</span></td>
+        <td>ロックの既往を病歴で拾う</td>
+      </tr>
+      <tr>
+        <td><b>非復位性円板転位+開口制限</b><br>DDwoR <u>with</u> limited opening<br>(いわゆる<strong>クローズドロック</strong>)</td>
+        <td class="num">0.80</td><td class="num">0.97</td>
+        <td><span class="badge b-green">妥当な水準</span></td>
+        <td>臨床のみで信頼して診断してよい数少ない関節疾患</td>
+      </tr>
+      <tr>
+        <td><b>非復位性円板転位・開口制限なし</b><br>DDwoR <u>without</u> limited opening</td>
+        <td class="num">0.54</td><td class="num">0.79</td>
+        <td><span class="badge b-red">不十分</span></td>
+        <td>「<strong>臨床的に正常に見えてしまう</strong>のがこの診断の問題点」</td>
+      </tr>
+      <tr>
+        <td><b>変形性関節症</b><br>Degenerative joint disease</td>
+        <td class="num">0.55</td><td class="num">0.61</td>
+        <td><span class="badge b-red">ほぼコイン投げ</span></td>
+        <td>細かいクレピタス/粗いクレピタスに分けても改善せず。「<strong>クレピタスがあっても変性があるかは五分五分</strong>」</td>
+      </tr>
+      <tr>
+        <td><b>亜脱臼</b><br>Subluxation</td>
+        <td class="num">0.98</td><td class="num">1.00</td>
+        <td><span class="badge b-green">極めて良好</span></td>
+        <td>病歴で確実に診断可能</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3>4-3. 感度0.34 という数字をどう読むか ― 最も重要な解釈</h3>
+  <p>ここは講演中でも特に丁寧に説明された部分です。感度が低い診断基準は「使えない」と切り捨てられがちですが、演者は<strong>「特異度の高さに救われている(saved by having high specificity)」</strong>と表現します。</p>
+
+  <div class="cards">
+    <div class="card" style="border-left:5px solid var(--green);">
+      <h5>雑音が「ある」場合 → 診断してよい</h5>
+      <p>特異度0.92。すなわち<strong>クリック・ポップ・スナップ音があれば、高い確率で円板転位と診断できる。間違うのは8%だけ</strong>。</p>
+    </div>
+    <div class="card" style="border-left:5px solid var(--red);">
+      <h5>雑音が「ない」場合 → 何も分からない</h5>
+      <p>感度0.34。<strong>音がないからといって円板転位を否定できない</strong>。転位があるかもしれないし、ないかもしれない。</p>
+    </div>
+  </div>
+
+  <h4>診断上の要件(復位性円板転位)</h4>
+  <ul class="clean">
+    <li><b>病歴:</b>現在TMJの雑音があると患者が申告する、<u>または</u>診察中に患者が雑音を自覚したと述べる。<br><span style="font-size:.88rem; color:var(--ink-sub);">※演者の補足:「クリックする関節は正常だと思っていて、気づきもしない人がいる。それ自体が何かを物語っている」</span></li>
+    <li><b>診察:</b>開口時と閉口時の両方でクリックがある、<u>または</u>(a)開口時か閉口時のクリック <u>かつ</u>(b)側方または前方運動時のクリック。</li>
+  </ul>
+
+  <h3>4-4. なぜ音が出ないことがあるのか ― 円板の形態学</h3>
+  <p>演者はここで矢状断の模式図を示し、雑音発生のメカニズムを説明しました。</p>
+
+  <figure class="svg-wrap">
+    <svg viewBox="0 0 720 260" width="100%" style="max-width:700px;" role="img" aria-label="関節円板と下顎頭の矢状断模式図">
+      <!-- panel 1 -->
+      <rect x="8" y="8" width="340" height="244" rx="10" fill="#fff" stroke="#dde3ec"/>
+      <text x="24" y="32" font-size="14" font-weight="bold" fill="#1f4e79">① 正常な円板形態(音が出る)</text>
+      <!-- eminence -->
+      <path d="M40,80 Q110,80 150,130 Q190,175 260,175 L320,175" stroke="#8fa3b8" stroke-width="10" fill="none" stroke-linecap="round"/>
+      <text x="150" y="72" font-size="11" fill="#5a6b7e">関節結節(articular eminence)</text>
+      <!-- disc -->
+      <path d="M112,142 Q132,120 158,132 Q186,145 208,168" stroke="#e07b00" stroke-width="9" fill="none" stroke-linecap="round"/>
+      <circle cx="200" cy="163" r="9" fill="#c0392b" opacity=".85"/>
+      <text x="196" y="200" font-size="10.5" fill="#c0392b" text-anchor="middle">後方肥厚部</text>
+      <text x="196" y="214" font-size="10.5" fill="#c0392b" text-anchor="middle">(posterior band)</text>
+      <text x="120" y="122" font-size="10.5" fill="#e07b00">中間帯／前方肥厚部</text>
+      <!-- condyle -->
+      <circle cx="240" cy="196" r="26" fill="#c7d7e6" stroke="#5b7a97" stroke-width="2"/>
+      <text x="240" y="200" font-size="11" text-anchor="middle" fill="#294a68">下顎頭</text>
+      <!-- retrodiscal -->
+      <path d="M212,172 Q252,158 292,150" stroke="#7ba05b" stroke-width="6" fill="none" stroke-dasharray="5 4"/>
+      <text x="252" y="140" font-size="10.5" fill="#5a7a3c">円板後部組織の線維化</text>
+      <!-- click marker -->
+      <text x="196" y="240" font-size="13" font-weight="bold" fill="#c0392b" text-anchor="middle">↑ ここを乗り越える瞬間にクリック音</text>
+
+      <!-- panel 2 -->
+      <rect x="372" y="8" width="340" height="244" rx="10" fill="#fff" stroke="#dde3ec"/>
+      <text x="388" y="32" font-size="14" font-weight="bold" fill="#1f4e79">② 後方肥厚部が扁平化(音が出ない)</text>
+      <path d="M404,80 Q474,80 514,130 Q554,175 624,175 L684,175" stroke="#8fa3b8" stroke-width="10" fill="none" stroke-linecap="round"/>
+      <path d="M476,142 Q504,128 536,150 Q560,166 578,172" stroke="#e07b00" stroke-width="8" fill="none" stroke-linecap="round"/>
+      <circle cx="604" cy="196" r="26" fill="#c7d7e6" stroke="#5b7a97" stroke-width="2"/>
+      <text x="604" y="200" font-size="11" text-anchor="middle" fill="#294a68">下顎頭</text>
+      <text x="560" y="205" font-size="11" fill="#2e7d32" text-anchor="middle">段差なし</text>
+      <text x="560" y="240" font-size="13" font-weight="bold" fill="#2e7d32" text-anchor="middle">→ 転位はあるが雑音は生じない</text>
+    </svg>
+    <figcaption>矢状断の模式図(講演スライドの内容を再構成)。円板は前方から「前方肥厚部・中間帯・後方肥厚部」の順で厚みが変化する。下顎頭が後方肥厚部の段差を乗り越えるときにクリック音が生じるが、円板が扁平化すると段差が消え、転位が存在しても無音となる。</figcaption>
+  </figure>
+
+  <div class="box warn">
+    <span class="box-t">⚠ 極めて重要な疫学的事実</span>
+    <strong>「痛みも雑音も臨床所見もまったくない人をMRIで撮ると、その3分の1に片側または両側の円板転位が見つかる。ありふれた所見なのだ。」</strong><br>
+    <span style="font-size:.9rem;">これは「画像所見=病気」ではないことを示す決定的なデータです。円板転位を見つけて治療対象にすること自体が、しばしば過剰医療になりうる。この一文は、後述する患者への説明(「よくあることですよ」)の科学的根拠でもあります。</span>
+  </div>
+
+  <div class="box key">
+    <span class="box-t">第3〜4章のまとめ(演者の言葉)</span>
+    「<strong>疼痛性疾患については、DC/TMD は確定診断を与えてくれる。</strong>一方、<strong>関節疾患についてはスクリーニングが雑音の検出に限られており、画像がゴールドスタンダードである。</strong>円板転位にはMRI、変形性関節症にはCT。ただし(クローズドロックのような)例外はありうる。」
+  </div>
+</section>
+
+<!-- ============ 5 ============ -->
+<section id="s5">
+  <h2><span class="sec-num">5</span>「妥当性」と「臨床的有用性」は別物である</h2>
+
+  <p>講演の折り返し点となる、概念整理の章です。演者は「信頼性があり妥当である。<strong>しかし、それに臨床的有用性はあるのか?</strong>」と問いを立てます。</p>
+
+  <div class="two-col">
+    <div class="card" style="border-top:5px solid var(--brand-2);">
+      <h5>妥当性(Validity)</h5>
+      <p style="font-size:1.0rem;"><strong>検査がどれだけ<u>正確</u>かを測る指標</strong></p>
+      <p>感度・特異度で表現される。「その診断名は本当に正しいか」を問う。</p>
+    </div>
+    <div class="card" style="border-top:5px solid var(--accent);">
+      <h5>臨床的有用性(Clinical Utility)</h5>
+      <p style="font-size:1.0rem;"><strong>検査がどれだけ<u>役に立つ</u>かを測る指標</strong></p>
+      <p>定義:「その検査が<strong>介入を促すことによって、健康アウトカムの改善をもたらす</strong>見込み」。要するに――<mark>それは意味があるのか?(Does it matter?)</mark></p>
+    </div>
+  </div>
+
+  <div class="box note">
+    <span class="box-t">なぜこの区別が実務上決定的なのか</span>
+    どれほど正確に「非復位性円板転位・開口制限なし」と診断できたとしても、それによって治療方針が変わらず、患者の予後も変わらないのであれば、その診断ラベルは臨床的には無価値です。逆に、感度0.34の復位性円板転位も、<em>患者への説明</em>や<em>装置選択</em>を変えるなら有用性はある。演者はこの物差しで、Axis I の全診断を一つずつ採点していきます。
+  </div>
+</section>
+
+<!-- ============ 6 ============ -->
+<section id="s6">
+  <h2><span class="sec-num">6</span>Axis I 各診断の臨床的有用性(疾患別詳解)</h2>
+  <p class="legend">※本章の内容は、演者らが準備中の論文(「次の次の論文」)で発表予定とのことです。</p>
+
+  <h3>6-1. 筋痛 vs 関節痛 ― 鑑別が治療を変える</h3>
+  <div class="tbl-wrap">
+  <table>
+    <caption>筋痛(Myalgia)と関節痛(Arthralgia)の臨床的相違</caption>
+    <thead>
+      <tr><th>比較項目</th><th>筋痛(Myalgia)</th><th>関節痛(Arthralgia)</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><b>薬物療法</b></td>
+        <td>原発性/単独の筋痛と考えるなら<strong>筋弛緩薬</strong>を用いる傾向</td>
+        <td><strong>NSAIDs</strong>を選択しやすい。非常に重度なら<strong>短期のステロイド</strong>も考慮</td></tr>
+      <tr><td><b>理学療法</b></td>
+        <td colspan="2">診断に応じてアプローチが異なる(演者は「理学療法の内容もそれに応じて変わる」と明言)</td></tr>
+      <tr><td><b>随伴する咬合変化</b></td>
+        <td><strong>「移動する咬合(migratory bite)」</strong>。筋のアンバランスにより、今日は右、明日は左…と当たる場所が日替わりで移動する(演者の造語)</td>
+        <td>関節に滲出液があると<strong>関節腔が広がり</strong>、患側の臼歯が強く当たらなくなる。患者は「その側は当たりが弱い/当たらない」と訴える</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="box warn">
+    <span class="box-t">⚠ 因果関係の向きに関する演者の主張</span>
+    「これはつまり、<strong>TMDが不正咬合を引き起こす</strong>ということでもある。<strong>その逆(不正咬合がTMDを起こす)である必要はない。</strong>」<br>
+    <span style="font-size:.9rem;">後のQ&amp;Aでも「TMDが不正咬合を起こすのであって、不正咬合が必ずしもTMDを起こすわけではない」と再確認されました。咬合の変化を<em>原因</em>ではなく<em>結果(症状)</em>として読むという、現代の顎関節症学のパラダイムを端的に示す部分です。</span>
+  </div>
+
+  <h3>6-2. 筋痛 vs 関連痛を伴う筋筋膜痛 ― 「複雑さ」のシグナル</h3>
+  <p>この鑑別には二つの有用性があります。</p>
+  <ol>
+    <li><strong>歯痛の鑑別診断に使える。</strong>「患者が歯の痛みを訴えて来院し、病変が何も見つからないなら、筋を触診してその部位に関連痛が飛ぶかどうかを調べる価値がある。」</li>
+    <li><strong>患者の複雑さを予告する。</strong>演者らが数年前に発表した論文で、<mark>関連痛を伴う筋筋膜痛の患者は、単なる筋痛の患者に比べて有意に心理社会的因子が多い</mark>ことが示されました。「彼らはしばしば<strong>感作(sensitized)</strong>されており、より複雑な患者である。」</li>
+  </ol>
+
+  <h3>6-3. TMDに起因する頭痛 ― 鑑別のための強力な道具</h3>
+  <ul class="clean">
+    <li><strong>緊張型頭痛との鑑別</strong>に有用。</li>
+    <li><strong>頸部由来の関連痛(頸原性頭痛)</strong>が側頭部痛を引き起こしている場合との鑑別。「真のTMD性頭痛」と「頸性頭痛」を切り分けられる。</li>
+    <li><strong>片頭痛との関係:</strong>「TMDが片頭痛の<em>トリガー</em>になることはあるが、片頭痛そのものを<em>引き起こす</em>とは私は考えていない。」また逆に、片頭痛が併存するTMDを<strong>増悪させる</strong>こともある。</li>
+  </ul>
+
+  <h3>6-4. 復位性関節円板転位 ― 「説明」こそが治療である</h3>
+  <div class="box tip">
+    <span class="box-t">🗣 患者説明のスクリプト(演者の実践)</span>
+    <ul class="clean" style="margin-top:6px;">
+      <li><b>①「これは非常にありふれたものです」</b>――クリックする関節はとても多い。そう伝えると患者は喜ぶ。<strong>「人は自分が特殊な存在だとは思いたくない」</strong>から。</li>
+      <li><b>②「椎間板ヘルニアの顎版のようなもの」</b>――「腰でも椎間板がずれることがあるでしょう。顎でも起きるのです」と言えば理解される。</li>
+      <li><b>③ 楽観的なカウンセリング</b>――多くは無痛である。痛みがある場合も、治療によって<strong>痛みは消失または大幅に改善し、それでもクリックは残る</strong>ことが多い、と説明する。</li>
+    </ul>
+  </div>
+  <div class="box warn">
+    <span class="box-t">円板転位そのものを「治そう」としないこと</span>
+    「<strong>円板転位を非外科的にせよ外科的にせよ取り除こうとすることの予後は不良である。</strong>」――治療目標を「円板の位置の正常化」ではなく「疼痛と機能の改善」に置くべきだ、という明確なメッセージです。
+  </div>
+
+  <h3>6-5. 復位性円板転位 vs 間欠ロックを伴う復位性円板転位</h3>
+  <ul class="clean">
+    <li><strong>クローズドロックへ進行しうる</strong>群を同定できる点で鑑別する価値がある。</li>
+    <li><strong>装置(オルソティクス)の選択が変わる:</strong>
+      <ul>
+        <li>安定型スプリント(フラットプレーン型・咬合スプリント/呼び方は何でもよい)は両者に有用でありうるが、<strong>間欠ロック例ではかえってロックを増やすことがある</strong>。</li>
+        <li>そこで<strong>前方整位型装置(anterior repositioning appliance)を就寝時に使用</strong>する。ただし<strong>「永久的な整位を意図しない」</strong>ことが前提。演者は「実際、それ(=永久的に位置を変えないこと)は簡単に達成できる」と述べ、聴衆からの反応に「良い質問だ」と応じています。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h3>6-6. 非復位性円板転位+開口制限(クローズドロック)</h3>
+  <ul class="clean">
+    <li>頻度は高くない(「稀だ。診ることはあるが」)。イメージとしては<strong>椎間板ヘルニアに相当</strong>。</li>
+    <li><strong>円板の位置を変える必要がある病態</strong>を同定できるという意味で有用。来院時に顎がロックして開かない状態であれば、徒手的にアンロックするか――</li>
+    <li>演者らの研究(MRIで追跡)では、<mark>徒手整復はしばしば円板をさらに前方に押しやっているだけ</mark>であったこと、<strong>手術は非手術に優るものではなかった</strong>こと、そして<strong>手術をするなら開放手術より関節鏡のほうがよい</strong>ことが示されました。</li>
+  </ul>
+
+  <h3>6-7. 非復位性円板転位・開口制限なし</h3>
+  <div class="box warn">
+    <span class="box-t">唯一「有用性なし」と断じられた診断</span>
+    「彼らは<strong>正常に見える</strong>。雑音もない。診断が難しい。そして<strong>臨床的に意味があるかどうかも私には分からない</strong>。この診断には<strong>臨床的有用性はない</strong>。」
+  </div>
+
+  <h3>6-8. 変形性関節症(DJD)</h3>
+  <ul class="clean">
+    <li><strong>装置選択が変わる</strong>ため重要。安定型スプリントを入れると<strong>開咬(open bite)や下顎後退(retrognathic jaw)</strong>が生じることがある。理由は<strong>歯からの固有受容感覚(proprioceptive input)が失われ、顎が後方に落ち着いてしまう</strong>ため。演者は「そういうときにこそ、この診断を使う」と述べています。</li>
+    <li><strong>非リウマチ性とリウマチ性の両方</strong>を含む。演者の経験:「良い薬がなかった時代に多くの関節リウマチ患者を診た。<strong>下顎頭が溶けて消失し、開咬と下顎後退</strong>に至ることがあった。」</li>
+  </ul>
+
+  <h3>6-9. 亜脱臼(Subluxation)</h3>
+  <p>「歯科処置が終わって『はい、お口を閉じてください』と言ったときに患者が<em>あぁっ</em>となっても、<strong>何をすべきか分かっている</strong>――だから有用なのだ。」(会場の反応が薄く、演者は「ユーモアには手強い聴衆だ」と苦笑)</p>
+</section>
+
+<!-- ============ 7 ============ -->
+<section id="s7">
+  <h2><span class="sec-num">7</span>Axis II ― 評価ツールの構成と改変点</h2>
+
+  <p>「Axis 2 ―― <strong>そちらこそ目を通す価値がある</strong>」。演者はここから講演の後半を Axis II に費やします。DC/TMD の Axis II はスクリーニング用プロトコルとして簡略化が図られており、以下の5領域を評価します。</p>
+
+  <div class="cards">
+    <div class="card"><h5>① 疼痛の段階付け</h5><p>Graded Chronic Pain Scale(GCPS)。強度と生活障害の程度から重症度をグレード分けする。</p></div>
+    <div class="card"><h5>② 全身の疼痛部位</h5><p>身体のどこがどれだけ痛むか。<strong>広汎痛(widespread pain)</strong>の探索。</p></div>
+    <div class="card"><h5>③ 顎機能</h5><p>顎の機能制限の程度。</p></div>
+    <div class="card"><h5>④ 心理状態</h5><p>PHQ-4 による不安・抑うつ症状の評価。</p></div>
+    <div class="card"><h5>⑤ 口腔習癖のレベル</h5><p>Oral Behaviors Checklist(OBC)。</p></div>
+  </div>
+  <p>これらが<strong>信頼性・妥当性を有すること自体は既に発表済み</strong>です。しかし演者は問います――<mark>「では、それは<em>役に立つ</em>のか? 役に立たないなら、自分と患者の時間を無駄にすべきではない。」</mark>この問いに答えるために行われたのが、次章の研究です。</p>
+
+  <hr class="soft">
+
+  <h3>7-1. Graded Chronic Pain Scale と、その「実用化」</h3>
+  <p>GCPS(6か月版)は次の要素からなります。</p>
+  <ul class="clean">
+    <li><b>特徴的疼痛強度(CPI):</b>「今の痛みは?」「この6か月で最悪の痛みは?」「平均の痛みは?」を 0〜10 の数値評価尺度(NRS)で回答。</li>
+    <li><b>障害日数:</b>痛みのために何日活動できなかったか。</li>
+    <li><b>障害スコア(disability score):</b>日常生活・レクリエーション・社会活動・家族との活動・仕事能力をどれだけ妨げているか。</li>
+  </ul>
+  <div class="box warn">
+    <span class="box-t">演者の率直な評価</span>
+    「(6か月版のフルスケールは)<strong>臨床では使い物にならない。忘れていい。</strong>」低強度・障害なしから重度障害までのグレード分けは学術的には美しいが、<strong>実診療には実用的でない</strong>。
+  </div>
+  <p>そこで演者らは、<strong>そこから CPI を抽出し、妥当性が確認された「1か月版」を採用</strong>しました(1か月版の CPI は演者の共同研究者らによって再検証されています)。</p>
+
+  <div class="formula">
+    <span class="lbl">特徴的疼痛強度(Characteristic Pain Intensity)</span>
+    CPI ＝ (「今の痛み」＋「最悪の痛み」＋「平均の痛み」) ÷ 3 × 10<br>
+    <span style="font-size:.85rem;">→ 0 〜 100 のスコア(100 が最悪)／ <b style="color:#ffd166;">CPI ≧ 50 = 高強度疼痛(high intensity pain)</b></span>
+  </div>
+  <div class="formula" style="background:#3b2d1f;">
+    <span class="lbl">干渉スコア(Interference Score)※旧称:障害スコア</span>
+    干渉スコア ＝ (3項目の平均) × 10<br>
+    <span style="font-size:.85rem;">→ 0 〜 100(100 = 完全な生活干渉)。名称が変わっただけで内容は同一</span>
+  </div>
+
+  <h3>7-2. ペインドローイング(疼痛部位図)の改変</h3>
+  <p>現行の DC/TMD には患者が痛みの部位を描き込む人体図が含まれており、演者は「非常に有用だ」と評価します。ただし本研究では、<strong>線維筋痛症のための Wolfe らの「広汎痛指数(Widespread Pain Index)」の身体区画を採用した人体図に差し替え</strong>ました。</p>
+  <div class="box key">
+    <span class="box-t">改変の狙い=「定量化」</span>
+    区画をチェックボックス化することで、<strong>「何か所が痛むのか」を数として数えられる</strong>ようになりました。後の解析で用いられた<strong>「19部位中5部位以上」</strong>というカットオフはここから生まれています。「顎の2か所は既に埋まっているので、<mark>あと3か所増えるだけでリスク群に入る</mark>」という演者の指摘は重要です。
+  </div>
+
+  <h3>7-3. PHQ-4 ― 不安と抑うつのスクリーニング</h3>
+  <div class="tbl-wrap">
+  <table>
+    <caption>PHQ-4 の構成と解釈(過去2週間の症状頻度を4項目で評価、各0〜3点)</caption>
+    <thead><tr><th>領域</th><th>質問内容</th><th>合計スコア</th><th>解釈と対応</th></tr></thead>
+    <tbody>
+      <tr><td rowspan="2"><b>不安</b>(GAD-2)</td><td>神経過敏、不安、いらいらを感じる</td>
+        <td class="num">0〜2</td><td><span class="badge b-green">なし</span></td></tr>
+      <tr><td>心配を止められない・制御できない</td>
+        <td class="num">3〜5</td><td><span class="badge b-yellow">軽度</span></td></tr>
+      <tr><td rowspan="2"><b>抑うつ</b>(PHQ-2)</td><td>物事に対する興味や喜びがほとんどない</td>
+        <td class="num">6〜8</td><td><span class="badge b-orange">中等度</span> → 演者:<strong>経過観察が必要。ただし歯科医ではなくメンタルヘルス専門職による観察</strong></td></tr>
+      <tr><td>気分が落ち込む、憂うつになる</td>
+        <td class="num">9〜12</td><td><span class="badge b-red">重度</span> → <strong>紹介すべき</strong></td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="box warn">
+    <span class="box-t">⚠ 演者からの警告:PHQ-4 を使うなら責任が伴う</span>
+    「<strong>PHQ-4 を使うのであれば、あなたには一定の責任が生じる。</strong>」スコアを取った以上、6〜8点なら観察の手配、重度なら紹介という<strong>次のアクションを取る義務がある</strong>ということです。測りっぱなしは許されません。
+  </div>
+
+  <h3>7-4. 演者独自の追加項目 ―「対処できているか」を問う</h3>
+  <p>本研究における最大の工夫がここです。演者は PHQ-4 に加えて、<strong>PHQ-9 の第10問</strong>を追加しました。</p>
+  <div class="box key">
+    <span class="box-t">追加された質問</span>
+    <span class="said">「これらの問題にチェックをした方へ:これらの問題によって、あなたはどの程度困難を感じていますか?」</span><br>
+    (回答:まったく困難でない/やや困難/とても困難/極めて困難)<br><br>
+    <strong>言い換えれば――「あなたは自分の心理的苦痛にどれだけ<u>対処(cope)</u>できていますか?」</strong><br>
+    <span style="font-size:.9rem; color:var(--ink-sub);">演者:「そちらのほうがより重要な質問だと考えたからだ。」――この直感が、後に<strong>本研究で最強の予測因子</strong>という形で見事に的中します。</span>
+  </div>
+
+  <h3>7-5. 口腔習癖チェックリスト(OBC)の改変</h3>
+  <p>Ohrbach らの OBC を用いましたが、<strong>回答選択肢を5段階から3段階に集約</strong>し、<strong>具体例はすべて残したうえでクラスター化(まとめる)</strong>する改変を加えました。</p>
+
+  <div class="box note">
+    <span class="box-t">📏 PBRN が課した絶対条件:「10分ルール」</span>
+    Practice-Based Research Network からの要求により、<strong>質問票は患者が10分以内に記入し終えられるものでなければならない</strong>とされました。実用性を担保するための制約であり、この制約ゆえに睡眠(ピッツバーグ睡眠質問票)からは1問、SF-12 からも1問しか採用できませんでした。演者はこの質問票を論文に全文掲載する予定です。
+  </div>
+
+  <h4>最終的に採用された Axis II 予測因子(改変版)</h4>
+  <div class="tbl-wrap">
+  <table>
+    <thead><tr><th>領域</th><th>採用したもの</th><th>改変点</th></tr></thead>
+    <tbody>
+      <tr><td>疼痛強度</td><td>CPI(1か月版)</td><td>GCPS のグレード分けは使わず、CPI と干渉スコアのみを抽出</td></tr>
+      <tr><td>疼痛部位</td><td>ペインドローイング</td><td>Wolfe の広汎痛指数の区画に変更し<strong>定量化</strong></td></tr>
+      <tr><td>心理</td><td>PHQ-4</td><td><strong>PHQ-9 の第10問(対処困難度)を追加</strong></td></tr>
+      <tr><td>習癖</td><td>OBC</td><td>5件法→3件法に集約</td></tr>
+      <tr><td>睡眠</td><td>PSQI から1問のみ</td><td>「すっきり休息できた感じで目覚めるか」<br><span style="font-size:.85rem;">演者:「これはもっと調査が必要だ」</span></td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<!-- ============ 8 ============ -->
+<section id="s8">
+  <h2><span class="sec-num">8</span>National Dental PBRN 前向きコホート研究の全容</h2>
+
+  <div class="box key">
+    <span class="box-t">研究の目的(Objective)</span>
+    <strong>ベースラインの患者特性を用いて、6か月後の「不満足な転帰(unsatisfactory outcome)」を予測できるか</strong>を、多変量二項ロジスティック回帰によって検討する。<br>
+    <span style="font-size:.9rem;">――要するに「<mark>Axis II は悪い結果を予測できるのか?</mark> それが結局のところの本質だ」(演者)。</span>
+  </div>
+
+  <h3>8-1. 研究デザイン</h3>
+  <div class="tbl-wrap">
+  <table>
+    <thead><tr><th>項目</th><th>内容</th></tr></thead>
+    <tbody>
+      <tr><td><b>デザイン</b></td><td>前向きコホート研究(<strong>観察研究</strong>)。介入は一切行わず、実診療で何が行われ、どうなるかを観察</td></tr>
+      <tr><td><b>資金・実施母体</b></td><td>NIH 資金による研究。National Dental Practice-Based Research Network(米国6地域の歯科医ネットワーク)</td></tr>
+      <tr><td><b>追跡</b></td><td>1か月・3か月・6か月(本講演では<strong>6か月時点</strong>を報告)</td></tr>
+      <tr><td><b>追跡方法</b></td><td>オンライン調査・電話・メール。<strong>患者は再来院しない</strong>。<mark>この設計により追跡率92%を達成</mark></td></tr>
+      <tr><td><b>予測因子</b></td><td>患者と術者の双方がベースライン質問票に回答(DC/TMD Axis II + 独自追加項目)</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="box tip">
+    <span class="box-t">💡 演者の研究哲学</span>
+    「<strong>臨床研究は臨床状況に適用可能でなければならない。</strong>」対象は<strong>「痛みを伴うTMDの管理を求めて術者を受診した、連続する同意患者」</strong>――つまり<strong>あなたの診療室のドアを開けて入ってくるのと同じ患者たち</strong>です。選抜された理想的な被験者ではありません。
+  </div>
+
+  <h3>8-2. 適格基準</h3>
+  <div class="two-col">
+    <div class="card" style="border-left:5px solid var(--green);">
+      <h5>組入れ基準(患者)</h5>
+      <ul class="clean" style="font-size:.9rem;">
+        <li>術者からTMD治療を受けようとしており、<strong>提案された治療を受け入れた</strong>こと</li>
+        <li>過去1か月間に顎または側頭部の痛みを報告</li>
+        <li>術者が「痛みを伴うTMD」と診断(追加診断も可。主に<strong>関節痛・筋痛</strong>)</li>
+        <li>18歳以上(<strong>ネブラスカ州のみ19歳以上</strong>=州の成人年齢による)</li>
+        <li>今後6か月間、連絡可能であること</li>
+        <li>メール・電話・オンライン調査にアクセスできること</li>
+      </ul>
+    </div>
+    <div class="card" style="border-left:5px solid var(--red);">
+      <h5>除外基準</h5>
+      <ul class="clean" style="font-size:.9rem;">
+        <li><strong>歯性病変の除外が必須</strong><br><span style="color:var(--red);">「口腔顔面痛の最も一般的な原因は歯性病変、膿瘍歯などである。それだった患者を何人診てきたか、数え切れない」</span></li>
+        <li>研究手順を理解できない、または英語・スペイン語で同意できない<br><span style="font-size:.85rem;">※NIH は全研究を英語とスペイン語で行うことを要求</span></li>
+      </ul>
+      <h5 style="margin-top:14px;">術者側の要件</h5>
+      <ul class="clean" style="font-size:.9rem;">
+        <li>ネットワークに登録済み</li>
+        <li>所定のトレーニングをすべて修了</li>
+        <li>過去1年間にTMD患者の治療実績があること</li>
+      </ul>
+    </div>
+  </div>
+  <p><b>治療内容:</b>推奨される治療は<strong>「その術者が自分の患者にとって最善と信じるもの」であり、研究側は一切変更しなかった</strong>。「我々は<strong>現場で何が行われ、それがどうなったか</strong>を知りたかった。次のステップはランダム化比較試験だ。それは私に聞くと良い質問になるだろう。」</p>
+
+  <h3>8-3. アウトカムの定義</h3>
+  <div class="two-col">
+    <div class="card" style="border-top:5px solid var(--green);">
+      <h5><span class="badge b-green">満足な転帰</span></h5>
+      <p style="font-size:.95rem;"><strong>疼痛強度が50%以上減少</strong> <u>かつ</u> <strong>6か月時点の痛みが「なし〜低強度」(CPI &lt; 50)</strong></p>
+    </div>
+    <div class="card" style="border-top:5px solid var(--red);">
+      <h5><span class="badge b-red">不満足な転帰</span></h5>
+      <p style="font-size:.95rem;"><strong>50%未満の減少</strong> <u>および/または</u> <strong>6か月時点で高強度疼痛(CPI ≧ 50)</strong></p>
+    </div>
+  </div>
+  <div class="box note">
+    <span class="box-t">なぜ「50%減少」なのか、そしてなぜ2条件が必要なのか</span>
+    <strong>50%以上の疼痛減少は「実質的な変化」であり、治療成功とみなされる</strong>という先行文献に基づいています。ただし、これだけでは不十分です。<br>
+    <span style="font-size:.92rem;">演者の実例:「<strong>10から5になった患者が1人いた。</strong>この人は50%減少を達成しているが、<strong>CPI 50 以上は高強度疼痛</strong>なので、依然として高強度疼痛が残っている。」――割合の改善だけを見ると、重症例を「成功」と誤分類してしまうため、絶対値の条件を併用したわけです。</span>
+  </div>
+
+  <h3>8-4. 参加者フロー</h3>
+  <div class="flow">
+    <div class="step" style="border-color:#8fa3b8;"><b>スクリーニング</b>約16,000名超<br><span style="font-size:.8rem; color:#777;">(音声上は「16,220」と聞こえる)</span></div>
+    <div class="arrow">→</div>
+    <div class="step" style="border-color:#8fa3b8;"><b>不適格・辞退を除外</b>1,953名</div>
+    <div class="arrow">→</div>
+    <div class="step" style="border-color:var(--brand);"><b>疼痛のない者を除外</b><br><strong style="font-size:1.05rem;">最終解析対象 1,911名</strong></div>
+  </div>
+
+  <div class="two-col">
+    <div class="card">
+      <h5>患者背景</h5>
+      <ul class="clean" style="font-size:.92rem;">
+        <li><b>女性:83%</b>(圧倒的に女性優位)</li>
+        <li><b>白人:85%</b></li>
+        <li>多くが何らかの<b>大学教育歴</b>あり</li>
+        <li>米国の<b>貧困ライン以上</b>の所得層</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h5>参加した歯科医師:185名</h5>
+      <ul class="clean" style="font-size:.92rem;">
+        <li><b>TMD専門医:44名</b></li>
+        <li><b>非専門医:141名</b></li>
+        <li>米国全土(6地域)から参加</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>8-5. 実際に行われていた治療</h3>
+  <div class="tbl-wrap">
+  <table>
+    <caption>実診療で推奨された治療(上位3種)</caption>
+    <thead><tr><th>治療</th><th>実施/推奨率</th><th>備考</th></tr></thead>
+    <tbody>
+      <tr><td><b>セルフケア指導</b></td><td class="num">89%</td><td>最も普遍的に提供された</td></tr>
+      <tr><td><b>装置療法(スプリント)</b></td><td class="num">75%</td><td>推奨された割合</td></tr>
+      <tr><td><b>薬物療法</b></td><td class="num">約60%</td><td></td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p>ただし演者は、「現場で行われていた治療の<strong>種類の数は膨大だった</strong>。ボトックスやら何やら、実に色々なものが」と述べています(この治療実態はすでに別論文で報告済み)。</p>
+
+  <h3>8-6. 主要な結果</h3>
+  <div class="box key" style="text-align:center; font-size:1.05rem;">
+    <span class="box-t" style="text-align:center;">6か月後の転帰</span>
+    <span style="display:inline-block; margin:8px 18px;"><b style="color:var(--green); font-size:1.6rem;">53%</b><br>満足な転帰(成功)</span>
+    <span style="display:inline-block; margin:8px 18px;"><b style="color:var(--red); font-size:1.6rem;">47%</b><br><strong>不満足な転帰</strong></span>
+    <p style="font-size:.92rem; margin-top:10px;">つまり、実際の歯科診療の場では<strong>およそ2人に1人が6か月後も十分な改善を得られていない</strong>。この「47%」こそが、Axis II による事前予測を必要とする理由です。</p>
+  </div>
+</section>
+
+<!-- ============ 9 ============ -->
+<section id="s9">
+  <h2><span class="sec-num">9</span>不良転帰を予測した因子(オッズ比一覧)</h2>
+
+  <h3>9-1. オッズ比(Odds Ratio)の読み方</h3>
+  <p>演者は結果を示す前に、オッズ比の解釈を丁寧に説明しました。オッズ比とは、<strong>「曝露群(例:高レベルの口腔習癖あり)のオッズ」を「非曝露群のオッズ」で割った値</strong>です。</p>
+  <div class="tbl-wrap">
+  <table>
+    <thead><tr><th>オッズ比</th><th>意味</th></tr></thead>
+    <tbody>
+      <tr><td class="num"><b>&gt; 1</b></td><td><span class="badge b-red">危険因子(risk factor)</span> その因子があると転帰が悪くなる</td></tr>
+      <tr><td class="num"><b>= 1</b></td><td><span class="badge b-gray">中立(neutral)</span> 影響なし</td></tr>
+      <tr><td class="num"><b>&lt; 1</b></td><td><span class="badge b-green">保護的(protective)</span> その因子があると転帰が良くなる</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p><b>「◯%増加」という表現について:</b>OR 1.5 は「一方の群でアウトカム発生のオッズが<strong>50%高い</strong>」ことを意味します。<strong>中立点である 1 を差し引く</strong>ためです。<br>
+  <b>信頼区間について:</b>「これは真の値がおそらくこの範囲にある、という幅である。危険因子であるなら、<strong>区間の下限は必ず1を超えていなければならない</strong>。」</p>
+
+  <h3>9-2. モデル①:「50%未満の疼痛減少」を予測した因子</h3>
+  <div class="tbl-wrap">
+  <table>
+    <caption>ベースライン因子と「疼痛が50%未満しか減らない」ことのオッズ(多変量ロジスティック回帰)</caption>
+    <thead><tr><th>順位</th><th>予測因子</th><th>オッズの増加</th><th>推定OR</th><th>解説</th></tr></thead>
+    <tbody>
+      <tr style="background:#fdecea;">
+        <td class="num">1</td>
+        <td><b>心理的苦痛への対処が「極めて困難」</b><br><span style="font-size:.85rem;">(PHQ-4で心理的苦痛が高く、かつ対処が極めて困難)</span></td>
+        <td class="num"><b style="color:var(--red); font-size:1.15rem;">+213%</b></td>
+        <td class="num">約3.1</td>
+        <td><strong>圧倒的に最強の因子。</strong>「困難なし」群と比較。<mark>「やや困難」「とても困難」は有意差なし。「極めて困難」だけが強く有意</mark>。「これは大きい。この人たちは失敗のハイリスクだということだ」</td></tr>
+      <tr><td class="num">2</td><td><b>より若い年齢</b></td><td class="num">+67%</td><td class="num">約1.7</td><td>高齢者と比べて若年者のほうが改善しにくい</td></tr>
+      <tr><td class="num">3</td><td><b>身体の疼痛部位が5か所以上</b><br>(広汎痛)</td><td class="num">+60%</td><td class="num">約1.6</td><td>「顎の2か所は既に入っている。<strong>あと3か所増えるだけ</strong>」</td></tr>
+      <tr><td class="num">4</td><td><b>TMD罹病期間が3年超</b></td><td class="num">+52%</td><td class="num">約1.5</td><td>3年以下と比較</td></tr>
+      <tr><td class="num">5</td><td><b>女性</b></td><td class="num">+42%</td><td class="num">約1.4</td><td>男性と比較</td></tr>
+      <tr><td class="num">6</td><td><b>複数の医療者を受診済み</b></td><td class="num">+31%</td><td class="num">約1.3</td><td>「1人も受診していない」群と比較。ドクターショッピングの指標</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3>9-3. モデル②:「6か月後の高強度疼痛」を予測した因子</h3>
+  <div class="tbl-wrap">
+  <table>
+    <caption>ベースライン因子と「6か月後も高強度疼痛が残る」ことのオッズ</caption>
+    <thead><tr><th>順位</th><th>予測因子</th><th>オッズの増加</th><th>推定OR</th><th>解説</th></tr></thead>
+    <tbody>
+      <tr style="background:#fdecea;">
+        <td class="num">1</td><td><b>ベースラインでの高強度疼痛</b><br>(CPI ≧ 50)</td>
+        <td class="num"><b style="color:var(--red); font-size:1.15rem;">+278%</b></td><td class="num">約3.8</td>
+        <td><strong>最強の因子。</strong>低強度疼痛群との比較。「初診時に痛みが強ければ、良い転帰は得にくい」</td></tr>
+      <tr><td class="num">2</td><td><b>痛みが常に存在する(持続痛)</b></td><td class="num">+82%</td><td class="num">約1.8</td>
+        <td>質問はたった2問――<strong>「痛みはいつもありますか、それとも出たり消えたりしますか?」</strong>。「いつもある」と答えたら要注意</td></tr>
+      <tr><td class="num">3</td><td><b>高い干渉スコア</b></td><td class="num">+50%</td><td class="num">約1.5</td>
+        <td>日常生活・社会活動を妨げているほど不良転帰</td></tr>
+      <tr><td class="num">4</td><td><b>広汎痛</b></td><td class="num">+46%</td><td class="num">約1.5</td><td>広汎痛なし群との比較</td></tr>
+      <tr><td class="num">5</td><td><b>女性・若年</b></td><td class="num">―</td><td class="num">―</td><td>モデル①と<strong>同程度のリスク</strong></td></tr>
+      <tr><td class="num">6</td><td><b>罹病期間3年以上</b></td><td class="num">―</td><td class="num">―</td><td>高強度疼痛が持続するリスク因子</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="legend">※オッズ比の値は講演で口頭説明された「◯%増加」から換算した概算値です。論文は査読中であり、再解析により数値が若干変わる可能性があると演者自身が明言しています。</p>
+
+  <div class="box warn">
+    <span class="box-t">総括:「これらすべてを持つ患者が来たら」</span>
+    「高強度疼痛、心理的苦痛への対処が極めて困難、痛みが常にある、若年女性、19部位中5か所以上の疼痛、高い慢性度、生活干渉、複数の医療者受診歴――<br>
+    <strong>これらをすべて持つ患者が来たら、あなたは困ったことになる。いや、その患者が困ったことになる。もしあなたがそれらに対処しなければ。</strong>」
+  </div>
+</section>
+
+<!-- ============ 10 ============ -->
+<section id="s10">
+  <h2><span class="sec-num">10</span>予測因子にならなかったもの(重要な陰性所見)</h2>
+  <p>「何が有意でなかったか」は、「何が有意だったか」と同じくらい実務上の意味を持ちます。</p>
+
+  <div class="tbl-wrap">
+  <table>
+    <thead><tr><th>有意でなかった因子</th><th>演者の解釈・注釈</th></tr></thead>
+    <tbody>
+      <tr><td><b>罹病期間が3か月超であること</b></td>
+        <td><mark>線維筋痛症のように「3か月待つ」必要はない</mark>。<strong>広汎痛が5部位以上あれば、それがどれだけ続いていようが関係なくリスク因子である</strong></td></tr>
+      <tr><td><b>心理的苦痛(抑うつ・不安)そのもの</b></td>
+        <td><strong style="color:var(--red);">本講演で最も示唆に富む知見。</strong>「重要なのは<mark>対処できているか</mark>だ。心理的苦痛に対処できているなら――たとえば心理士にかかるなどして――それはリスク因子にならない。対処できていない場合に問題になる」</td></tr>
+      <tr><td><b>口腔習癖(Oral habits)</b></td>
+        <td>有意な予測因子ではなかった。ただし<strong>質問票からは削除しない</strong>(理由は下記)</td></tr>
+      <tr><td><b>睡眠の質の低さ</b></td>
+        <td>ピッツバーグ睡眠質問票から<strong>1問しか使えなかった</strong>(「すっきり休息して目覚めるか」)。「これはもっと調査が必要だ」――方法論的限界による陰性であり、睡眠が無関係と結論すべきではない</td></tr>
+      <tr><td><b>SF-12(健康関連QOL)</b></td>
+        <td>これも<strong>10分制約のため1問のみ</strong>の採用</td></tr>
+      <tr><td><b>治療計画への低い満足度・改善への期待</b></td>
+        <td>ベースラインで「治療計画に満足しているか」「改善を期待するか」を質問。<strong>「有意まであと一歩だったが、届かなかった」</strong></td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3>10-1. なぜ有意でない口腔習癖を残すのか ― 演者の3つの理由</h3>
+  <div class="cards">
+    <div class="card"><h5>理由①:皆が注目しているから</h5><p>「誰もが口腔習癖に注目する」。臨床現場の関心が高い項目を落とすと、質問票そのものが使われなくなる。</p></div>
+    <div class="card"><h5>理由②:「対処できているか」を追加したいから</h5><p>心理的苦痛と同じように<strong>「その習癖を自分で管理できていますか?」</strong>という質問を加えるべきだった、と演者は述べます。「思いつくべきだった。<mark>研究をやるのに最適な時期は、終わった後だ</mark>。そのときになって初めて本当に分かるのだから」(自嘲)。</p></div>
+    <div class="card"><h5>理由③:心理的苦痛の代理指標だから</h5><p><strong>「高レベルの口腔習癖は、心理的苦痛のプロキシ(代理指標)である、というのが私の信念だ。」</strong></p></div>
+  </div>
+
+  <div class="box tip">
+    <span class="box-t">🗣 口腔習癖を「対話の入口」として使う(演者の実演)</span>
+    <p style="margin:.4em 0;">「あなたは口腔習癖がたくさんありますね。どうやって管理していますか?」<br>
+    →「あまりうまくできていません。やめられないんです」<br>
+    →「不安やストレス、心理的ストレスがそれを悪化させることをご存じですか? <strong>心理的ストレスは食いしばりを起こし、それが筋と関節に外傷を与え、痛みを生じさせるのです。</strong>」</p>
+    <p style="margin:.4em 0;"><strong>「原因にたどり着きたいのなら、ストレスに取り組まなければならない。患者との会話のために有用なのだ。」</strong></p>
+  </div>
+</section>
+
+<!-- ============ 11 ============ -->
+<section id="s11">
+  <h2><span class="sec-num">11</span>フラグ・システムとトリアージ、生物心理社会モデル</h2>
+
+  <p>結論として、<strong>「DC/TMD Axis II には臨床的有用性がある」</strong>。では、それをどう使うのか。演者らは所見を<strong>「フラグ(旗)」</strong>として整理して発表する予定です。</p>
+
+  <h3>11-1. 4色のフラグ</h3>
+  <div class="flags">
+    <div class="flag f-red">
+      <h5><span class="dot"></span>レッドフラグ</h5>
+      <p><strong>身体的な病態</strong>を示し、<strong>速やかな評価と紹介</strong>を要する。</p>
+      <p><b>例:</b>頭痛。特に最近発症したもの、めまい等を伴うもの。<strong>医師による評価が必要</strong>。</p>
+    </div>
+    <div class="flag f-orange">
+      <h5><span class="dot"></span>オレンジフラグ</h5>
+      <p>レッドフラグと<strong>同様に点滅している警告</strong>だが、紹介先が異なる。</p>
+      <p><b>紹介先:</b><strong>メンタルヘルスの専門職</strong>。</p>
+    </div>
+    <div class="flag f-yellow">
+      <h5><span class="dot"></span>イエローフラグ</h5>
+      <p><strong>回復の遅延・不良転帰</strong>と関連する。<strong>予後不良のリスク因子</strong>。</p>
+      <p>緊急性はないが、放置すれば治療が失敗する。</p>
+    </div>
+    <div class="flag f-green">
+      <h5><span class="dot"></span>グリーンフラグ</h5>
+      <p><strong>進んでよい。良好に見える。アクセルを踏め。</strong></p>
+      <p>この所見だけなら一般歯科医でも対応可能。</p>
+    </div>
+  </div>
+
+  <h3>11-2. 提案されているフラグ割り当て(暫定)</h3>
+  <div class="box note">
+    <span class="box-t">⚠ 注意:これは確定版ではありません</span>
+    演者自身が「共著者たちと言い争っている。私はいつも議論好きなので。<strong>いくつかの点はまだ決まっていないが、これに近いものになるだろう</strong>」と明言しています。特に「非復位性円板転位・開口制限なし」については「緑か黄か、私は緑寄りだと思うのだが…」と迷いを見せていました。
+  </div>
+
+  <div class="tbl-wrap">
+  <table>
+    <caption>A. Axis I 診断に対するフラグ(暫定案)</caption>
+    <thead><tr><th>診断</th><th>条件</th><th>フラグ</th><th>理由</th></tr></thead>
+    <tbody>
+      <tr><td rowspan="2"><b>関節痛</b></td><td>低強度疼痛</td><td><span class="badge b-green">GREEN</span></td><td>「大した問題ではない」</td></tr>
+      <tr><td>高強度疼痛</td><td><span class="badge b-yellow">YELLOW</span></td><td>不良転帰のリスク因子を持つため</td></tr>
+      <tr><td rowspan="2"><b>筋痛</b></td><td>低強度疼痛</td><td><span class="badge b-green">GREEN</span></td><td>同上</td></tr>
+      <tr><td>高強度疼痛</td><td><span class="badge b-yellow">YELLOW</span></td><td>同上</td></tr>
+      <tr><td><b>関連痛を伴う筋筋膜痛</b></td><td>―</td><td><span class="badge b-yellow">YELLOW</span></td><td><strong>より複雑な患者である</strong>ため(感作、心理社会的因子の多さ)</td></tr>
+      <tr style="background:#fdecea;"><td><b>TMDに起因する頭痛</b></td><td>頭痛があれば即</td><td><span class="badge b-red">RED</span></td><td><strong>「頭痛がある時点でレッドフラグ」</strong>=まず評価せよ。神経学的症状やその他の症状があれば<strong>医師の診察が必要</strong></td></tr>
+      <tr><td><b>復位性円板転位</b></td><td>―</td><td><span class="badge b-green">GREEN</span></td><td>ありふれており、多くは無痛</td></tr>
+      <tr><td><b>復位性円板転位+間欠ロック</b></td><td>―</td><td><span class="badge b-yellow">YELLOW</span></td><td><strong>機械的問題</strong>があるため、スプリント・セルフケア・薬物以上の対応が要る</td></tr>
+      <tr><td><b>非復位性円板転位+開口制限</b><br>(クローズドロック)</td><td>―</td><td><span class="badge b-yellow">YELLOW</span></td><td>常にではないが、<strong>円板を前方に戻す/ロックを解除する処置が必要になることが多い</strong></td></tr>
+      <tr><td><b>非復位性円板転位・開口制限なし</b></td><td>―</td><td><span class="badge b-gray">議論中</span></td><td>演者は緑寄りの見解。共著者間で結論が出ていない</td></tr>
+      <tr><td><b>変形性関節症/亜脱臼</b></td><td>―</td><td><span class="badge b-yellow">YELLOW</span></td><td>「イエローフラグにしているのは<strong>機械的な問題を抱えるもの</strong>だ」という原則に基づく</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="tbl-wrap">
+  <table>
+    <caption>B. Axis II 所見に対するフラグ(暫定案)</caption>
+    <thead><tr><th>評価項目</th><th>所見</th><th>フラグ</th><th>備考</th></tr></thead>
+    <tbody>
+      <tr><td rowspan="3"><b>心理的苦痛への対処</b></td><td>困難なし</td><td><span class="badge b-green">GREEN</span></td><td></td></tr>
+      <tr><td>軽度〜中等度の困難</td><td><span class="badge b-yellow">YELLOW(暫定)</span></td><td>「<strong>エビデンスがないので使えないかもしれないが、私はイエローだと思う</strong>」(演者)</td></tr>
+      <tr style="background:#fff1e0;"><td><b>重度の対処困難</b></td><td><span class="badge b-orange">ORANGE</span></td><td><strong>心理士への紹介が必要</strong>だと演者は考える</td></tr>
+      <tr><td rowspan="2"><b>生活への干渉</b></td><td>低い</td><td><span class="badge b-green">GREEN</span></td><td></td></tr>
+      <tr><td>高い</td><td><span class="badge b-yellow">YELLOW</span></td><td></td></tr>
+      <tr><td rowspan="2"><b>広汎痛</b></td><td>なし</td><td><span class="badge b-green">GREEN</span></td><td></td></tr>
+      <tr><td>あり(5部位以上/19部位中)</td><td><span class="badge b-yellow">YELLOW</span></td><td></td></tr>
+      <tr><td rowspan="2"><b>疼痛の持続性</b></td><td>出たり消えたりする</td><td><span class="badge b-green">GREEN</span></td><td>「痛みが来たり去ったりするのは良い」</td></tr>
+      <tr><td>常に存在する</td><td><span class="badge b-yellow">YELLOW</span></td><td>「常にあるのは、あまり良くない」</td></tr>
+      <tr><td rowspan="2"><b>他院受診歴</b></td><td>なし</td><td><span class="badge b-green">GREEN</span></td><td></td></tr>
+      <tr><td>2人以上の医療者を受診</td><td><span class="badge b-yellow">YELLOW</span></td><td></td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3>11-3. トリアージの実際</h3>
+  <p>患者をトリアージする際に見るべきは、<strong>「複雑さ(complexity)」= 緑・黄・橙・赤のフラグがそれぞれいくつあるか</strong>です。それによって以下を判断します。</p>
+  <ul class="clean">
+    <li><b>一般歯科医が診るべきか、専門医が診るべきか</b>――「すべて緑の患者なら、一般歯科医でも対応できると思う。あるいはあなたが診るなら、スムーズに進むだろう」</li>
+    <li><b>臨床家のトレーニングと経験</b>も判断材料になる</li>
+    <li><b>患者の価値観・希望・置かれた状況</b>も同じく重要</li>
+  </ul>
+
+  <div class="box quote">
+    <span class="box-t">💬 講演中の印象的なエピソード:「1枚の絵で十分」</span>
+    <p class="said">「ときには、必要なのは1枚の絵だけだと私は言う。ある患者が私にこれを手渡した。」</p>
+    <p style="font-size:.93rem;">――全身が痛みで塗りつぶされたペインドローイングを示しながら――<br>
+    「この人は複雑だと思いますか? 感作されていると思いますか? <strong>身体が燃え上がっている(their body is on fire)</strong>と思いますか? <mark>全身が燃えているときに、ここ(顎)の痛みだけを取り除こうとしているのですよ。</mark>……愛すべき、素晴らしい方でしたが。」</p>
+  </div>
+
+  <h3>11-4. 生物心理社会モデル(Biopsychosocial Model)による評価</h3>
+  <p>演者は、Axis II を用いてこのモデルを実装せよと主張します。以下の4つの軸で患者を捉えます。</p>
+  <div class="cards">
+    <div class="card" style="border-left:5px solid var(--red);">
+      <h5>① 痛みの強度</h5>
+      <p>高強度であれば<strong>感作されている</strong>可能性がある。</p>
+    </div>
+    <div class="card" style="border-left:5px solid var(--brand-2);">
+      <h5>② 円板転位の有無</h5>
+      <p>あれば<strong>機械的問題</strong>を抱えている可能性がある。</p>
+    </div>
+    <div class="card" style="border-left:5px solid var(--yellow);">
+      <h5>③ 痛みの分布</h5>
+      <p>顎や頸部のみの<strong>局所性・領域性</strong>なら悪くない。多部位に及ぶなら<strong>複雑</strong>。</p>
+    </div>
+    <div class="card" style="border-left:5px solid var(--purple);">
+      <h5>④ 心理的苦痛と生活干渉</h5>
+      <p><strong>対処できないほどの苦痛</strong>があるか、<strong>生活を妨げている</strong>か。</p>
+    </div>
+  </div>
+
+  <div class="box key">
+    <span class="box-t">Axis II の結論(演者の言葉)</span>
+    「<strong>Axis 2 は、単純な患者と複雑な患者を識別する。そして、不満足な転帰=予後不良のリスク因子を持つ患者を同定する。</strong>」
+  </div>
+</section>
+
+<!-- ============ 12 ============ -->
+<section id="s12">
+  <h2><span class="sec-num">12</span>演者の40年の臨床フローと学際的チーム医療</h2>
+
+  <p>講演の締めくくりに、演者は「これを臨床でどうやっているのか。40年間こうしてきた」という自身の手順を示しました。</p>
+
+  <div class="flow" style="flex-direction:column; gap:8px;">
+    <div class="step" style="flex:none;"><b>STEP 1</b>患者を評価する(Evaluate)</div>
+    <div class="step" style="flex:none;"><b>STEP 2</b>診断を確定する(Establish a diagnosis)</div>
+    <div class="step" style="flex:none;"><b>STEP 3</b><strong>心理社会的因子を探す</strong>(Look for psychosocial factors)</div>
+    <div class="step" style="flex:none;"><b>STEP 4</b>患者の<strong>治療ゴールを明確化する</strong>(Clarify their treatment goals)</div>
+    <div class="step" style="flex:none;"><b>STEP 5</b>重度の抑うつなどがあれば、まずそれに対処するよう紹介する</div>
+    <div class="step" style="flex:none;"><b>STEP 6</b>複雑でなければ自分で治療する(ただし理学療法士とはしばしば併診)</div>
+  </div>
+
+  <h3>12-1. なぜ学際的チームなのか</h3>
+  <p>演者の私的診療所には各職種が揃っており、紹介してフィードバックを得られる体制がありました。大学では<strong>心理士・理学療法士・歯科医が同じクリニックにいて話し合える</strong>環境で、レジデントとは<strong>その日の患者を診る前に朝のカンファレンス</strong>を行い、大学の神経内科医とも連携していました。</p>
+  <div class="tbl-wrap">
+  <table>
+    <caption>学際的チームの3つの意義(演者の提示)</caption>
+    <thead><tr><th>意義</th><th>内容</th></tr></thead>
+    <tbody>
+      <tr><td><b>①全人的理解</b></td><td>その人全体と、苦痛のあらゆる側面を理解する</td></tr>
+      <tr><td><b>②多面的介入</b></td><td>問題の複数の側面に同時に取り組む</td></tr>
+      <tr><td><b>③アドヒアランス向上</b></td><td>患者のコンプライアンス(治療遵守)が改善する</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="box key">
+    <span class="box-t">治療の3原則(Principles)</span>
+    <ol style="margin:6px 0 0 0; padding-left:22px;">
+      <li><strong>診断を治療する</strong>(Treat the diagnosis)</li>
+      <li><strong>リスク因子に対処する</strong>(Address the risk factors)</li>
+      <li><strong>治療チームを、患者の複雑さ・診断・治療内容に合わせる</strong>(Match the treatment team to the complexity)</li>
+    </ol>
+    <p style="margin-top:8px;">「とてもシンプルだ。」</p>
+  </div>
+
+  <h3>12-2. 最後のメッセージ ― プラセボではなく「非特異的効果」</h3>
+  <div class="box tip">
+    <span class="box-t">🌟 講演の結語</span>
+    <p>「<strong>プラセボ</strong>は世間では悪い意味で使われるが、私は<strong>『非特異的効果(non-specific effect)』</strong>という言葉を好む。</p>
+    <p><mark>疼痛に対する我々の治療はすべて、20〜60%のプラセボ効果を持っている</mark>ことをご存じだろうか。そしてそれは、<strong>あなたが患者をどう扱うかによって左右される</strong>。</p>
+    <ul class="clean">
+      <li>落ち着いて話しかけているか?</li>
+      <li>相手の話を最後まで聴いているか?</li>
+      <li>思いやり(compassion)を示しているか?</li>
+    </ul>
+    <p><strong>「最後に申し上げたいのは、最良の転帰を得たいのであれば、これらすべてを行い、非特異的効果を最大化しなければならない、ということです。ありがとうございました。」</strong></p>
+  </div>
+</section>
+
+<!-- ============ 13 ============ -->
+<section id="s13">
+  <h2><span class="sec-num">13</span>研究の限界・今後の展望・出版状況</h2>
+
+  <h3>13-1. 演者自身が認める限界</h3>
+  <div class="box warn">
+    <span class="box-t">RCT による検証が必要</span>
+    「我々の知見は<strong>ランダム化比較試験によって検証される必要がある。それが究極の証明だ。</strong>すなわち、これらの因子をすべて持つ患者を集め、<strong>半数はそれらの因子を治療せず、残り半数はそれらの因子に介入して</strong>、後者のほうが良い転帰になるかを見るのだ。単純に言えばそういうことだ。」
+  </div>
+  <ul class="clean">
+    <li>観察研究であり、因果関係は示せない。</li>
+    <li>10分制約により、睡眠・QOL の評価が各1問に限られた。</li>
+    <li>対象集団は<strong>女性83%・白人85%・大学教育歴あり・貧困ライン以上</strong>と偏りがあり、他集団への一般化には注意が必要(本解説者注)。</li>
+  </ul>
+
+  <h3>13-2. 出版の状況(講演時点)</h3>
+  <div class="tbl-wrap">
+  <table>
+    <thead><tr><th>内容</th><th>投稿先/予定</th><th>状況</th></tr></thead>
+    <tbody>
+      <tr><td>PBRN 予測因子研究(本編)</td><td><i>Journal of Dental Research</i>、または<i>Pain</i>誌へ変更を検討</td>
+        <td><strong>査読中。再解析が必要</strong></td></tr>
+      <tr><td>10分質問票+フラグによる解釈</td><td><i>JADA</i>(米国歯科医師会雑誌)が有力</td><td>準備中</td></tr>
+      <tr><td>Axis I の臨床的有用性</td><td>―</td><td>「次の次の論文」で発表予定</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="box quote">
+    <span class="box-t">💬 査読についての演者の弁</span>
+    <p class="said">「4人の査読者のうち<strong>1人はこれを毛嫌いし、1人は絶賛し、1人はまあまあ気に入り、4人目はまともだった。そしてもう1人が嫌っていた</strong>。<mark>全員を喜ばせなければならないと分かった。</mark>だから、再解析に伴って多少内容が変わるかもしれない。」</p>
+    <p style="font-size:.9rem; color:var(--ink-sub);">後にも「(<i>Pain</i>誌に移すのは)査読者が私に痛みを与えているからだ」と言葉遊びで笑わせています。</p>
+  </div>
+
+  <h3>13-3. 演者の悲願</h3>
+  <div class="box key">
+    <span class="box-t">「引退する前に、これを臨床で役立つものにしたい」</span>
+    <p>DC/TMD は<strong>研究用としては極めて成功した</strong>。NIH は TMD に関するあらゆる研究に DC/TMD の使用を義務づけている。それは「必ずしもそれが真理だから」ではなく、<strong>少なくとも同じ診断名を使うことで研究同士を比較できるから</strong>である。</p>
+    <p>しかし――<strong style="color:var(--red);">「臨床的にはうまくいっていない。だから我々は簡略化したいのだ。」</strong></p>
+    <p><b>簡略化の具体策:</b>10分質問票を提供し、<strong>解釈もその中に載せる</strong>。<strong>CPI が 50 以上のところに赤い線を引いておく</strong>。身体図のチェック数をざっと目で数えられるようにする――こうして臨床家にとって「やりやすいもの」にする。</p>
+    <p><b>次のステップ:</b>「より良い基準は<strong>メカニズムに基づくもの</strong>だろう。それが次の一歩だ。ご存じのとおり、何も完全に確定することはなく、<strong>真理は捉えがたい(the truth is elusive)</strong>。だからこの営みは続いていく。」</p>
+  </div>
+</section>
+
+<!-- ============ Q&A ============ -->
+<section id="qa" style="border:2px solid var(--accent);">
+  <h2 style="color:var(--accent); border-bottom-color:#f4e3d7;"><span class="sec-num" style="background:var(--accent);">Q&amp;A</span>【全収録】講演後ディスカッション</h2>
+
+  <div class="box quote">
+    <span class="box-t">💬 質疑応答の冒頭にて</span>
+    <p class="said">座長:「素晴らしいご講演をありがとうございました。質問とディスカッションの時間です。」<br>
+    演者:「<strong>質問は大好きです。悪い質問というのは、しなかった質問だけです。</strong>」</p>
+    <p style="font-size:.88rem; color:var(--ink-sub);">――演者は質疑の間、繰り返し「I love questions(質問が大好きだ)」と述べ、積極的に発言を促していました。以下、フロアから出た質問を出た順にすべて収録します。</p>
+  </div>
+
+  <!-- Q1 -->
+  <details class="qa" id="qa1" open>
+    <summary>心理士・精神科への紹介について。先生はどのくらいの頻度で患者をメンタルヘルス専門職に紹介しますか? また、どうやって患者に受診してもらうのですか?</summary>
+    <div class="qa-body">
+      <span class="asker">質問者:R. Tak 先生(OC University/顎関節症の専門医)</span>
+      <p style="font-size:.93rem; color:var(--ink-sub); background:#f8fafc; padding:10px 14px; border-radius:8px;">
+      <b>質問の背景(質問者の発言より):</b>「顎関節症の Axis II の重要性は十分に理解しています。私自身も顎関節症の専門医です。患者を精神科医に紹介することもありますが、<strong>自分自身で患者のメンタルの問題をコントロールすること</strong>もあります。そこでお尋ねしたいのは、どのくらいの頻度でメンタルクリニックに患者を送っているのか、ということです。」<br>
+      <span style="font-size:.85rem;">※演者は当初「どうやって行かせるか」という質問と受け取り、その後「どのくらいの頻度で送るか」という趣旨も含めて両方に答えています。</span></p>
+
+      <div class="answer">
+        <div>
+          <p><strong>「それは<mark>二段階のダンス(a two-stage dance)</mark>になり得ます。」</strong></p>
+
+          <h4 style="margin-top:14px;">■ 第1段階:土台をつくる</h4>
+          <ul class="clean">
+            <li><b>①「あなたの痛みは本物です」と伝える。</b><br>「まず私は患者に、あなたには身体的なもの、これらの診断があるのだと説明します。<strong>つまり彼らの痛みは本物だということです。それが重要な点です。</strong>」</li>
+            <li><b>② 転帰を良くする因子があると説明する。</b><br>「次に、これらに取り組めばもっと良い転帰が得られる因子があるのだ、と説明します。<strong>より良い転帰を望まない患者はほとんどいません。しかし、全員が心理士に会いたいわけではない。</strong>」</li>
+            <li><b>③ 選択権を患者に渡す。</b><br>「そこで私はこう言います――『これらに取り組めば、最善の結果になると思います。<strong>ですが、今あなたは何をしたいですか?</strong>』実際、<strong>私はそれをボードに書き出します</strong>。マウスガードを使うかもしれない、理学療法士に会うかもしれない、心理士にも、そして非常に複雑であれば他の痛みのために神経内科医にも。」</li>
+            <li><b>④ 自分の専門領域を明示する。</b><br>「患者が他の部位の痛みを話し始めたら、私はいつも『<strong>私は歯科医です。顎を診ています</strong>』と言います。」</li>
+          </ul>
+
+          <h4>■ 患者が「まずスプリントから」と言ったら</h4>
+          <p>「患者が『スプリントから始めたい』『これから始めたい』と言えば、私は『<strong>それでまったく構いません。患者が決めることです</strong>』と伝えます。この時点で既にインフォームド・コンセントは済んでおり、彼らは選択肢を知っています。そして『それで始めたいならそれでいい。<strong>ただし、良くならなかった場合には、私が重要だと考えるこれらの他の手段があります。様子を見ましょう</strong>』と言い添えます。」</p>
+
+          <h4>■ 第2段階:再来院時</h4>
+          <p>「そして<strong>再診で良くなっていなければ、単純に『では、これら他のことにも取り組んでみませんか?』と言うだけです。</strong>」</p>
+
+          <h4>■ 重症の場合</h4>
+          <p>「非常に重度であれば、こう伝えます――『<strong>あなたが私に示してくださった内容からすると、心理士の受診について、ぜひ主治医(内科医)に相談する必要があると思います</strong>』。」</p>
+
+          <h4>■ 同じクリニックにいることの強み</h4>
+          <p>「幸い私はクリニック内に彼ら(心理士)がいるので、『<strong>次にいらっしゃるときに、ついでに彼らにも会ってみませんか。何が大事なのか、彼らから聞けるかもしれませんよ</strong>』と言えます。<strong>同じクリニックにいると、みんなが同じことを言うので、はるかにうまくいきます。</strong>」</p>
+
+          <div class="box warn" style="margin-top:16px;">
+            <span class="box-t">⚠ 外部の心理士に紹介する場合の必須の注意</span>
+            <p><strong>「心理士に紹介するのであれば、まず先方と話をして、あなたが何を言っているかを共有しておいてほしい。というのも、同じことを言わないと――とりわけ<u>ある種の患者、パーソナリティ障害のある患者</u>の場合――<mark>チームが分断(split)されると、事態は厄介になる</mark>からです。」</strong></p>
+            <p style="font-size:.9rem; color:var(--ink-sub);">※これは「スプリッティング」と呼ばれる現象への言及です。医療者間で説明が食い違うと、患者がそれぞれの医療者を理想化・こき下ろしの対象として分断してしまい、治療関係が破綻することがあります。だからこそ<strong>紹介前の情報共有とメッセージの統一</strong>が不可欠だ、という実務上きわめて重要な助言です。</p>
+          </div>
+
+          <p style="margin-top:14px;">演者:「これで意味が通じますか?」<br>
+          質問者:「<strong>まったく同感です。素晴らしいご回答をありがとうございました。</strong>」</p>
+        </div>
+      </div>
+    </div>
+  </details>
+
+  <!-- Q2 -->
+  <details class="qa" id="qa2" open>
+    <summary>DC/TMD を策定される際、膨大なデータを収集されたと思いますが、他の研究者や医師とのあいだで合意形成やとりまとめに困難はありませんでしたか?</summary>
+    <div class="qa-body">
+      <span class="asker">質問者:フロアの参加者(氏名の言及なし)</span>
+      <p style="font-size:.93rem; color:var(--ink-sub); background:#f8fafc; padding:10px 14px; border-radius:8px;">
+      <b>やりとりの経緯:</b>この質問の直前、講演内容の確認として<strong>「TMDが不正咬合を引き起こすのであって、不正咬合が必ずしもTMDを引き起こすわけではない」</strong>という論点が再確認されました。続いて質問者は「DC/TMD を確立する過程で、10年、20年といった長期にわたって膨大なデータを収集されたのでしょうか」と尋ねます。<br>
+      <b>演者の即答:</b>「<strong>いいえ、我々がデータを取得したのは2年間です。</strong>」<br>
+      質問者はさらに「その間、たとえば他の研究者や臨床家と修正したり合意を形成したりするのに困難はありませんでしたか?」と問い、演者は「<strong>あの34人の著者がいる2014年の DC/TMD の論文を通すこと、という意味ですね</strong>」と確認しました。</p>
+
+      <div class="answer">
+        <div>
+          <p><strong>「我々が専門家たちから得ようとしたのは、<mark>二つのこと</mark>でした。」</strong></p>
+
+          <div class="cards" style="margin-top:12px;">
+            <div class="card" style="border-top:5px solid var(--brand-2);">
+              <h5>① 学術的な目的:彼らの意見(input)</h5>
+              <p>世界中の専門家の知見を診断基準に反映させること。</p>
+            </div>
+            <div class="card" style="border-top:5px solid var(--accent);">
+              <h5>② 政治的な目的:彼らの名前(name)</h5>
+              <p>「論文に彼らの名前を載せることで、<strong>彼らがそれを支持する</strong>ようにしたかった。」</p>
+            </div>
+          </div>
+
+          <div class="box quote">
+            <span class="box-t">💬 演者の名言</span>
+            <p class="said">「<strong>学者(academics)がいかに議論好きかご存じでしょう。ですが、その論文に自分の名前が載っていたら、それに反対するのは難しいのです。</strong>」</p>
+            <p>「ですから、これは二つのことを同時に達成しました。<strong>一つは学術的に彼らの意見を得ること。もう一つは政治的なことです。</strong>」</p>
+          </div>
+
+          <div class="box note">
+            <span class="box-t">💬 続けて語られた皮肉</span>
+            <p class="said">「<strong>すべては政治です。</strong>私はかつて、大学では物事の99%が政治だと思っていました。<mark>1%間違っていました。100%です。</mark>」</p>
+            <p style="font-size:.88rem;">(会場に向けて)「他に質問は? ご質問にはお答えできましたか? どうぞ、いらしてください。<strong>すみません、私は皮肉屋(cynic)なので。</strong>」</p>
+          </div>
+
+          <div class="box tip">
+            <span class="box-t">📌 この回答から読み取れること</span>
+            国際的な診断基準の策定とは、純粋な科学的作業であると同時に、<strong>コンセンサス形成という社会的・政治的プロセス</strong>でもあります。多数の専門家を著者として巻き込むという手法は、策定後の普及と受容を確保するための戦略でもあった――という、学術政治の実務を知る者ならではの率直な証言です。なお、実際のデータ収集は<strong>2年間</strong>という比較的短期間で行われた点も、この質問で明らかになった事実です。
+          </div>
+        </div>
+      </div>
+    </div>
+  </details>
+
+  <!-- Q3 -->
+  <details class="qa" id="qa3" open>
+    <summary>最後のスライドにあった Axis II の診断フローについて。先生の地域の一般歯科医は、先生にコンサルトしてくる時点で、どの程度この診断を実施しているのでしょうか?(米国の一般歯科医は、紹介前にどこまで診断しているのですか?)</summary>
+    <div class="qa-body">
+      <span class="asker">質問者:韓国・ソウルからの参加者</span>
+      <p style="font-size:.93rem; color:var(--ink-sub); background:#f8fafc; padding:10px 14px; border-radius:8px;">
+      <b>質問者の補足:</b>「素晴らしいご講演でした。純粋な興味からの質問です。<strong>韓国の歯科医師も Axis I と Axis II について少しは知っており、実施しようとはしています。ただ、正確なやり方までは分かっていないと思います。</strong>米国の歯科医はどうなのでしょうか。先生にコンサルトする前に、どの程度まで診断を行っているのですか?」</p>
+
+      <div class="answer">
+        <div>
+          <p style="font-size:1.1rem;"><strong style="color:var(--red);">「ほとんど誰もやっていません。それが問題なのです。」</strong></p>
+          <p>演者は逆に会場に問い返しました――<strong>「この中で Axis II の評価をやっている方は、どれくらいいますか?」</strong></p>
+
+          <h4>■ ミネソタ州ツインシティーズの現実</h4>
+          <ul class="clean">
+            <li>「ツインシティーズでは、<strong>一般歯科医のほとんどがTMDを治療しません。</strong>」</li>
+            <li>「<strong>治療しないほうがはるかに儲かるからです。</strong>」</li>
+            <li>「ですから、少しでも複雑だと見て取れる患者は、しばしば私のところに回されてきます。<strong>私のところには本当に複雑な症例が来ます。私はそれが好きなのですが。実に興味深い。街を歩いていてもああいう人たちには出会えませんから。</strong>」</li>
+          </ul>
+
+          <h4>■ だからこそ「今これをやっている」理由</h4>
+          <div class="two-col">
+            <div class="card" style="border-top:5px solid var(--green);">
+              <h5>研究用としては大成功</h5>
+              <p>「DC/TMD は<strong>研究においては極めて成功しました。</strong>NIH は TMD に関するあらゆる研究に DC/TMD の使用を義務づけています。」</p>
+              <p><strong>「それは良いことです。ただし、それが必ずしも<u>真理</u>だからではありません。少なくとも<mark>皆が同じ診断名を使うことで、研究同士を比較できる</mark>からです。」</strong></p>
+              <p style="font-size:.9rem;">「より良い基準は<strong>メカニズムに基づいたもの</strong>でしょう。それが次のステップです。何事も完全に確定することはなく、<strong>真理は捉えがたいものです。</strong>この営みは続いていきます。」</p>
+            </div>
+            <div class="card" style="border-top:5px solid var(--red);">
+              <h5>臨床用としては失敗している</h5>
+              <p><strong>「臨床的にはうまくいっていません。だから我々は簡略化したいのです。」</strong></p>
+              <p><b>解決策:</b></p>
+              <ul class="clean" style="font-size:.9rem;">
+                <li><strong>10分間の質問票</strong>を提供する</li>
+                <li><strong>解釈もその場に載せる</strong></li>
+                <li><strong>CPI が 50 以上のところに赤い線</strong>を引いておく</li>
+                <li>身体図のチェック箇所を<strong>ざっと目で追って数えられる</strong>ようにする</li>
+              </ul>
+              <p style="font-size:.9rem;">「そうすることで、臨床家にとってより簡単なものになる。このステップによって臨床家がやりやすくなることを願っています。」</p>
+            </div>
+          </div>
+
+          <div class="box quote">
+            <span class="box-t">💬 演者の締めくくりの言葉</span>
+            <p class="said">「<strong>現状のままでは、これは活用されていません。それは残念なことです。だから私は、引退する前に、これを臨床的に役立つものにしたいのです。</strong>」</p>
+          </div>
+
+          <p style="margin-top:12px;">質問者:「ありがとうございました。」<br>
+          座長:「申し訳ありませんが、お時間の都合でここまでとさせていただきます。誠にありがとうございました。」</p>
+        </div>
+      </div>
+    </div>
+  </details>
+
+  <div class="box key">
+    <span class="box-t">📊 Q&amp;A 全体から見えるもの</span>
+    <p>3つの質問はいずれも、講演の異なる側面に切り込んでいました。<strong>Q1は「実装の技術」(どうやって患者を動かすか)、Q2は「基準がどう作られたか」(科学と政治)、Q3は「基準がなぜ使われないのか」(普及の失敗)</strong>――つまり、<mark>優れた診断基準を作ることと、それが現場で使われることの間には大きな溝がある</mark>という、この講演全体の通奏低音がQ&amp;Aで最も鮮明に浮かび上がりました。演者が講演を通じて「妥当性」から「臨床的有用性」へと軸足を移し、10分質問票とフラグ・システムという具体策を提示したのは、まさにこの溝を埋めるためです。</p>
+  </div>
+</section>
+
+<!-- ============ APPENDIX ============ -->
+<section id="appendix">
+  <h2><span class="sec-num">付</span>付録:講演中に演者が投げかけた問い・場内とのやりとり</h2>
+  <p class="legend">※以下はスライド発表中に生じたやりとりであり、上記の「講演後ディスカッション」とは区別して記載します。</p>
+  <div class="tbl-wrap">
+  <table>
+    <thead><tr><th>場面</th><th>内容</th></tr></thead>
+    <tbody>
+      <tr><td><b>冒頭の確認</b></td><td>「本題に入る前に、後ろまで声は届いていますか? 聞こえる方は手を挙げてください。」</td></tr>
+      <tr><td><b>前方整位型装置の説明中</b></td><td>「永久的な整位は意図しない。実際それは簡単に達成できる」と述べた際、場内の反応に対して「<strong>良い質問です(Good question)</strong>」と応答。</td></tr>
+      <tr><td><b>観察研究の説明中</b></td><td>「我々は現場で何が行われているかを知りたかった。<strong>次はランダム化比較試験だ。それは私に聞くと良い質問になるだろう</strong>」と、自ら質問を誘導。</td></tr>
+      <tr><td><b>専門医の有無の確認</b></td><td>トリアージの説明中、「<strong>こちらに専門医の方はいらっしゃいますか?</strong>」と挙手を求めた。</td></tr>
+      <tr><td><b>Axis II 実施率の確認</b></td><td>Q&amp;Aの中で「<strong>この中で Axis II の評価をやっている方は?</strong>」と会場に問いかけた。</td></tr>
+      <tr><td><b>時間管理のやりとり</b></td><td>「半分まで来たということですね?」「25(分)」「いえ、あなたがボスです、失礼」――終盤も「あと何分? 6分?」と確認しつつ進行。最後にマイクが切れかけ「<strong>切らないでください。私の初めての講義では、まさにそれをやられたのです</strong>」と笑いを取った。</td></tr>
+      <tr><td><b>ユーモアへの反応</b></td><td>亜脱臼の説明で笑いが取れず「<strong>ユーモアには手強い聴衆だ(Tough group with humor)</strong>」、冒頭でも「<strong>私はドライなユーモアの持ち主でね</strong>」と自嘲。</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<!-- ============ GLOSSARY ============ -->
+<section id="glossary">
+  <h2><span class="sec-num">用</span>用語集・略語一覧</h2>
+  <div class="tbl-wrap">
+  <table>
+    <thead><tr><th>略語/用語</th><th>正式名称</th><th>意味・解説</th></tr></thead>
+    <tbody>
+      <tr><td><b>TMD</b></td><td>Temporomandibular Disorders</td><td>顎関節症/顎関節・咀嚼筋障害の総称</td></tr>
+      <tr><td><b>DC/TMD</b></td><td>Diagnostic Criteria for TMD</td><td>2014年発表の国際診断基準。RDC/TMD の後継。Axis I / Axis II の二軸構成</td></tr>
+      <tr><td><b>RDC/TMD</b></td><td>Research Diagnostic Criteria for TMD</td><td>Dworkin &amp; LeResche(1992)による前身の研究用診断基準</td></tr>
+      <tr><td><b>感度</b></td><td>Sensitivity</td><td>疾患がある人を正しく陽性と判定する割合(見逃しの少なさ)</td></tr>
+      <tr><td><b>特異度</b></td><td>Specificity</td><td>疾患がない人を正しく陰性と判定する割合(過剰診断の少なさ)</td></tr>
+      <tr><td><b>妥当性</b></td><td>Validity</td><td>検査がどれだけ正確かを示す性質</td></tr>
+      <tr><td><b>臨床的有用性</b></td><td>Clinical Utility</td><td>検査が介入を促し、健康アウトカムの改善をもたらす見込み</td></tr>
+      <tr><td><b>Familiar pain</b></td><td>―</td><td>「いつもの痛み」。検査で誘発された痛みが、患者の主訴と同じ痛みであること。DC/TMD の中核概念</td></tr>
+      <tr><td><b>DD / DDwR / DDwoR</b></td><td>Disc Displacement (with/without Reduction)</td><td>関節円板転位(復位性/非復位性)</td></tr>
+      <tr><td><b>クローズドロック</b></td><td>Closed lock</td><td>非復位性円板転位+開口制限。口が開かなくなる状態</td></tr>
+      <tr><td><b>DJD</b></td><td>Degenerative Joint Disease</td><td>変形性関節症。非リウマチ性・リウマチ性の両方を含む</td></tr>
+      <tr><td><b>クレピタス</b></td><td>Crepitus</td><td>関節の「ジャリジャリ」という捻髪音。DJD の指標とされるが精度は低い</td></tr>
+      <tr><td><b>GCPS</b></td><td>Graded Chronic Pain Scale</td><td>慢性疼痛の重症度段階尺度。強度と生活障害から grade 分類</td></tr>
+      <tr><td><b>CPI</b></td><td>Characteristic Pain Intensity</td><td>特徴的疼痛強度。(今・最悪・平均の平均)×10、0〜100。<strong>50以上=高強度</strong></td></tr>
+      <tr><td><b>干渉スコア</b></td><td>Interference Score(旧 Disability Score)</td><td>痛みが生活を妨げる程度。0〜100</td></tr>
+      <tr><td><b>PHQ-4 / PHQ-9</b></td><td>Patient Health Questionnaire</td><td>不安・抑うつのスクリーニング尺度。PHQ-4 は0〜12点。PHQ-9 の第10問は「対処困難度」を問う</td></tr>
+      <tr><td><b>OBC</b></td><td>Oral Behaviors Checklist</td><td>Ohrbach らによる口腔習癖チェックリスト</td></tr>
+      <tr><td><b>広汎痛指数</b></td><td>Widespread Pain Index(Wolfe)</td><td>線維筋痛症診断用の身体区画別疼痛評価。本研究では19部位中5部位以上をカットオフに使用</td></tr>
+      <tr><td><b>PBRN</b></td><td>Practice-Based Research Network</td><td>実診療に根ざした研究ネットワーク。米国では6地域から歯科医が参加</td></tr>
+      <tr><td><b>オッズ比</b></td><td>Odds Ratio(OR)</td><td>&gt;1で危険因子、=1で中立、&lt;1で保護因子</td></tr>
+      <tr><td><b>感作</b></td><td>Sensitization</td><td>神経系の痛覚過敏状態。広汎痛や高強度疼痛の背景にあると考えられる</td></tr>
+      <tr><td><b>非特異的効果</b></td><td>Non-specific effect</td><td>いわゆるプラセボ効果。疼痛治療では20〜60%を占め、術者の態度に左右される</td></tr>
+      <tr><td><b>ARA</b></td><td>Anterior Repositioning Appliance</td><td>前方整位型装置。間欠ロック例に就寝時使用。永久整位は意図しない</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<!-- ============ TAKEAWAY ============ -->
+<section id="takeaway" style="border:2px solid var(--brand);">
+  <h2><span class="sec-num">✓</span>明日から使えるチェックリスト</h2>
+
+  <h3>初診時に必ず確認する8項目(Axis II の実装)</h3>
+  <div class="tbl-wrap">
+  <table>
+    <thead><tr><th>#</th><th>確認事項</th><th>陽性ならどうなるか</th></tr></thead>
+    <tbody>
+      <tr><td class="num">1</td><td><b>CPI(今/最悪/平均の平均×10)は 50 以上か?</b></td><td><span class="badge b-red">最強の予測因子</span> 高強度疼痛残存のオッズ +278%</td></tr>
+      <tr><td class="num">2</td><td><b>「これらの問題にどれだけ困難を感じていますか?」が『極めて困難』か?</b></td><td><span class="badge b-red">最強の予測因子</span> 50%未満改善のオッズ +213%。<strong>橙フラグ→心理士へ</strong></td></tr>
+      <tr><td class="num">3</td><td><b>身体図で 5 か所以上に痛みがあるか?</b>(顎の2か所は既に埋まっている)</td><td><span class="badge b-yellow">黄フラグ</span> オッズ +60% / +46%</td></tr>
+      <tr><td class="num">4</td><td><b>「痛みはいつもありますか、出たり消えたりしますか?」</b>(たった1問)</td><td>「いつもある」で <span class="badge b-yellow">黄</span> オッズ +82%</td></tr>
+      <tr><td class="num">5</td><td><b>罹病期間は3年を超えているか?</b></td><td><span class="badge b-yellow">黄</span> オッズ +52%。<u>3か月では有意でない</u></td></tr>
+      <tr><td class="num">6</td><td><b>生活・仕事・社会活動への干渉は高いか?</b></td><td><span class="badge b-yellow">黄</span> オッズ +50%</td></tr>
+      <tr><td class="num">7</td><td><b>既に2人以上の医療者を受診しているか?</b></td><td><span class="badge b-yellow">黄</span> オッズ +31%</td></tr>
+      <tr><td class="num">8</td><td><b>若年か? 女性か?</b></td><td><span class="badge b-yellow">黄</span> オッズ +67% / +42%(修正不能因子だが認識は必要)</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3>診察室での5つの所作</h3>
+  <div class="cards">
+    <div class="card"><h5>1分間クレンチテスト</h5><p>パラファンクションで「いつもの痛み」が誘発されるかを確認。</p></div>
+    <div class="card"><h5>患者が指した場所から触診</h5><p>教科書の順序より、患者の指先を優先する。</p></div>
+    <div class="card"><h5>「いつもの痛み」かを必ず問う</h5><p>単なる圧痛では診断にならない。familiar pain の確認が特異度を担保する。</p></div>
+    <div class="card"><h5>歯性病変をまず除外</h5><p>口腔顔面痛の最多原因は歯性病変。ここを飛ばさない。</p></div>
+    <div class="card"><h5>選択肢をボードに書き出す</h5><p>スプリント/理学療法/心理士/神経内科。<strong>決めるのは患者</strong>、と伝える。</p></div>
+  </div>
+
+  <h3>絶対に忘れてはならない3つの原則</h3>
+  <div class="box key">
+    <ol style="margin:0; padding-left:22px; font-size:1.0rem;">
+      <li style="margin-bottom:6px;"><strong>診断を治療する。</strong></li>
+      <li style="margin-bottom:6px;"><strong>リスク因子に対処する。</strong>(それらは治療前に測っておく)</li>
+      <li><strong>治療チームを、患者の複雑さに合わせる。</strong></li>
+    </ol>
+    <p style="margin-top:12px; border-top:1px dashed #b3d4f0; padding-top:10px;">そして――<strong>落ち着いて話し、最後まで聴き、思いやりを示すこと。それが20〜60%の非特異的効果を最大化する。</strong></p>
+  </div>
+</section>
+
+<footer>
+  <p>本資料は、Eric Schiffman 教授による講演(<a href="https://youtu.be/d6iHTe0yIsQ">https://youtu.be/d6iHTe0yIsQ</a>)の音声文字起こしをもとに構成した解説です。</p>
+  <p>感度・特異度の数値は DC/TMD(Schiffman E, et al. <i>J Oral Facial Pain Headache</i>. 2014;28:6-27)および公式診断基準表に準拠しています。<br>
+  PBRN 研究の結果(オッズ比等)は<strong>講演時点で査読中</strong>であり、再解析により数値が変更される可能性があります。</p>
+  <p style="margin-top:14px; font-size:.8rem;">※本解説は教育目的の要約であり、個々の患者の診断・治療の判断は原著論文および各国のガイドラインをご確認のうえ、臨床家の責任において行ってください。</p>
+</footer>
+
+</div>
+
+<a href="#" class="totop" aria-label="ページ先頭へ">↑</a>
+
+</body>
+</html>
