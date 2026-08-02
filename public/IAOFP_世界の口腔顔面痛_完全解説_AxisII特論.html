@@ -64,6 +64,7 @@ button, input { font: inherit; }
 .search-count { position:absolute; right:12px; top:50%; transform:translateY(-50%); font-size:.75rem; color:var(--muted); }
 .tool-btn { border:1px solid var(--line); border-radius:12px; padding:9px 12px; background:var(--surface); color:var(--ink); cursor:pointer; }
 .tool-btn:hover { border-color:var(--teal); }
+.tool-link { display:inline-flex; align-items:center; gap:.38rem; text-decoration:none; white-space:nowrap; }
 .layout { max-width: 1510px; margin: 0 auto; display:grid; grid-template-columns: var(--sidebar) minmax(0,1fr); gap:34px; padding:34px 22px 90px; }
 .sidebar { position:sticky; top:86px; height:calc(100vh - 108px); overflow:auto; padding:18px 14px 24px; border:1px solid var(--line); border-radius:18px; background:var(--surface); box-shadow:var(--shadow); }
 .sidebar h2 { font-size:.82rem; text-transform:uppercase; letter-spacing:.16em; color:var(--muted); margin:4px 10px 12px; }
@@ -438,6 +439,7 @@ summary { cursor:pointer; font-weight:800; color:var(--navy); }
 </header>
 <div class="toolbar">
 <div class="toolbar-inner">
+<a class="tool-btn tool-link" href="./index.html"><span aria-hidden="true">&larr;</span><span>講演一覧へ戻る</span></a>
 <button aria-label="表示テーマを切り替える" class="tool-btn" id="themeBtn">☾ 表示</button>
 <button class="tool-btn" id="expandBtn">全文を展開</button>
 <button class="tool-btn" id="printBtn">印刷</button>
