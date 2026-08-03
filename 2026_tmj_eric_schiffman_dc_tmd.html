@@ -231,6 +231,17 @@ ul.clean{padding-left:22px;} ul.clean li{margin:6px 0;}
 @media(max-width:760px){ .two-col{grid-template-columns:1fr;} section{padding:22px 18px 26px;} header.hero h1{font-size:1.45rem;} }
 .svg-wrap{background:#fbfcfe; border:1px solid var(--line); border-radius:11px; padding:14px; margin:18px 0; text-align:center;}
 .svg-wrap figcaption{font-size:.83rem; color:var(--ink-sub); margin-top:8px;}
+.slide-figure{background:#fbfcfe; border:1px solid var(--line); border-radius:11px; padding:14px; margin:18px 0; text-align:center;}
+.slide-figure img{display:block; width:100%; max-width:1040px; height:auto; margin:0 auto; border:1px solid #d7dde5; border-radius:6px;}
+.slide-figure figcaption{font-size:.83rem; color:var(--ink-sub); margin-top:8px;}
+.clinical-utility-grid{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; margin:20px 0;}
+.clinical-utility-panel{background:#fbfcfe; border:1px solid var(--line); border-radius:11px; padding:18px 20px;}
+.clinical-utility-panel h4{margin:0 0 10px; color:var(--brand); font-size:1.02rem;}
+.clinical-utility-panel h5{margin:18px 0 5px; color:#123a5c; font-size:.94rem; line-height:1.55;}
+.clinical-utility-panel h5:first-of-type{margin-top:0;}
+.clinical-utility-panel ul{margin:0; padding-left:20px; font-size:.9rem;}
+.clinical-utility-panel li{margin:5px 0;}
+@media(max-width:760px){.clinical-utility-grid{grid-template-columns:1fr;}.slide-figure{padding:8px;}.clinical-utility-panel{padding:16px;}}
 footer{text-align:center; color:var(--ink-sub); font-size:.85rem; padding:30px 12px 60px;}
 .totop{
   position:fixed; right:18px; bottom:18px; background:var(--brand); color:#fff;
@@ -640,6 +651,91 @@ hr.soft{border:none; border-top:1px dashed var(--line); margin:26px 0;}
   <h2><span class="sec-num">6</span>Axis I 各診断の臨床的有用性(疾患別詳解)</h2>
   <p class="legend">※本章の内容は、演者らが準備中の論文(「次の次の論文」)で発表予定とのことです。</p>
 
+  <h3>6-0. Axis I: Clinical Utility ― 講演スライドと要点</h3>
+  <figure class="slide-figure">
+    <img src="./images/schiffman-dc-tmd/axis-i-clinical-utility.jpg" alt="Axis I: Clinical Utility。復位性・非復位性関節円板転位、変性性関節疾患、亜脱臼の臨床的有用性を示す講演スライド">
+    <figcaption>講演スライド「Axis I: Clinical Utility」（提供画像）。下の英語はスライドの文字起こし、日本語はその訳です。</figcaption>
+  </figure>
+
+  <div class="clinical-utility-grid">
+    <section class="clinical-utility-panel" aria-label="Axis I Clinical Utility 英語文字起こし">
+      <h4>英語文字起こし</h4>
+
+      <h5>Disc Displacement with Reduction (DDwR)</h5>
+      <ul>
+        <li>“Slipped” disc … common</li>
+        <li>Optimistic counseling – Typically pain-free</li>
+        <li>If pain is present – no need to address DD directly for pain relief.</li>
+      </ul>
+
+      <h5>DDwR versus DDwR with Intermittent Locking *</h5>
+      <ul>
+        <li>Potential to progress to next “stage”</li>
+        <li>Different orthotic options: including stabilization or anterior repositioning appliances (without permanent repositioning)</li>
+      </ul>
+
+      <h5>Disc Displacement without Reduction (DDw/oR) with limited opening *</h5>
+      <ul>
+        <li>“Herniated” disc … uncommon</li>
+        <li>Identifies a disorder that needs the disc position to be changed: unlocked or progress to the next “stage” for increased mobility and pain relief</li>
+        <li>Minority of patients benefit from surgery</li>
+      </ul>
+
+      <h5>Disc Displacement without Reduction (DDw/oR) without limited opening</h5>
+      <ul><li>Clinically – looks normal clinically (no known utility)</li></ul>
+
+      <h5>Degenerative joint disease</h5>
+      <ul>
+        <li>Different orthotic options</li>
+        <li>Can cause significant malocclusions</li>
+      </ul>
+
+      <h5>Subluxation</h5>
+      <ul><li>Aggravated by opening wide including with dental procedures</li></ul>
+    </section>
+
+    <section class="clinical-utility-panel" aria-label="Axis I Clinical Utility 日本語訳">
+      <h4>日本語訳</h4>
+
+      <h5>復位性関節円板転位（DDwR）</h5>
+      <ul>
+        <li>「ずれた」関節円板……よくみられる</li>
+        <li>楽観的な説明ができる――通常は疼痛を伴わない</li>
+        <li>疼痛がある場合でも、疼痛を軽減するために<strong>円板転位そのものへ直接介入する必要はない</strong>。</li>
+      </ul>
+
+      <h5>復位性関節円板転位と、間欠的ロックを伴う復位性関節円板転位との比較 *</h5>
+      <ul>
+        <li>次の「段階」へ進行する可能性がある</li>
+        <li>口腔内装置療法の選択肢が異なる。これには、スタビライゼーション型装置または前方整位型装置が含まれる。ただし、恒久的な前方整位を目的とはしない。</li>
+      </ul>
+
+      <h5>開口制限を伴う非復位性関節円板転位（DDw/oR）*</h5>
+      <ul>
+        <li>「ヘルニアを起こした」関節円板……まれである</li>
+        <li>関節円板の位置を変える必要がある病態を特定する。すなわち、ロックを解除するか、可動性を高めて疼痛を軽減するために、次の「段階」へ移行させる。</li>
+        <li>手術によって利益を得る患者は少数である。</li>
+      </ul>
+
+      <h5>開口制限を伴わない非復位性関節円板転位（DDw/oR）</h5>
+      <ul><li>臨床的には正常に見える。既知の臨床的有用性はない。</li></ul>
+
+      <h5>変性性関節疾患</h5>
+      <ul>
+        <li>口腔内装置療法の選択肢が異なる</li>
+        <li>著しい咬合異常を引き起こすことがある</li>
+      </ul>
+
+      <h5>亜脱臼</h5>
+      <ul><li>歯科処置時を含め、口を大きく開けることで増悪する</li></ul>
+    </section>
+  </div>
+
+  <div class="box note">
+    <span class="box-t">「progress to the next “stage”」への講演中の口頭補足</span>
+    このスライドの “stage” は省略的な表現です。演者は、開口制限が改善した際に<strong>円板を正常位へ復位させたのではなく、MRI上では円板がさらに前方へ転位している場合が多い</strong>と補足しています。したがって、ここでの臨床目標は円板の正常位化ではなく、ロックの解除、可動性の回復、疼痛の軽減として理解する必要があります。
+  </div>
+
   <h3>6-1. 筋痛 vs 関節痛 ― 鑑別が治療を変える</h3>
   <div class="tbl-wrap">
   <table>
@@ -1006,7 +1102,7 @@ hr.soft{border:none; border-top:1px dashed var(--line); margin:26px 0;}
       <tr style="background:#fdecea;">
         <td class="num">1</td><td><b>ベースラインでの高強度疼痛</b><br>(CPI ≧ 50)</td>
         <td class="num"><b style="color:var(--red); font-size:1.15rem;">+278%</b></td><td class="num">約3.8</td>
-        <td><strong>最強の因子。</strong>低強度疼痛群との比較。「初診時に痛みが強ければ、良い転帰は得にくい」</td></tr>
+        <td><strong>最強の因子。</strong>低強度疼痛群との比較。「初診時に痛みが強ければ、良い転帰は得にくい」<br><span style="display:inline-block; margin-top:6px; color:var(--red); font-weight:700;">作成者コメント：VAS値0－100の場合、すべて100近くに印をつける人には注意するのと同じだ</span></td></tr>
       <tr><td class="num">2</td><td><b>痛みが常に存在する(持続痛)</b></td><td class="num">+82%</td><td class="num">約1.8</td>
         <td>質問はたった2問――<strong>「痛みはいつもありますか、それとも出たり消えたりしますか?」</strong>。「いつもある」と答えたら要注意</td></tr>
       <tr><td class="num">3</td><td><b>高い干渉スコア</b></td><td class="num">+50%</td><td class="num">約1.5</td>

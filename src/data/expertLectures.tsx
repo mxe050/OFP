@@ -1757,7 +1757,7 @@ const retractionsContent = (
 );
 
 const TAB_DEFS = [
-  { id: 'famous', title: '有名な先生の講義より', content: famousLectureContent },
+  { id: 'famous', title: '2026年和嶋の講義より', content: famousLectureContent },
   { id: 'clark', title: 'Glenn Clark, DDS：Case Studies and Literature Reviews in Orofacial Pain and Headache', content: clarkContent },
   { id: 'pasternak', title: 'Amy Pasternak, PharmD：Pharmacogenetics of Orofacial Pain', content: <PasternakContent /> },
   { id: 'muraoka-2026-04', title: '2026年4月の慶應OFPオープンセミナー：村岡渡先生', content: muraokaContent },
