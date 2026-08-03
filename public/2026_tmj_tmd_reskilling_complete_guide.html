@@ -8,14 +8,13 @@
 <style>
 :root{--bg:#f5f7fb;--panel:#fff;--panel2:#f0f4fa;--text:#172033;--muted:#5f6b7f;--line:#dce3ee;--accent:#155eef;--accent2:#0b7a75;--warn:#a14500;--danger:#b42318;--good:#087443;--shadow:0 12px 35px rgba(20,35,70,.09);--radius:18px;--font-scale:1}
 html[data-theme="dark"]{--bg:#0e1320;--panel:#161d2b;--panel2:#1d2637;--text:#eef3ff;--muted:#aeb9cc;--line:#2b3850;--accent:#7aa2ff;--accent2:#64d2c8;--warn:#ffb65c;--danger:#ff8b82;--good:#6fe0a5;--shadow:0 14px 40px rgba(0,0,0,.28)}
-*{box-sizing:border-box}html{scroll-behavior:smooth;font-size:calc(16px * var(--font-scale))}body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP","Hiragino Kaku Gothic ProN",Meiryo,sans-serif;line-height:1.78}a{color:var(--accent)}button,input,select{font:inherit}button{cursor:pointer}.progress{position:fixed;top:0;left:0;height:4px;background:linear-gradient(90deg,var(--accent),var(--accent2));z-index:1000;width:0}.topbar{position:sticky;top:0;z-index:900;background:color-mix(in srgb,var(--panel) 92%,transparent);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.topbar-inner{max-width:1500px;margin:auto;display:flex;gap:10px;align-items:center;padding:10px 18px}.brand{font-weight:800;white-space:nowrap}.searchbox{flex:1;position:relative}.searchbox input{width:100%;border:1px solid var(--line);border-radius:999px;background:var(--panel2);color:var(--text);padding:10px 44px 10px 16px}.search-count{position:absolute;right:14px;top:10px;color:var(--muted);font-size:.82rem}.control{border:1px solid var(--line);background:var(--panel);color:var(--text);border-radius:10px;padding:8px 10px}.menu-return{display:inline-flex;align-items:center;white-space:nowrap;text-decoration:none}.layout{max-width:1500px;margin:auto;display:grid;grid-template-columns:280px minmax(0,1fr);gap:24px;padding:24px 18px}.sidebar{position:sticky;top:74px;height:calc(100vh - 94px);overflow:auto;padding:16px;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}.sidebar h3{font-size:.85rem;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin:8px 8px 10px}.sidebar a{display:block;text-decoration:none;color:var(--text);padding:9px 10px;border-radius:10px;font-size:.9rem}.sidebar a:hover,.sidebar a.active{background:var(--panel2);color:var(--accent)}.sidebar .nav-sub{padding-left:24px;font-size:.82rem;color:var(--muted)}main{min-width:0}.hero{background:linear-gradient(135deg,color-mix(in srgb,var(--accent) 13%,var(--panel)),var(--panel));border:1px solid var(--line);border-radius:28px;padding:42px;box-shadow:var(--shadow);position:relative;overflow:hidden}.hero:after{content:"TMJ";position:absolute;right:-20px;top:-45px;font-weight:900;font-size:11rem;color:color-mix(in srgb,var(--accent) 6%,transparent);line-height:1}.eyebrow{font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);font-weight:800}h1{font-size:clamp(2rem,4vw,4.2rem);line-height:1.12;margin:.3em 0 .25em;max-width:1000px}.lead{font-size:1.15rem;max-width:950px;color:var(--muted)}.metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:26px;position:relative;z-index:1}.metric{background:color-mix(in srgb,var(--panel) 90%,transparent);border:1px solid var(--line);border-radius:14px;padding:16px}.metric strong{font-size:1.6rem;display:block}.metric span{font-size:.83rem;color:var(--muted)}.notice-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:22px 0}.callout{border:1px solid var(--line);border-left:5px solid var(--accent);background:var(--panel);border-radius:14px;padding:16px 18px;margin:14px 0}.callout strong{display:block;margin-bottom:5px}.callout.danger{border-left-color:var(--danger);background:color-mix(in srgb,var(--danger) 5%,var(--panel))}.callout.good{border-left-color:var(--good);background:color-mix(in srgb,var(--good) 5%,var(--panel))}.callout.key{border-left-color:var(--accent2);background:color-mix(in srgb,var(--accent2) 6%,var(--panel))}.overview-section,.global-section{margin:30px 0;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow)}.overview-section h2,.global-section h2{margin-top:0;font-size:1.7rem}.course-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.course-card{display:grid;grid-template-columns:54px 1fr;gap:14px;text-decoration:none;color:var(--text);border:1px solid var(--line);border-radius:16px;padding:16px;background:var(--panel2)}.course-card:hover{transform:translateY(-2px);box-shadow:var(--shadow)}.course-no{width:46px;height:46px;display:grid;place-items:center;border-radius:50%;background:var(--accent);color:white;font-weight:900}.course-card small{display:block;color:var(--muted);margin-top:4px}.course-card p{margin:8px 0 0;font-size:.88rem;color:var(--muted)}.status-partial{border-left:5px solid var(--warn)}.status-missing{border-left:5px solid var(--danger)}.table-wrap{overflow:auto;border:1px solid var(--line);border-radius:14px;margin:14px 0}table{border-collapse:collapse;width:100%;min-width:700px}th,td{padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}th{background:var(--panel2);font-size:.86rem}td{font-size:.91rem}tr:last-child td{border-bottom:0}.status-dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:7px;background:var(--good)}.status-dot.partial{background:var(--warn)}.status-dot.missing{background:var(--danger)}.session{margin:42px 0 64px;scroll-margin-top:88px}.session-header{background:var(--panel);border:1px solid var(--line);border-radius:24px;padding:30px;box-shadow:var(--shadow)}.session-kicker{font-weight:900;color:var(--accent);letter-spacing:.14em}.session h2{font-size:clamp(1.8rem,3vw,3rem);line-height:1.25;margin:.2em 0}.session-meta{display:flex;flex-wrap:wrap;gap:8px 20px;color:var(--muted);font-size:.92rem}.session-thesis{font-size:1.1rem;border-left:4px solid var(--accent2);padding-left:16px;margin:20px 0}.session-actions{display:flex;gap:10px;flex-wrap:wrap}.button,.session-actions button{border:0;border-radius:11px;padding:10px 14px;background:var(--accent);color:white;text-decoration:none;font-weight:700}.button.secondary,.copy-link{background:var(--panel2)!important;color:var(--text)!important;border:1px solid var(--line)!important}.video-slot{margin-top:14px}.video-frame{position:relative;padding-top:56.25%;border-radius:16px;overflow:hidden;background:#000}.video-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}.timestamps{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}.timestamp{font-size:.82rem;border:1px solid var(--line);border-radius:999px;padding:5px 10px;text-decoration:none;background:var(--panel2)}.timestamp.disabled{opacity:.65}.status-banner{margin-top:16px;border-radius:10px;padding:10px 12px;background:color-mix(in srgb,var(--good) 8%,var(--panel2));font-size:.88rem}.status-banner.partial{background:color-mix(in srgb,var(--warn) 10%,var(--panel2))}.status-banner.missing{background:color-mix(in srgb,var(--danger) 10%,var(--panel2))}.section-label{margin:28px 0 14px}.section-label span{text-transform:uppercase;letter-spacing:.14em;font-size:.75rem;color:var(--accent);font-weight:800}.section-label h3{font-size:1.5rem;margin:.1em 0}.section-label p{color:var(--muted);margin:0}.module-list,.qna-list{display:grid;gap:12px}details.module,details.qna-card{background:var(--panel);border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 5px 18px rgba(20,35,70,.04)}details>summary{list-style:none;cursor:pointer}details>summary::-webkit-details-marker{display:none}.module>summary{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:17px 20px;font-weight:800}.module>summary:before{content:"＋";color:var(--accent);font-size:1.3rem}.module[open]>summary:before{content:"−"}.module>summary span:first-of-type{flex:1}.module-body{padding:4px 22px 22px;border-top:1px solid var(--line)}.module-body h4{margin-top:1.4em;margin-bottom:.3em;font-size:1.08rem}.module-body p{margin:.65em 0}.badge{display:inline-flex;align-items:center;white-space:nowrap;border-radius:999px;padding:3px 8px;font-size:.7rem;font-weight:800;background:var(--panel2);color:var(--muted)}.badge.lecture{background:color-mix(in srgb,var(--accent) 10%,var(--panel2));color:var(--accent)}.badge.appraisal{background:color-mix(in srgb,var(--warn) 12%,var(--panel2));color:var(--warn)}.badge.external{background:color-mix(in srgb,var(--accent2) 12%,var(--panel2));color:var(--accent2)}.badge.gap,.badge.missing{background:color-mix(in srgb,var(--danger) 12%,var(--panel2));color:var(--danger)}.badge.qna{background:color-mix(in srgb,var(--accent) 12%,var(--panel2));color:var(--accent)}.badge.comment{background:color-mix(in srgb,var(--accent2) 12%,var(--panel2));color:var(--accent2)}.badge.chair{background:color-mix(in srgb,var(--warn) 12%,var(--panel2));color:var(--warn)}.flow{display:flex;align-items:stretch;gap:8px;overflow:auto;margin:18px 0;padding:4px}.flow-node{min-width:145px;flex:1;background:var(--panel2);border:1px solid var(--line);border-radius:13px;padding:14px;text-align:center;font-weight:700;font-size:.86rem}.flow-arrow{display:grid;place-items:center;color:var(--accent);font-size:1.4rem}.qna-card>summary{display:grid;grid-template-columns:64px 1fr auto;gap:12px;align-items:center;padding:16px 18px}.qna-number{font-weight:900;color:var(--accent)}.qna-summary{font-weight:750}.qna-body{padding:0 20px 20px;border-top:1px solid var(--line)}.qna-meta{display:flex;justify-content:space-between;margin:12px 0;color:var(--muted);font-size:.82rem}.qa-block{display:grid;grid-template-columns:70px 1fr;gap:12px;border-radius:12px;padding:13px;margin:9px 0}.qa-block p{margin:0}.qa-block.question{background:color-mix(in srgb,var(--accent) 6%,var(--panel2))}.qa-block.answer{background:color-mix(in srgb,var(--good) 6%,var(--panel2))}.qna-appraisal{border-left:4px solid var(--warn);padding:10px 12px;margin-top:10px;background:color-mix(in srgb,var(--warn) 7%,var(--panel2));border-radius:8px}.source-note{font-size:.86rem;color:var(--muted)}.session-end{text-align:right;margin-top:16px}.q-index{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}.q-index a{text-decoration:none;color:var(--text);padding:9px 11px;border:1px solid var(--line);border-radius:10px;font-size:.82rem;background:var(--panel2)}.q-index a span{font-weight:900;color:var(--accent);margin-right:8px}.glossary{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.glossary>div{border:1px solid var(--line);border-radius:12px;padding:13px;background:var(--panel2)}.glossary dt{font-weight:850}.glossary dd{margin:.3em 0 0;color:var(--muted);font-size:.9rem}.references li{margin:8px 0}.source-box{font-size:.9rem;background:var(--panel2);border-radius:14px;padding:18px}mark{background:#ffe66d;color:#111;border-radius:3px;padding:0 2px}.hidden-by-filter{display:none!important}.no-results{display:none;background:var(--panel);border:1px solid var(--line);padding:20px;border-radius:14px;margin:20px 0}.session-end a{font-size:.85rem}footer{max-width:1500px;margin:40px auto;padding:24px 18px 60px;color:var(--muted);font-size:.86rem}@media(max-width:1050px){.layout{grid-template-columns:1fr}.sidebar{display:none}.metrics{grid-template-columns:repeat(2,1fr)}.course-grid{grid-template-columns:1fr}.notice-grid{grid-template-columns:1fr}}@media(max-width:650px){.topbar-inner{flex-wrap:wrap}.brand{width:100%}.searchbox{flex:1 0 100%;width:100%}.layout{padding:12px}.hero{padding:25px 19px}.metrics{grid-template-columns:1fr 1fr}.overview-section,.global-section,.session-header{padding:20px}.qna-card>summary{grid-template-columns:50px 1fr}.qna-card>summary .badge{grid-column:2}.qa-block{grid-template-columns:1fr}.glossary,.q-index{grid-template-columns:1fr}.flow-arrow{transform:rotate(90deg)}.flow{flex-direction:column}.flow-node{min-width:0}}@media print{.topbar,.sidebar,.session-actions,.video-slot,.session-end,.progress{display:none!important}body{background:white;color:black;font-size:10.5pt}.layout{display:block;max-width:none}.hero,.overview-section,.global-section,.session-header,details.module,details.qna-card{box-shadow:none;break-inside:avoid}details.module:not([open]) .module-body,details.qna-card:not([open]) .qna-body{display:block}details>summary:before{display:none}a{color:black;text-decoration:none}.session{page-break-before:always}}
+*{box-sizing:border-box}html{scroll-behavior:smooth;font-size:calc(16px * var(--font-scale))}body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP","Hiragino Kaku Gothic ProN",Meiryo,sans-serif;line-height:1.78}a{color:var(--accent)}button,input,select{font:inherit}button{cursor:pointer}.progress{position:fixed;top:0;left:0;height:4px;background:linear-gradient(90deg,var(--accent),var(--accent2));z-index:1000;width:0}.topbar{position:sticky;top:0;z-index:900;background:color-mix(in srgb,var(--panel) 92%,transparent);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.topbar-inner{max-width:1500px;margin:auto;display:flex;gap:10px;align-items:center;padding:10px 18px}.brand{font-weight:800;white-space:nowrap}.searchbox{flex:1;position:relative}.searchbox input{width:100%;border:1px solid var(--line);border-radius:999px;background:var(--panel2);color:var(--text);padding:10px 44px 10px 16px}.search-count{position:absolute;right:14px;top:10px;color:var(--muted);font-size:.82rem}.control{border:1px solid var(--line);background:var(--panel);color:var(--text);border-radius:10px;padding:8px 10px}.layout{max-width:1500px;margin:auto;display:grid;grid-template-columns:280px minmax(0,1fr);gap:24px;padding:24px 18px}.sidebar{position:sticky;top:74px;height:calc(100vh - 94px);overflow:auto;padding:16px;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}.sidebar h3{font-size:.85rem;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin:8px 8px 10px}.sidebar a{display:block;text-decoration:none;color:var(--text);padding:9px 10px;border-radius:10px;font-size:.9rem}.sidebar a:hover,.sidebar a.active{background:var(--panel2);color:var(--accent)}.sidebar .nav-sub{padding-left:24px;font-size:.82rem;color:var(--muted)}main{min-width:0}.hero{background:linear-gradient(135deg,color-mix(in srgb,var(--accent) 13%,var(--panel)),var(--panel));border:1px solid var(--line);border-radius:28px;padding:42px;box-shadow:var(--shadow);position:relative;overflow:hidden}.hero:after{content:"TMJ";position:absolute;right:-20px;top:-45px;font-weight:900;font-size:11rem;color:color-mix(in srgb,var(--accent) 6%,transparent);line-height:1}.eyebrow{font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);font-weight:800}h1{font-size:clamp(2rem,4vw,4.2rem);line-height:1.12;margin:.3em 0 .25em;max-width:1000px}.lead{font-size:1.15rem;max-width:950px;color:var(--muted)}.metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:26px;position:relative;z-index:1}.metric{background:color-mix(in srgb,var(--panel) 90%,transparent);border:1px solid var(--line);border-radius:14px;padding:16px}.metric strong{font-size:1.6rem;display:block}.metric span{font-size:.83rem;color:var(--muted)}.notice-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:22px 0}.callout{border:1px solid var(--line);border-left:5px solid var(--accent);background:var(--panel);border-radius:14px;padding:16px 18px;margin:14px 0}.callout strong{display:block;margin-bottom:5px}.callout.danger{border-left-color:var(--danger);background:color-mix(in srgb,var(--danger) 5%,var(--panel))}.callout.good{border-left-color:var(--good);background:color-mix(in srgb,var(--good) 5%,var(--panel))}.callout.key{border-left-color:var(--accent2);background:color-mix(in srgb,var(--accent2) 6%,var(--panel))}.overview-section,.global-section{margin:30px 0;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow)}.overview-section h2,.global-section h2{margin-top:0;font-size:1.7rem}.course-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.course-card{display:grid;grid-template-columns:54px 1fr;gap:14px;text-decoration:none;color:var(--text);border:1px solid var(--line);border-radius:16px;padding:16px;background:var(--panel2)}.course-card:hover{transform:translateY(-2px);box-shadow:var(--shadow)}.course-no{width:46px;height:46px;display:grid;place-items:center;border-radius:50%;background:var(--accent);color:white;font-weight:900}.course-card small{display:block;color:var(--muted);margin-top:4px}.course-card p{margin:8px 0 0;font-size:.88rem;color:var(--muted)}.status-partial{border-left:5px solid var(--warn)}.status-missing{border-left:5px solid var(--danger)}.table-wrap{overflow:auto;border:1px solid var(--line);border-radius:14px;margin:14px 0}table{border-collapse:collapse;width:100%;min-width:700px}th,td{padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}th{background:var(--panel2);font-size:.86rem}td{font-size:.91rem}tr:last-child td{border-bottom:0}.status-dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:7px;background:var(--good)}.status-dot.partial{background:var(--warn)}.status-dot.missing{background:var(--danger)}.session{margin:42px 0 64px;scroll-margin-top:88px}.session-header{background:var(--panel);border:1px solid var(--line);border-radius:24px;padding:30px;box-shadow:var(--shadow)}.session-kicker{font-weight:900;color:var(--accent);letter-spacing:.14em}.session h2{font-size:clamp(1.8rem,3vw,3rem);line-height:1.25;margin:.2em 0}.session-meta{display:flex;flex-wrap:wrap;gap:8px 20px;color:var(--muted);font-size:.92rem}.session-thesis{font-size:1.1rem;border-left:4px solid var(--accent2);padding-left:16px;margin:20px 0}.session-actions{display:flex;gap:10px;flex-wrap:wrap}.button,.session-actions button{border:0;border-radius:11px;padding:10px 14px;background:var(--accent);color:white;text-decoration:none;font-weight:700}.button.secondary,.copy-link{background:var(--panel2)!important;color:var(--text)!important;border:1px solid var(--line)!important}.video-slot{margin-top:14px}.video-frame{position:relative;padding-top:56.25%;border-radius:16px;overflow:hidden;background:#000}.video-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}.timestamps{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}.timestamp{font-size:.82rem;border:1px solid var(--line);border-radius:999px;padding:5px 10px;text-decoration:none;background:var(--panel2)}.timestamp.disabled{opacity:.65}.status-banner{margin-top:16px;border-radius:10px;padding:10px 12px;background:color-mix(in srgb,var(--good) 8%,var(--panel2));font-size:.88rem}.status-banner.partial{background:color-mix(in srgb,var(--warn) 10%,var(--panel2))}.status-banner.missing{background:color-mix(in srgb,var(--danger) 10%,var(--panel2))}.section-label{margin:28px 0 14px}.section-label span{text-transform:uppercase;letter-spacing:.14em;font-size:.75rem;color:var(--accent);font-weight:800}.section-label h3{font-size:1.5rem;margin:.1em 0}.section-label p{color:var(--muted);margin:0}.module-list,.qna-list{display:grid;gap:12px}details.module,details.qna-card{background:var(--panel);border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 5px 18px rgba(20,35,70,.04)}details>summary{list-style:none;cursor:pointer}details>summary::-webkit-details-marker{display:none}.module>summary{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:17px 20px;font-weight:800}.module>summary:before{content:"＋";color:var(--accent);font-size:1.3rem}.module[open]>summary:before{content:"−"}.module>summary span:first-of-type{flex:1}.module-body{padding:4px 22px 22px;border-top:1px solid var(--line)}.module-body h4{margin-top:1.4em;margin-bottom:.3em;font-size:1.08rem}.module-body p{margin:.65em 0}.badge{display:inline-flex;align-items:center;white-space:nowrap;border-radius:999px;padding:3px 8px;font-size:.7rem;font-weight:800;background:var(--panel2);color:var(--muted)}.badge.lecture{background:color-mix(in srgb,var(--accent) 10%,var(--panel2));color:var(--accent)}.badge.appraisal{background:color-mix(in srgb,var(--warn) 12%,var(--panel2));color:var(--warn)}.badge.external{background:color-mix(in srgb,var(--accent2) 12%,var(--panel2));color:var(--accent2)}.badge.gap,.badge.missing{background:color-mix(in srgb,var(--danger) 12%,var(--panel2));color:var(--danger)}.badge.qna{background:color-mix(in srgb,var(--accent) 12%,var(--panel2));color:var(--accent)}.badge.comment{background:color-mix(in srgb,var(--accent2) 12%,var(--panel2));color:var(--accent2)}.badge.chair{background:color-mix(in srgb,var(--warn) 12%,var(--panel2));color:var(--warn)}.flow{display:flex;align-items:stretch;gap:8px;overflow:auto;margin:18px 0;padding:4px}.flow-node{min-width:145px;flex:1;background:var(--panel2);border:1px solid var(--line);border-radius:13px;padding:14px;text-align:center;font-weight:700;font-size:.86rem}.flow-arrow{display:grid;place-items:center;color:var(--accent);font-size:1.4rem}.qna-card>summary{display:grid;grid-template-columns:64px 1fr auto;gap:12px;align-items:center;padding:16px 18px}.qna-number{font-weight:900;color:var(--accent)}.qna-summary{font-weight:750}.qna-body{padding:0 20px 20px;border-top:1px solid var(--line)}.qna-meta{display:flex;justify-content:space-between;margin:12px 0;color:var(--muted);font-size:.82rem}.qa-block{display:grid;grid-template-columns:70px 1fr;gap:12px;border-radius:12px;padding:13px;margin:9px 0}.qa-block p{margin:0}.qa-block.question{background:color-mix(in srgb,var(--accent) 6%,var(--panel2))}.qa-block.answer{background:color-mix(in srgb,var(--good) 6%,var(--panel2))}.qna-appraisal{border-left:4px solid var(--warn);padding:10px 12px;margin-top:10px;background:color-mix(in srgb,var(--warn) 7%,var(--panel2));border-radius:8px}.source-note{font-size:.86rem;color:var(--muted)}.session-end{text-align:right;margin-top:16px}.q-index{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}.q-index a{text-decoration:none;color:var(--text);padding:9px 11px;border:1px solid var(--line);border-radius:10px;font-size:.82rem;background:var(--panel2)}.q-index a span{font-weight:900;color:var(--accent);margin-right:8px}.glossary{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.glossary>div{border:1px solid var(--line);border-radius:12px;padding:13px;background:var(--panel2)}.glossary dt{font-weight:850}.glossary dd{margin:.3em 0 0;color:var(--muted);font-size:.9rem}.references li{margin:8px 0}.source-box{font-size:.9rem;background:var(--panel2);border-radius:14px;padding:18px}mark{background:#ffe66d;color:#111;border-radius:3px;padding:0 2px}.hidden-by-filter{display:none!important}.no-results{display:none;background:var(--panel);border:1px solid var(--line);padding:20px;border-radius:14px;margin:20px 0}.session-end a{font-size:.85rem}footer{max-width:1500px;margin:40px auto;padding:24px 18px 60px;color:var(--muted);font-size:.86rem}@media(max-width:1050px){.layout{grid-template-columns:1fr}.sidebar{display:none}.metrics{grid-template-columns:repeat(2,1fr)}.course-grid{grid-template-columns:1fr}.notice-grid{grid-template-columns:1fr}}@media(max-width:650px){.topbar-inner{flex-wrap:wrap}.brand{width:100%}.searchbox{flex:1 0 100%;width:100%}.layout{padding:12px}.hero{padding:25px 19px}.metrics{grid-template-columns:1fr 1fr}.overview-section,.global-section,.session-header{padding:20px}.qna-card>summary{grid-template-columns:50px 1fr}.qna-card>summary .badge{grid-column:2}.qa-block{grid-template-columns:1fr}.glossary,.q-index{grid-template-columns:1fr}.flow-arrow{transform:rotate(90deg)}.flow{flex-direction:column}.flow-node{min-width:0}}@media print{.topbar,.sidebar,.session-actions,.video-slot,.session-end,.progress{display:none!important}body{background:white;color:black;font-size:10.5pt}.layout{display:block;max-width:none}.hero,.overview-section,.global-section,.session-header,details.module,details.qna-card{box-shadow:none;break-inside:avoid}details.module:not([open]) .module-body,details.qna-card:not([open]) .qna-body{display:block}details>summary:before{display:none}a{color:black;text-decoration:none}.session{page-break-before:always}}
 </style>
 </head>
 <body id="top">
 <div class="progress" id="progress"></div>
 <header class="topbar"><div class="topbar-inner">
   <div class="brand">TMJ Re-skilling Guide</div>
-  <a class="control menu-return" href="./index.html">&larr; 講演一覧へ戻る</a>
   <div class="searchbox"><input id="search" type="search" placeholder="全文検索（例：effusion、円板、Q&A、巨細胞性動脈炎）" aria-label="全文検索"><span class="search-count" id="searchCount"></span></div>
   <select id="sessionFilter" class="control" aria-label="セッション絞り込み"><option value="all">全セッション</option><option value="1">S1</option><option value="2">S2</option><option value="3">S3</option><option value="4">S4</option><option value="5">S5</option><option value="6">S6</option><option value="7">S7</option><option value="8">S8</option></select>
   <select id="kindFilter" class="control" aria-label="内容種類絞り込み"><option value="all">全内容</option><option value="lecture">講演解説</option><option value="appraisal">批判的吟味</option><option value="workflow">臨床フロー</option><option value="qna">Q&A</option><option value="external">外部補足</option><option value="gap">欠落情報</option></select>
@@ -40,11 +39,11 @@ html[data-theme="dark"]{--bg:#0e1320;--panel:#161d2b;--panel2:#1d2637;--text:#ee
   <div class="eyebrow">The 39th Japanese Society for the Temporomandibular Joint · Re-skilling</div>
   <h1>顎関節症 Re-skilling 1–8<br>完全解説・総合討論Q&A</h1>
   <p class="lead">8本の動画リンクと添付文字起こしを、講演の論理、臨床的含意、エビデンスの限界、フロア討論の全項目へ再構成した検索可能なHTMLです。発言の要約と批判的吟味を明確に分離しています。</p>
-  <div class="metrics"><div class="metric"><strong>8</strong><span>公式Re-skilling動画</span></div><div class="metric"><strong>7</strong><span>本文を確認できたセッション</span></div><div class="metric"><strong>30</strong><span>Q&A・コメント・座長総括カード</span></div><div class="metric"><strong>1 file</strong><span>検索・印刷・動画リンク統合</span></div></div>
+  <div class="metrics"><div class="metric"><strong>8</strong><span>公式Re-skilling動画</span></div><div class="metric"><strong>8</strong><span>本文を確認できたセッション</span></div><div class="metric"><strong>31</strong><span>Q&A・コメント・座長総括カード</span></div><div class="metric"><strong>1 file</strong><span>検索・印刷・動画リンク統合</span></div></div>
 </section>
 <div class="notice-grid">
-  <aside class="callout key"><strong>このHTMLの読み方</strong><div>青の「講演由来」は文字起こしを整理した内容、橙の「批判的吟味」は研究デザイン上の評価、緑の「外部一次資料」は第8章などの補足です。混同しないでください。</div></aside>
-  <aside class="callout danger"><strong>資料上の制約</strong><div>第3は大久保昌和先生の講演本文が欠落。第8は全講演・討論本文が欠落しています。推測による補完はしていません。</div></aside>
+  <aside class="callout key"><strong>このHTMLの読み方</strong><div>青の「講演由来」は文字起こしを整理した内容、橙の「批判的吟味」は研究デザイン上の評価、緑の「外部一次資料」は講演外の補足です。混同しないでください。</div></aside>
+  <aside class="callout danger"><strong>資料上の制約</strong><div>第3は大久保昌和先生の講演本文が欠落しています。Skilling 8は追加文字起こしにより全講演と会場Q&Aを再構成しました。</div></aside>
 </div>
 <section class="overview-section searchable" data-kind="overview">
   <h2>8セッションの全体地図</h2><div class="course-grid"><a class="course-card status-complete searchable" href="#session-1" data-kind="overview">
@@ -61,13 +60,13 @@ html[data-theme="dark"]{--bg:#0e1320;--panel:#161d2b;--panel2:#1d2637;--text:#ee
   <span class="course-no">6</span><div><strong>顎関節症と咬合</strong><small>重本 修伺・窪木 拓男</small><p>咬合を万能原因にも無関係にもせず、関節stageと可逆的trialに基づいて不可逆治療を管理する。</p></div>
 </a><a class="course-card status-complete searchable" href="#session-7" data-kind="overview">
   <span class="course-no">7</span><div><strong>顎関節症と小児・矯正歯科</strong><small>梶井 貴史・齊藤 一誠・谷本 幸太郎</small><p>成長期は症状と構造が乖離し得るため、高リスク例を縦断的に診る。ただし画像異常から治療因果を断定しない。</p></div>
-</a><a class="course-card status-missing searchable" href="#session-8" data-kind="overview">
-  <span class="course-no">8</span><div><strong>顎関節症と顎顔面痛・心身症</strong><small>村岡 渡・渡邊 友希</small><p>TMDを広い口腔顔面痛の一部として鑑別し、身体所見と心理社会的障害を二軸で評価する。</p></div>
+</a><a class="course-card status-complete searchable" href="#session-8" data-kind="overview">
+  <span class="course-no">8</span><div><strong>顎関節症と顎顔面痛・心身症</strong><small>村岡 渡・渡邊 友希</small><p>慢性顎関節痛を、痛覚変調・心理社会・行動・生活機能まで統合し、関係性、疾患教育、歯科外来で実行可能なCBT的介入へつなぐ。</p></div>
 </a></div>
 </section>
 <section class="global-section searchable" id="source-audit" data-kind="overview">
   <h2>資料監査：何を根拠に、どこまで再構成したか</h2>
-  <div class="table-wrap"><table class="evidence-table"><thead><tr><th>セッション</th><th>公式演題</th><th>公式演者</th><th>文字起こし状態</th><th>討論カード数</th></tr></thead><tbody><tr><td><a href="#session-1">Re-skilling 1</a></td><td>顎関節症 今と未来：顎関節症の疾患概念（診断から治療の流れ）</td><td>高岡 亮太, 三次 翔, 中尾 友也</td><td><span class="status-dot complete"></span>本文・3講演・総合討論を確認</td><td>7</td></tr><tr><td><a href="#session-2">Re-skilling 2</a></td><td>解剖学・生理学・画像検査学的視点からアプローチ</td><td>塩崎 一成, 森田 匠, 五十嵐 千浪</td><td><span class="status-dot complete"></span>本文・3講演・総合討論を確認</td><td>4</td></tr><tr><td><a href="#session-3">Re-skilling 3</a></td><td>顎関節症の診断（鑑別・症型）</td><td>佐藤 毅, 大久保 昌和（本文欠落）, 西山 暁</td><td><span class="status-dot partial"></span>一部欠落：大久保昌和先生の講演本文なし。総合討論は確認</td><td>4</td></tr><tr><td><a href="#session-4">Re-skilling 4</a></td><td>顎関節症の治療1：保存的治療</td><td>大井 一浩, 槙原 絵理</td><td><span class="status-dot complete"></span>本文・2講演・総合討論を確認</td><td>2</td></tr><tr><td><a href="#session-5">Re-skilling 5</a></td><td>顎関節症の治療2：外科的治療（穿刺から）</td><td>高原 楠旻, 儀武 啓幸</td><td><span class="status-dot complete"></span>本文・2講演・総合討論を確認</td><td>7</td></tr><tr><td><a href="#session-6">Re-skilling 6</a></td><td>顎関節症と咬合</td><td>重本 修伺, 窪木 拓男</td><td><span class="status-dot complete"></span>本文・2講演・総合討論を確認</td><td>3</td></tr><tr><td><a href="#session-7">Re-skilling 7</a></td><td>顎関節症と小児・矯正歯科</td><td>梶井 貴史, 齊藤 一誠, 谷本 幸太郎</td><td><span class="status-dot complete"></span>本文・3講演・総合討論を確認</td><td>3</td></tr><tr><td><a href="#session-8">Re-skilling 8</a></td><td>顎関節症と顎顔面痛・心身症</td><td>村岡 渡, 渡邊 友希</td><td><span class="status-dot missing"></span>本文・総合討論とも欠落。外部一次資料による補助章のみ</td><td>0（再構成不能）</td></tr></tbody></table></div>
+  <div class="table-wrap"><table class="evidence-table"><thead><tr><th>セッション</th><th>公式演題</th><th>公式演者</th><th>文字起こし状態</th><th>討論カード数</th></tr></thead><tbody><tr><td><a href="#session-1">Re-skilling 1</a></td><td>顎関節症 今と未来：顎関節症の疾患概念（診断から治療の流れ）</td><td>高岡 亮太, 三次 翔, 中尾 友也</td><td><span class="status-dot complete"></span>本文・3講演・総合討論を確認</td><td>7</td></tr><tr><td><a href="#session-2">Re-skilling 2</a></td><td>解剖学・生理学・画像検査学的視点からアプローチ</td><td>塩崎 一成, 森田 匠, 五十嵐 千浪</td><td><span class="status-dot complete"></span>本文・3講演・総合討論を確認</td><td>4</td></tr><tr><td><a href="#session-3">Re-skilling 3</a></td><td>顎関節症の診断（鑑別・症型）</td><td>佐藤 毅, 大久保 昌和（本文欠落）, 西山 暁</td><td><span class="status-dot partial"></span>一部欠落：大久保昌和先生の講演本文なし。総合討論は確認</td><td>4</td></tr><tr><td><a href="#session-4">Re-skilling 4</a></td><td>顎関節症の治療1：保存的治療</td><td>大井 一浩, 槙原 絵理</td><td><span class="status-dot complete"></span>本文・2講演・総合討論を確認</td><td>2</td></tr><tr><td><a href="#session-5">Re-skilling 5</a></td><td>顎関節症の治療2：外科的治療（穿刺から）</td><td>高原 楠旻, 儀武 啓幸</td><td><span class="status-dot complete"></span>本文・2講演・総合討論を確認</td><td>7</td></tr><tr><td><a href="#session-6">Re-skilling 6</a></td><td>顎関節症と咬合</td><td>重本 修伺, 窪木 拓男</td><td><span class="status-dot complete"></span>本文・2講演・総合討論を確認</td><td>3</td></tr><tr><td><a href="#session-7">Re-skilling 7</a></td><td>顎関節症と小児・矯正歯科</td><td>梶井 貴史, 齊藤 一誠, 谷本 幸太郎</td><td><span class="status-dot complete"></span>本文・3講演・総合討論を確認</td><td>3</td></tr><tr><td><a href="#session-8">Re-skilling 8</a></td><td>顎関節症と顎顔面痛・心身症</td><td>村岡 渡, 渡邊 友希</td><td><span class="status-dot complete"></span>本文・2講演・総合討論を確認</td><td>1</td></tr></tbody></table></div>
   <div class="source-box">
     <p><strong>処理方針：</strong>自動文字起こしの明らかな専門用語誤認識は文脈で正規化しました。例：学説／学接→顎関節、科学等→下顎頭、円盤→円板、福意性→復位性、Fジョン→joint effusion、ヒアル論さん→ヒアルロン酸。ただし遺伝子名・固有名詞など確定できないものは推測せず、ASR不確実としました。</p>
     <p><strong>重複：</strong>第3セッションは文字起こし内に重複ブロックがあり、同一内容を二重計上せず統合しました。</p>
@@ -764,58 +763,451 @@ html[data-theme="dark"]{--bg:#0e1320;--panel:#161d2b;--panel2:#1d2637;--text:#ee
     </details></div>
       <div class="session-end"><a href="#top">ページ上部へ ↑</a></div>
     </section><section class="session searchable" id="session-8" data-session="8">
-      <header class="session-header">
-        <div class="session-kicker">RE-SKILLING 8</div>
-        <h2>顎関節症と顎顔面痛・心身症</h2>
-        <div class="session-meta"><span>座長：村岡 渡</span><span>演者：村岡 渡／渡邊 友希</span></div>
-        <p class="session-thesis">TMDを広い口腔顔面痛の一部として鑑別し、身体所見と心理社会的障害を二軸で評価する。</p>
-        <div class="session-actions">
-          <button class="video-launch" data-video="NPiPTu3WqbM" aria-label="Re-skilling 8 の動画を埋め込む">▶ 動画を表示</button>
-          <a class="button secondary" href="https://youtu.be/NPiPTu3WqbM" target="_blank" rel="noopener">YouTubeで開く ↗</a>
-          <button class="copy-link" data-anchor="session-8">章リンクをコピー</button>
+  <header class="session-header">
+    <div class="session-kicker">RE-SKILLING 8</div>
+    <h2>顎関節症と顎顔面痛・心身症</h2>
+    <div class="session-meta"><span>座長・前半講演：村岡 渡</span><span>後半講演：渡邊 友希</span><span>講演時間：約62分</span></div>
+    <p class="session-thesis">治らない痛みを、構造異常の見落としでも「気のせい」でもなく、侵害受容・神経障害・痛覚変調、心理社会的要因、行動、生活機能が相互作用する問題として捉え直し、歯科外来で実行可能なコミュニケーションと認知行動療法的介入へつなぐ。</p>
+    <div class="session-actions">
+      <button class="video-launch" data-video="NPiPTu3WqbM" aria-label="Re-skilling 8 の動画を埋め込む">▶ 動画を表示</button>
+      <a class="button secondary" href="https://youtu.be/NPiPTu3WqbM" target="_blank" rel="noopener">YouTubeで開く ↗</a>
+      <button class="copy-link" data-anchor="session-8">章リンクをコピー</button>
+    </div>
+    <div class="video-slot" data-video-slot></div>
+    <div class="timestamps">
+      <a class="timestamp" href="https://youtu.be/NPiPTu3WqbM?t=0" target="_blank" rel="noopener">開会 00:00 ↗</a>
+      <a class="timestamp" href="https://youtu.be/NPiPTu3WqbM?t=136" target="_blank" rel="noopener">村岡先生 02:16 ↗</a>
+      <a class="timestamp" href="https://youtu.be/NPiPTu3WqbM?t=340" target="_blank" rel="noopener">心身症 05:40 ↗</a>
+      <a class="timestamp" href="https://youtu.be/NPiPTu3WqbM?t=451" target="_blank" rel="noopener">痛みの定義 07:31 ↗</a>
+      <a class="timestamp" href="https://youtu.be/NPiPTu3WqbM?t=596" target="_blank" rel="noopener">痛覚変調性疼痛 09:56 ↗</a>
+      <a class="timestamp" href="https://youtu.be/NPiPTu3WqbM?t=745" target="_blank" rel="noopener">三叉神経の特異性 12:25 ↗</a>
+      <a class="timestamp" href="https://youtu.be/NPiPTu3WqbM?t=983" target="_blank" rel="noopener">渡邊先生 16:23 ↗</a>
+      <a class="timestamp" href="https://youtu.be/NPiPTu3WqbM?t=1191" target="_blank" rel="noopener">ICD-11 19:51 ↗</a>
+      <a class="timestamp" href="https://youtu.be/NPiPTu3WqbM?t=1285" target="_blank" rel="noopener">関係性構築 21:25 ↗</a>
+      <a class="timestamp" href="https://youtu.be/NPiPTu3WqbM?t=1611" target="_blank" rel="noopener">OFF／ON対話 26:51 ↗</a>
+      <a class="timestamp" href="https://youtu.be/NPiPTu3WqbM?t=2105" target="_blank" rel="noopener">疾患教育 35:05 ↗</a>
+      <a class="timestamp" href="https://youtu.be/NPiPTu3WqbM?t=2333" target="_blank" rel="noopener">破局的思考 38:53 ↗</a>
+      <a class="timestamp" href="https://youtu.be/NPiPTu3WqbM?t=2411" target="_blank" rel="noopener">恐怖回避 40:11 ↗</a>
+      <a class="timestamp" href="https://youtu.be/NPiPTu3WqbM?t=2487" target="_blank" rel="noopener">生活目標 41:27 ↗</a>
+      <a class="timestamp" href="https://youtu.be/NPiPTu3WqbM?t=2583" target="_blank" rel="noopener">CBT実装 43:03 ↗</a>
+      <a class="timestamp" href="https://youtu.be/NPiPTu3WqbM?t=2786" target="_blank" rel="noopener">4領域 46:26 ↗</a>
+      <a class="timestamp" href="https://youtu.be/NPiPTu3WqbM?t=2955" target="_blank" rel="noopener">身体への介入 49:15 ↗</a>
+      <a class="timestamp" href="https://youtu.be/NPiPTu3WqbM?t=3111" target="_blank" rel="noopener">行動への介入 51:51 ↗</a>
+      <a class="timestamp" href="https://youtu.be/NPiPTu3WqbM?t=3209" target="_blank" rel="noopener">段階的開口 53:29 ↗</a>
+      <a class="timestamp" href="https://youtu.be/NPiPTu3WqbM?t=3317" target="_blank" rel="noopener">感情への介入 55:17 ↗</a>
+      <a class="timestamp" href="https://youtu.be/NPiPTu3WqbM?t=3400" target="_blank" rel="noopener">認知への介入 56:40 ↗</a>
+      <a class="timestamp" href="https://youtu.be/NPiPTu3WqbM?t=3539" target="_blank" rel="noopener">総合討論 58:59 ↗</a>
+    </div>
+    <div class="status-banner"><strong>資料状態：</strong>Skilling 8の全講演本文と、終了後に行われた会場質問1題・回答・座長補足を確認。自動文字起こしの明らかな専門用語誤認識は文脈に沿って正規化し、講演由来の説明と批判的吟味を分離した。</div>
+  </header>
+
+  <div class="section-label"><span>Detailed explanation</span><h3>講演内容の詳細解説</h3><p>青ラベルは文字起こしに基づく講演内容、橙ラベルはその主張を臨床・方法論の観点から吟味した部分です。</p></div>
+  <div class="module-list">
+
+    <details class="module searchable" data-kind="lecture" id="s8-m01" open>
+      <summary><span>セッション全体像：二つの講演が一つの診療モデルになる</span><span class="badge lecture">講演由来</span></summary>
+      <div class="module-body">
+        <p>前半は、村岡先生が<strong>三叉神経領域の痛みの特異性と慢性化</strong>を整理し、後半は渡邊先生が<strong>治らない顎関節痛に対する認知行動療法的アプローチ</strong>を、診療室で使える会話と行動介入に落とし込んだ。二つを統合すると、このセッションの臨床メッセージは次の順序になる。</p>
+        <div class="flow" role="list">
+          <div class="flow-node" role="listitem">顎関節症以外を鑑別し、TMD内の病態を分類する</div><div class="flow-arrow" aria-hidden="true">→</div>
+          <div class="flow-node" role="listitem">急性の侵害入力だけでなく慢性化機序を評価する</div><div class="flow-arrow" aria-hidden="true">→</div>
+          <div class="flow-node" role="listitem">身体・心理・社会・行動・生活障害を統合する</div><div class="flow-arrow" aria-hidden="true">→</div>
+          <div class="flow-node" role="listitem">患者との関係性を作り、痛みの説明を共有する</div><div class="flow-arrow" aria-hidden="true">→</div>
+          <div class="flow-node" role="listitem">身体・行動・認知・感情から介入しやすい入口を選ぶ</div><div class="flow-arrow" aria-hidden="true">→</div>
+          <div class="flow-node" role="listitem">痛みの消失だけでなく生活機能と自己効力感を回復する</div>
         </div>
-        <div class="video-slot" data-video-slot></div>
-        <div class="timestamps"><a class="timestamp" href="https://youtu.be/NPiPTu3WqbM?t=0" target="_blank" rel="noopener">動画 00:00</a><span class="timestamp disabled">総合討論：文字起こしなし</span></div>
-        <div class="status-banner missing"><strong>資料状態：</strong>本文・総合討論とも欠落。外部一次資料による補助章のみ</div>
-      </header>
-      <div class="section-label"><span>Detailed explanation</span><h3>講演内容の詳細解説</h3></div>
-      <div class="module-list"><details class="module searchable" data-kind="gap" open>
-      <summary><span>資料欠落の扱い：この章は動画講演の要約ではない</span><span class="badge gap">文字起こし欠落</span></summary>
-      <div class="module-body"><aside class="callout danger"><strong>重要</strong><div>添付テキストには第8動画URLだけがあり、講演本文と総合討論が収録されていない。したがって以下は、公式プログラムで確認したテーマ・演者に合わせ、DC/TMD、ICOP、日本顎関節学会「顎関節症治療の指針2020」、National Academies報告を使って作成した外部学習補助である。村岡先生・渡邊先生が実際に述べた内容として引用してはならない。</div></aside></div>
-    </details><details class="module searchable" data-kind="external">
-      <summary><span>顎関節症・口腔顔面痛・心身症を混同しない</span><span class="badge external">外部一次資料</span></summary>
-      <div class="module-body"><p><strong>顎関節症（TMD）</strong>は咀嚼筋、顎関節、関連構造の疼痛・機能障害を含む。一方、<strong>口腔顔面痛</strong>は歯・歯周・粘膜・唾液腺・顎骨、筋、顎関節、神経障害性疼痛、頭痛に類似する疼痛、特発性疼痛などを含む、より広い分類領域である。<strong>心身症・心理社会的要因</strong>は「器質病変がない」「痛みが想像上」という意味ではなく、ストレス、睡眠、抑うつ、不安、破局化、回避、社会環境が疼痛体験・持続・障害に影響することを扱う。</p><div class="table-wrap"><table class="evidence-table"><thead><tr><th>層</th><th>主な問い</th><th>代表的枠組み</th></tr></thead><tbody><tr><td>身体診断</td><td>筋痛、顎関節痛、円板障害、OAか</td><td>DC/TMD Axis I</td></tr><tr><td>疼痛・障害</td><td>痛み強度、持続、日常生活障害、顎機能制限</td><td>DC/TMD Axis II</td></tr><tr><td>広い鑑別</td><td>歯原性、神経障害性、頭痛、特発性、二次性疼痛</td><td>ICOP</td></tr><tr><td>心理社会</td><td>抑うつ、不安、身体症状、破局化、睡眠、ストレス</td><td>validated questionnaires＋面接</td></tr><tr><td>安全性</td><td>腫瘍、感染、血管炎、神経疾患、眼科・頭蓋内疾患</td><td>red flagと医科連携</td></tr></tbody></table></div></div>
-    </details><details class="module searchable" data-kind="external">
-      <summary><span>DC/TMDの二軸を臨床意思決定へつなぐ</span><span class="badge external">外部一次資料</span></summary>
-      <div class="module-body"><h4>Axis I：身体的病態</h4>
-    <p>症状質問票と標準化診察を組み合わせ、pain-related TMDを中心に診断する。familiar painの再現、顎運動での変化、標準圧での触診を用いる。関節内障害の一部は臨床診断精度が十分でなく、必要時画像で確認する。</p>
-    <h4>Axis II：疼痛と生活への影響</h4>
-    <p>疼痛強度、疼痛関連障害、顎機能制限、抑うつ・不安・身体症状、非機能行動などを評価する。Axis IIは「精神科疾患を探す追加検査」ではなく、同じAxis I診断でも治療必要量、予後、支援方法が違うことを把握するための中核評価である。</p><aside class="callout key"><strong>実務上の意味</strong><div>急性・局在性・機械誘発性で障害が軽い患者と、広範・長期・睡眠障害・高い疼痛関連障害を伴う患者を、同じ説明・同じ装置・同じ予後期待で扱わない。</div></aside></div>
-    </details><details class="module searchable" data-kind="external">
-      <summary><span>ICOPを使った口腔顔面痛の鑑別</span><span class="badge external">外部一次資料</span></summary>
-      <div class="module-body"><p>ICOPは、疼痛を発生部位だけでなく病因と診断基準で整理する。TMDと診断する前に、少なくとも次を考える。</p><div class="table-wrap"><table class="evidence-table"><thead><tr><th>カテゴリー</th><th>例</th><th>TMDと誤認しやすい手掛かり</th></tr></thead><tbody><tr><td>歯・歯槽・顎骨由来</td><td>歯髄炎、歯周炎、歯根破折、顎骨病変</td><td>咬合・開口で変化しても歯原性は否定できない</td></tr><tr><td>筋・腱由来</td><td>myofascial pain、側頭筋腱炎、筋炎</td><td>歯・耳前部へ関連痛を出す</td></tr><tr><td>顎関節由来</td><td>arthralgia、関節炎、OA</td><td>familiar painと関節負荷で再現</td></tr><tr><td>神経障害性</td><td>三叉神経痛、外傷後三叉神経障害性疼痛、帯状疱疹</td><td>電撃痛、感覚異常、allodynia、神経分布</td></tr><tr><td>頭痛に類似</td><td>片頭痛、三叉神経自律神経性頭痛</td><td>顔面・歯へ投射、悪心・光過敏・自律神経症状</td></tr><tr><td>特発性</td><td>burning mouth syndrome、persistent idiopathic dentoalveolar pain</td><td>反復歯科処置で説明できない持続痛</td></tr><tr><td>全身・重篤疾患</td><td>巨細胞性動脈炎、腫瘍、感染</td><td>発熱、体重減少、神経症状、視覚症状、夜間痛</td></tr></tbody></table></div></div>
-    </details><details class="module searchable" data-kind="external">
-      <summary><span>「心理社会的」説明で患者を傷つけない</span><span class="badge external">外部一次資料</span></summary>
-      <div class="module-body"><p>慢性疼痛は、生物学的侵害入力、末梢・中枢感作、情動、注意、学習、睡眠、ストレス、社会的反応が相互作用する。組織損傷が小さいのに痛みが大きいことは、詐病や想像を意味しない。逆に、画像異常が大きくても無痛の人がいる。</p>
-    <h4>避ける説明</h4><ul class=""><li>「検査が正常なので痛くないはず」</li><li>「ストレスが原因だから気にしないで」</li><li>「噛み合わせを直せば必ず全部治る」</li><li>「100%痛みを消せる」</li><li>「心理検査が高いので歯科では扱えない」</li></ul><h4>より妥当な説明</h4>
-    <p>「痛みは実在しています。現在の検査では危険な病気は見つかっていません。顎の組織だけでなく、睡眠・筋緊張・神経の過敏さ・ストレス反応が痛みを増幅し得ます。組織を壊す治療を増やすより、機能を少しずつ戻し、睡眠と痛みの調節を改善する方が安全です」と説明する。</p></div>
-    </details><details class="module searchable" data-kind="workflow">
-      <summary><span>外部資料に基づく診療フロー</span><span class="badge workflow">外部補足</span></summary>
-      <div class="module-body"><div class="flow" role="list"><div class="flow-node" role="listitem">歯原性・感染・腫瘍・血管炎・神経疾患を除外</div><div class="flow-arrow" aria-hidden="true">→</div><div class="flow-node" role="listitem">DC/TMD Axis Iで身体病態を標準化</div><div class="flow-arrow" aria-hidden="true">→</div><div class="flow-node" role="listitem">Axis IIで疼痛障害・心理社会・睡眠を評価</div><div class="flow-arrow" aria-hidden="true">→</div><div class="flow-node" role="listitem">ICOPでTMD外の疼痛カテゴリーを再確認</div><div class="flow-arrow" aria-hidden="true">→</div><div class="flow-node" role="listitem">教育・段階的活動・理学療法・必要時薬物</div><div class="flow-arrow" aria-hidden="true">→</div><div class="flow-node" role="listitem">高障害・複雑例は口腔顔面痛／疼痛／心身医学へ連携</div></div><div class="table-wrap"><table class="evidence-table"><thead><tr><th>状況</th><th>基本対応</th><th>紹介を急ぐ条件</th></tr></thead><tbody><tr><td>局在性TMD、低障害</td><td>教育、自己管理、運動、短期薬物、必要時装置</td><td>通常は段階的</td></tr><tr><td>慢性広範痛、高障害</td><td>疼痛教育、graded activity、睡眠、心理介入、薬物再評価</td><td>自殺念慮、重度抑うつ、急激悪化</td></tr><tr><td>神経障害性疼痛疑い</td><td>感覚検査、不要な歯科処置を止める</td><td>新規神経脱落、帯状疱疹、頭蓋内疑い</td></tr><tr><td>視覚症状＋顎跛行</td><td>GCAを疑う</td><td>即日緊急紹介</td></tr><tr><td>進行性腫脹・発熱・体重減少</td><td>感染・腫瘍を評価</td><td>緊急画像・医科連携</td></tr></tbody></table></div></div>
-    </details><details class="module searchable" data-kind="external">
-      <summary><span>この章で使用した外部一次資料</span><span class="badge external">外部一次資料</span></summary>
-      <div class="module-body"><ol class="references">
-      <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4478082/" target="_blank" rel="noopener">Schiffman et al. Diagnostic Criteria for Temporomandibular Disorders (DC/TMD), 2014</a></li>
-      <li><a href="https://journals.sagepub.com/doi/10.1177/0333102419893823" target="_blank" rel="noopener">International Classification of Orofacial Pain, 1st edition (ICOP), 2020</a></li>
-      <li><a href="https://kokuhoken.net/jstmj/publication/file/guideline/guideline_treatment_tmj_2020.pdf" target="_blank" rel="noopener">日本顎関節学会『顎関節症治療の指針2020』</a></li>
-      <li><a href="https://www.nationalacademies.org/projects/HMD-HSP-18-21/publication/25652" target="_blank" rel="noopener">National Academies. Temporomandibular Disorders: Priorities for Research and Care, 2020</a></li>
-    </ol></div>
-    </details></div>
-      <div class="section-label qna-label"><span>Floor discussion</span><h3>スライド後の総合討論：Q&A・コメント・座長総括</h3><p>質問ではない助言やコメントも省略せず、別ラベルで収録しています。</p></div>
-      <div class="qna-list"><aside class="callout danger"><strong>総合討論Q&Aは再構成できません</strong><div>添付文字起こしに第8セッションの討論本文がないため、会場質問・回答を推測して作成していません。</div></aside></div>
-      <div class="session-end"><a href="#top">ページ上部へ ↑</a></div>
-    </section>
-<section class="global-section searchable" id="qna-index" data-kind="qna"><h2>総合討論Q&A索引</h2><p>質問だけでなく、フロアコメントと座長総括も含みます。</p><div class="q-index"><a href="#s1-q1"><span>S1-1</span>遺伝子解析で有意差が出た2つのSNPには、どのような意味があるのか。</a><a href="#s1-q2"><span>S1-2</span>約30年前から続く研究が、遺伝子・ヒアルロン酸・ノックアウトマウスへ発展していることへの期待。</a><a href="#s1-q3"><span>S1-3</span>T2強調MRIで白く見える水分だけをeffusionとして扱うと、ヒアルロン酸低分子化などで信号が暗くなった「dark effusion」を見落とすので…</a><a href="#s1-q4"><span>S1-4</span>下関節腔側の病変が上関節腔より先行し、より重いのではないか。下関節腔へのアプローチを進めるべきではないか。</a><a href="#s1-q5"><span>S1-5</span>現在痛みがあり、変形性顎関節症が進行中と判断される患者の治療方針は。</a><a href="#s1-q6"><span>S1-6</span>疼痛症状がある場合、上関節腔と下関節腔のどちらへ介入するかで意味は違うのか。</a><a href="#s1-q7"><span>S1-7</span>円板転位と軟骨変性は、ミクロにはほぼ同時に起き、臨床像として現れる時期だけがずれるのではないか。</a><a href="#s2-q1"><span>S2-1</span>外側翼突筋は単純な前方走行ではなく内側方向も持つ。学生にはどう教えるか。また牽引仮説で、臨床に多い外側部の部分的前方転位を説明できるのか。</a><a href="#s2-q2"><span>S2-2</span>顎関節痛と咀嚼筋痛では、関与する神経を患者説明にどう使えるか。</a><a href="#s2-q3"><span>S2-3</span>患者は痛い場所を避けて噛み方や下顎位を変える。動物実験の力学を患者へどう説明し、どう指導するか。</a><a href="#s2-q4"><span>S2-4</span>後部結合組織をMRIでどのように評価するか。評価項目が乏しいのではないか。</a><a href="#s3-q1"><span>S3-1</span>側方運動で反対側の筋突起が頬骨へ当たり、筋・骨性の痛みが出る場合、関節痛との鑑別をどう工夫するか。</a><a href="#s3-q2"><span>S3-2</span>一般開業医が、巨細胞性動脈炎など内科疾患を疑ったとき、まず何を準備すべきか。</a><a href="#s3-q3"><span>S3-3</span>MMTAHや巨細胞性動脈炎を知らず、スプリントや開口訓練を続けて改善しなかった過去の経験。</a><a href="#s3-q4"><span>S3-4</span>MMTAHは小学生頃から発症するのか。成人・高齢になって初めて出ることもあるか。</a><a href="#s4-q1"><span>S4-1</span>「保存的治療／外科的治療」という用語は混乱している。パンピングや関節腔洗浄は日本では外科治療に入る一方、国際的には低侵襲・保存的側に置かれる。咬合調整の…</a><a href="#s4-q2"><span>S4-2</span>stabilization applianceは中心位で均等接触させるだけでよいのか。clenchingやgrindingを含む機能運動時の接触をどう調…</a><a href="#s5-q1"><span>S5-1</span>シミュレーターでは、まず皮膚上に骨・関節窩・下顎頭・穿刺点の絵を描かせるべきではないか。</a><a href="#s5-q2"><span>S5-2</span>第2穿刺では、液体の波動を触れ、正しい位置で流出が戻る感覚が重要。次版では波動・returnを再現してほしい。</a><a href="#s5-q3"><span>S5-3</span>表在側頭動脈の触知、外耳道前壁で急に深くなる軟部解剖、血管損傷リスクをモデルに反映し、平均深度などのデータも示してほしい。</a><a href="#s5-q4"><span>S5-4</span>関節造影の経験が減っている。シミュレーターを側臥位・デンタルチェアでも使い、透視や造影の教育へ拡張できないか。</a><a href="#s5-q5"><span>S5-5</span>皮膚パーツには外耳道の開口部まで再現されているか。</a><a href="#s5-q6"><span>S5-6</span>発売される場合、価格はどの程度か。</a><a href="#s5-q7"><span>S5-7</span>肥満などで皮膚・軟部組織が厚い患者では、模型と実際の穿刺をどう工夫するか。</a><a href="#s6-q1"><span>S6-1</span>最小運動軸が下顎孔・下顎小舌付近に集まることは、下歯槽神経を伸展から守る意味があるのか。</a><a href="#s6-q2"><span>S6-2</span>顎変形症手術で大きく骨格・咬合を動かすとき、digital twin／bio-tensegrityで術後の良い位置を事前予測できるか。</a><a href="#s6-q3"><span>S6-3</span>0.x mmの微小な咬合変更と、顎矯正手術のmm単位の移動でも、同じ円板stageの考え方を適用するのか。</a><a href="#s7-q1"><span>S7-1</span>口腔機能異常や習癖が、不正咬合、開咬、疼痛へ順に進む流れはあるのか。患者説明に将来リスクを含めてよいか。</a><a href="#s7-q2"><span>S7-2</span>症状が軽くなった症例にmultibracket治療を行うと、下顎頭変形・吸収が進むリスクを覚悟すべきか。</a><a href="#s7-q3"><span>S7-3</span>小児では症状が分かりにくい。顎関節異常を疑っていなかったのに、MRIで円板・骨異常が見つかる症例は多いか。</a></div></section>
+        <aside class="callout key"><strong>最重要の区別</strong><div>痛みが心理社会的要因の影響を受けることは、「痛みが想像上である」「精神疾患だけが原因である」という意味ではない。講演全体は、身体的評価を行った上で、慢性痛の増幅・持続因子を追加して考える構造になっている。</div></aside>
+        <div class="table-wrap"><table class="evidence-table"><thead><tr><th>前半：村岡先生</th><th>後半：渡邊先生</th><th>統合した臨床上の意味</th></tr></thead><tbody>
+          <tr><td>診断されない痛み、慢性化した痛み、病態未解明の痛みという3問題</td><td>生物医学モデルから生物心理社会モデルへの転換</td><td>構造診断だけで終わらず、疼痛機序と生活障害まで評価する</td></tr>
+          <tr><td>心身症の概念、IASPの痛み定義、痛覚変調性疼痛</td><td>ICD-11、慢性一次性疼痛、心理教育</td><td>「損傷が見えない＝痛くない」という誤りを避ける</td></tr>
+          <tr><td>三叉神経領域の情動・全身感作に関する動物研究</td><td>関係性、コミュニケーション、CBT的介入</td><td>機序仮説を、患者を否定しない説明と段階的行動へ翻訳する</td></tr>
+        </tbody></table></div>
+      </div>
+    </details>
+
+    <details class="module searchable" data-kind="lecture" id="s8-m02">
+      <summary><span>村岡先生①　口腔顔面痛・顎関節症診療にある三つの失敗点</span><span class="badge lecture">講演由来</span></summary>
+      <div class="module-body">
+        <p>講演は、歯科医療が直面する問題を三つに分けた。これは単なる分類ではなく、患者が「治らない痛み」に至る経路を示している。</p>
+        <div class="table-wrap"><table class="evidence-table"><thead><tr><th>問題</th><th>講演で示された内容</th><th>臨床で起きること</th><th>必要な対応</th></tr></thead><tbody>
+          <tr><td><strong>①適切に診断されない</strong></td><td>TMDと他疾患の鑑別が不十分。TMDと判断しても「顎関節症」という総称だけで終わり、筋痛・関節痛などの病態を分類しない。</td><td>本来不要な装置・処置が続き、redirectionが遅れる。患者は「検査をしても原因不明」と受け取る。</td><td>鑑別診断、病態分類、適切な初期治療を一連の工程として行う。</td></tr>
+          <tr><td><strong>②診断できても慢性化する</strong></td><td>鑑別・病態分類ができても初期治療で改善せず、慢性痛となる。</td><td>睡眠、食欲、気分、不安、破局的思考、医療不信、生活障害が痛みと相互に増幅する。</td><td>急性痛と同じ「原因除去」だけでなく、慢性痛の維持因子へ介入する。</td></tr>
+          <tr><td><strong>③病態・治療法自体が未解明</strong></td><td>特発性と呼ばれる原因不明の痛みなど、既存の病態モデルでは説明しにくい。</td><td>処置を追加しても整合する説明が得られず、患者・治療者の双方が疲弊する。</td><td>口腔顔面痛の枠組み、疼痛機序、心理社会的評価を導入し、無理な構造修正を避ける。</td></tr>
+        </tbody></table></div>
+        <h4>「顎関節症です」で診断を終えない理由</h4>
+        <p>顎関節症は複数病態の総称である。病名ラベルだけでは、どの組織を標的にするのか、どの治療反応を期待するのか、改善しなかった時に何を再評価するのかが決まらない。講演では、学会・卒前教育・臨床推論教育を通して、総称から病態診断へ進む必要性が強調された。</p>
+        <aside class="callout danger"><strong>批判的注意</strong><div>この三分類は互いに排他的ではない。誤診されたまま慢性化する患者も、正しく診断されても複数機序が重なって難治化する患者もいる。「診断が正しい／間違い」の二分法だけでは処理できない。</div></aside>
+      </div>
+    </details>
+
+    <details class="module searchable" data-kind="lecture" id="s8-m03">
+      <summary><span>村岡先生②　心身症は「精神疾患」でも「気のせい」でもない</span><span class="badge lecture">講演由来</span></summary>
+      <div class="module-body">
+        <p>講演では、心身症を<strong>身体疾患のうち、その発症・経過に心理社会的要因が密接に関係し、器質的または機能的障害を認める病態</strong>として説明した。診療科としては心療内科が扱い、神経症・うつ病など精神疾患に伴う身体症状とは概念上区別するとされた。</p>
+        <div class="table-wrap"><table class="evidence-table"><thead><tr><th>誤った理解</th><th>講演が示した整理</th><th>患者説明への翻訳</th></tr></thead><tbody>
+          <tr><td>「心理的だから身体疾患ではない」</td><td>心身症は身体疾患であり、心理社会的要因が発症・経過へ密接に関与する。</td><td>「痛みは実在します。その強さや長引き方に、睡眠・緊張・不安・生活状況も関係します」</td></tr>
+          <tr><td>「心身症なら精神科へ送ればよい」</td><td>歯科が身体病態を診ながら心身医学的側面を把握し、必要範囲を支援する余地が大きい。</td><td>「顎の治療を続けながら、痛みを増幅させる要素も一緒に整えます」</td></tr>
+          <tr><td>「精神疾患があれば心身症ではない」</td><td>講演は概念を区別する一方、口腔顔面痛では精神疾患との併存率が高いとも説明した。</td><td>身体と精神を排他的に扱わず、併存を想定する。</td></tr>
+        </tbody></table></div>
+        <aside class="callout danger"><strong>概念上の注意</strong><div>「心身症」と「精神疾患」を区別することは必要だが、実臨床では併存し得る。区別を「どちらか一方しか存在しない」という排他的分類にしてはならない。また、心理社会的影響を見つけたことだけで、身体病態の再評価を中止してよいわけではない。</div></aside>
+      </div>
+    </details>
+
+    <details class="module searchable" data-kind="lecture" id="s8-m04">
+      <summary><span>村岡先生③　痛みの定義が変えたもの：損傷の有無と痛みの実在を切り離す</span><span class="badge lecture">講演由来</span></summary>
+      <div class="module-body">
+        <p>講演では、2020年に改訂された国際疼痛学会の定義を紹介し、痛みは実際の組織損傷に伴う場合だけでなく、損傷に似た感覚・情動上の不快な体験も含むこと、そして生物学的・心理的・社会的要因の影響を受ける個人的経験であると説明した。</p>
+        <h4>急性痛と慢性痛で、診療の目的が変わる</h4>
+        <div class="table-wrap"><table class="evidence-table"><thead><tr><th>観点</th><th>急性痛</th><th>慢性痛</th></tr></thead><tbody>
+          <tr><td>典型的な歯科教育</td><td>抜歯、感染、炎症、術後痛など、原因病変を除くと改善しやすい。</td><td>講演では、卒前教育で十分扱われず、臨床に出て初めて「治らない痛み」に遭遇すると指摘。</td></tr>
+          <tr><td>痛みの役割</td><td>組織損傷を知らせ、保護行動を促す警告としての意味が大きい。</td><td>警告系そのものの過敏化、注意、恐怖、回避、睡眠障害、情動が持続に関与する。</td></tr>
+          <tr><td>伴いやすい問題</td><td>局所症状が中心。</td><td>睡眠障害、食欲不振、便秘、抑うつ、不安、破局的思考など、痛み以外の症状が重なる。</td></tr>
+          <tr><td>治療目標</td><td>原因病変の処置と疼痛軽減。</td><td>疼痛軽減に加え、生活機能、活動、睡眠、自己効力感、対処能力の回復。</td></tr>
+        </tbody></table></div>
+        <aside class="callout appraisal"><strong>批判的整理</strong><div>睡眠障害、不安、疲労、便秘などは慢性痛に伴い得るが、慢性痛に特異的な診断所見ではない。これらを認めても、直ちに痛覚変調性疼痛や心身症と確定できない。</div></aside>
+      </div>
+    </details>
+
+    <details class="module searchable" data-kind="lecture" id="s8-m05">
+      <summary><span>村岡先生④　痛覚変調性疼痛：第三の疼痛機序をどう理解するか</span><span class="badge lecture">講演由来</span></summary>
+      <div class="module-body">
+        <p>講演では、侵害受容性疼痛・神経障害性疼痛に加え、2017年に提唱された<strong>痛覚変調性疼痛（nociplastic pain）</strong>を紹介した。明白な組織損傷による侵害入力や、体性感覚系の病変・疾患だけでは十分説明できないにもかかわらず、侵害受容の変化によって生じる痛みという位置づけである。</p>
+        <div class="table-wrap"><table class="evidence-table"><thead><tr><th>機序</th><th>講演での基本像</th><th>顎関節症で考える例</th><th>誤解しやすい点</th></tr></thead><tbody>
+          <tr><td><strong>侵害受容性疼痛</strong></td><td>炎症・損傷により侵害受容器が活性化する。</td><td>急性関節炎、筋損傷、過負荷に伴う局所痛。</td><td>画像所見の大きさと痛みの強さが必ず比例するわけではない。</td></tr>
+          <tr><td><strong>神経障害性疼痛</strong></td><td>体性感覚神経系の病変・疾患に由来する。</td><td>三叉神経損傷後の疼痛、感覚異常を伴う痛み。</td><td>「電撃痛」だけで神経障害性と決めない。</td></tr>
+          <tr><td><strong>痛覚変調性疼痛</strong></td><td>侵害受容の処理・調節が変化し、明白な組織損傷や神経病変だけでは説明しきれない。</td><td>長期化し、局所所見と不釣合いな過敏、広い圧痛、アロディニア、睡眠・疲労・認知症状を伴う例。</td><td>「原因不明」「心理的」と同義ではなく、単なる除外箱でもない。</td></tr>
+        </tbody></table></div>
+        <p>講演では、筋骨格系疼痛における臨床基準・グレーディングとして、侵害受容性・神経障害性だけでは説明しにくいことに加え、過敏、アロディニア、併存する睡眠障害、疲労、注意・集中困難、記憶障害などを評価する流れが示された。</p>
+        <aside class="callout danger"><strong>ここからは言えない</strong><div>「画像で異常が乏しい」「長く痛い」という二点だけで、痛覚変調性疼痛と診断することはできない。また、一人の患者に侵害受容性・神経障害性・痛覚変調性の複数機序が併存する可能性を排除してはならない。</div></aside>
+      </div>
+    </details>
+
+    <details class="module searchable" data-kind="lecture" id="s8-m06">
+      <summary><span>村岡先生⑤　三叉神経領域の痛みは、なぜ情動・全身過敏と結びつき得るのか</span><span class="badge lecture">講演由来</span></summary>
+      <div class="module-body">
+        <p>前半講演の最後は、三叉神経領域に特徴的と考えられる疼痛経路の最近の基礎研究である。いずれもラットを用いた研究として紹介された。</p>
+        <h4>1．情動系へ比較的直接的に入る経路</h4>
+        <p>口腔顔面領域の炎症性刺激は三叉神経系へ入り、痛みの部位・強さを識別する経路だけでなく、傍腕傍核などを経て扁桃体へ投射し、不快・恐怖・情動的側面に関わる。講演では、三叉神経系から情動系へ比較的直接的に入る経路が示され、口腔顔面痛で情動的負担が強くなり得る機序候補とされた。</p>
+        <h4>2．顔面刺激が全身の過敏化へ波及する可能性</h4>
+        <p>三叉神経領域の刺激で右側の扁桃体中心核が選択的に活性化され、前肢・後肢の両側に過敏が生じるという報告が紹介された。局所の顔面痛が、全身性の痛覚過敏に結びつく可能性を示す仮説である。</p>
+        <aside class="callout appraisal"><strong>批判的吟味</strong><div>ここで示されたのは動物実験の神経回路・行動所見であり、人の慢性TMD患者に同じ経路がどの程度働くか、どの患者で臨床的に重要かは講演からは分からない。「三叉神経痛は必ず情動反応が強い」「顔面痛が全身痛を起こす」と断定してはならない。基礎機序は説明の候補であって、個別患者の診断証明ではない。</div></aside>
+      </div>
+    </details>
+
+    <details class="module searchable" data-kind="lecture" id="s8-m07">
+      <summary><span>渡邊先生①　生物医学モデルから生物心理社会モデルへ</span><span class="badge lecture">講演由来</span></summary>
+      <div class="module-body">
+        <p>渡邊先生は、構造異常を中心とする従来のバイオメカニカルモデルと、現代の生物心理社会モデルを対比した。重要なのは、前者を捨てて後者へ置き換えることではなく、構造だけでは説明できない持続痛へ評価軸を追加することである。</p>
+        <div class="table-wrap"><table class="evidence-table"><thead><tr><th>観点</th><th>従来のバイオメカニカルモデル</th><th>生物心理社会モデル</th></tr></thead><tbody>
+          <tr><td>痛みの捉え方</td><td>組織損傷・構造異常に比例する警告信号。</td><td>組織状態だけでなく、中枢神経系、情動、認知、行動、社会状況が統合された主観的体験。</td></tr>
+          <tr><td>診断で重視するもの</td><td>画像所見、咬合、関節雑音などの解剖学的異常。</td><td>痛みの持続、心理的苦痛、QOL、生活機能障害、行動パターン。</td></tr>
+          <tr><td>治療標的</td><td>顎関節、咀嚼筋、咬合などの物理的修正。</td><td>身体治療に加え、神経系の過敏、認知、恐怖、回避、過活動、生活機能を調整。</td></tr>
+          <tr><td>難題</td><td>構造異常が乏しい、または構造を是正しても痛みが続く例。</td><td>歯科医師にも心理教育・コミュニケーション・行動変容支援の技能が必要。</td></tr>
+        </tbody></table></div>
+        <h4>ICD-11が示すパラダイム</h4>
+        <p>講演では、ICD-11において慢性一次性疼痛が独立した疾患概念として位置づけられ、慢性一次性口腔顔面痛の枠組みの中で、心理的苦痛や機能障害を伴う持続痛を包括的に評価する意義が説明された。「原因疾患の単なる症状」として痛みを扱うだけでは不十分である、という転換である。</p>
+        <aside class="callout danger"><strong>臨床上の防壁</strong><div>生物心理社会モデルは画像・診察を不要にする理論ではない。危険な疾患、歯原性疼痛、関節炎、神経障害などを評価せず、「慢性だから心理的」と処理するのは、このモデルの誤用である。</div></aside>
+      </div>
+    </details>
+
+    <details class="module searchable" data-kind="lecture" id="s8-m08">
+      <summary><span>渡邊先生②　認知行動療法の前に、関係性と疾患教育が必要</span><span class="badge lecture">講演由来</span></summary>
+      <div class="module-body">
+        <p>講演は、CBTの技法を先に使うのではなく、<strong>①治療関係の構築、②疾患教育・心理教育</strong>が前提だとした。患者が治療者を信頼できず、説明を「痛みを否定された」と受け取っている状態では、セルフケアや行動課題は実行されにくい。</p>
+        <h4>講演で示された治療効果への寄与割合</h4>
+        <p>精神療法の改善要因として、患者側・治療外要因40％、患者—治療者関係30％、期待・プラセボ15％、技法・モデル15％という図が示され、技法より関係性の寄与が大きいという説明がなされた。</p>
+        <aside class="callout appraisal"><strong>この数値の扱い</strong><div>40・30・15・15を、どの患者・どの疾患・どの治療にも当てはまる普遍的な因果分解として使うのは不適切である。講演での役割は、「技法だけで治療が決まるのではない」と注意を向ける説明図と読むべきである。</div></aside>
+        <h4>共同的実証主義／共同的経験主義</h4>
+        <p>患者は自分の症状・困り事の専門家であり、治療者は痛みと対処法の専門家である。両者がチームとなり、「実験的に試して結果を一緒に見る」。成功すれば続け、うまくいかなければ「失敗」ではなく、次の方法を考えるための情報とする。</p>
+        <div class="course-grid">
+          <aside class="callout good"><strong>使いやすい提案</strong><div>「これが絶対の答えとは限りません。まず一週間、実験として試し、痛み・活動・睡眠がどう変わるか一緒に見ましょう」</div></aside>
+          <aside class="callout danger"><strong>避けたい提案</strong><div>「この方法で必ず治ります」「できなかったのは患者さんの努力不足です」</div></aside>
+        </div>
+      </div>
+    </details>
+
+    <details class="module searchable" data-kind="lecture" id="s8-m09">
+      <summary><span>渡邊先生③　患者の心を閉じる「OFFの対話」と、開く「ONの対話」</span><span class="badge lecture">講演由来</span></summary>
+      <div class="module-body">
+        <p>講演では、同じ「半年続く顎の痛み」を扱う二つの会話が対比された。違いは情報量ではなく、患者の体験を否定するか、理解して言語化するかにある。</p>
+        <div class="course-grid">
+          <aside class="callout danger"><strong>OFFの対話</strong><div><p>患者：「マウスピースを使っているのに痛みが良くなりません」</p><p>治療者：「使っているのに痛いの？」「レントゲンもMRIも問題ないですよ」「痛いわけないけどな」</p><p><strong>何が起きるか：</strong>疑うような語尾、画像正常を患者体験の否定に使う、断定的な否認が連続し、患者は「説明しても無駄」と感じる。</p></div></aside>
+          <aside class="callout good"><strong>ONの対話</strong><div><p>患者：「半年も右の顎が痛く、マウスピースでも良くなりません」</p><p>治療者：「そうなのですね」「マウスピースを使っているのに痛みが続いている」「原因が分からないと心配ですよね」「痛いだけでもつらいのに、不安が重なると痛みも増しますね」</p><p><strong>何が起きるか：</strong>反映、感情の命名、患者の経験の要約、さりげない心理教育が入り、患者が会話を続けやすくなる。</p></div></aside>
+        </div>
+        <h4>会話をONに保つ具体技術</h4>
+        <ul>
+          <li><strong>挨拶：</strong>「ここは安全な場」「あなたに関心がある」という最初のメッセージになる。</li>
+          <li><strong>語尾を下げる反映：</strong>質問口調で疑うのではなく、「痛みが続いている」と理解を返す。</li>
+          <li><strong>感情への応答：</strong>「心配ですよね」「つらかったですね」と、出来事ではなく患者の感情に寄り添う。</li>
+          <li><strong>オウム返しと一段深い言い換え：</strong>「何もする気が起きない」→「本当は頑張りたいのに、痛みで動く気になれないのですね」。</li>
+          <li><strong>相槌と接続語：</strong>講演では「は・ひ・ふ・へ・ほ」の相槌や、「それで」「それから」「すると」などを使い、話の流れを保つ方法が紹介された。</li>
+          <li><strong>非言語情報：</strong>表情、姿勢、視線、声量、速度、間を整える。</li>
+          <li><strong>OFFの兆候で止まる：</strong>患者の表情が曇る、疑う、沈黙する時は、説明を進めず「疑問に感じた点はありますか」と戻る。</li>
+        </ul>
+        <aside class="callout appraisal"><strong>Mehrabianの7–38–55の注意</strong><div>講演では言語7％、聴覚38％、視覚55％という有名な数字が示された。しかし、これを「一般の医療コミュニケーションでは内容が7％しか重要でない」という法則として使うのは誤りである。ここで実務的に残すべき点は、言葉の内容と表情・声・姿勢が矛盾すると、患者が非言語情報を強く受け取る、という限定的な教訓である。</div></aside>
+      </div>
+    </details>
+
+    <details class="module searchable" data-kind="lecture" id="s8-m10">
+      <summary><span>渡邊先生④　疾患教育：「壊れ続けている顎」から「過敏になった警報系」へ</span><span class="badge lecture">講演由来</span></summary>
+      <div class="module-body">
+        <p>慢性痛患者は、「痛い＝関節や筋が今も壊れ続けている」と理解していることが多い。この理解は、動かす恐怖、過度の安静、繰り返す確認行動、医療機関の反復受診を強め得る。講演では、十分な身体評価を前提に、痛みのメカニズムを共有することが提案された。</p>
+        <h4>講演で用いられた二つの説明</h4>
+        <div class="table-wrap"><table class="evidence-table"><thead><tr><th>説明法</th><th>内容</th><th>利点</th><th>注意点</th></tr></thead><tbody>
+          <tr><td>脳の痛みセンサー</td><td>顎からの信号を脳で痛みとして感じる。長引くと、痛みを感じるセンサーが敏感・興奮した状態になる。</td><td>組織損傷と痛みの強さが一致しない理由を説明しやすい。</td><td>「脳がおかしい」「精神的」と聞こえないよう、痛みを最初に承認する。</td></tr>
+          <tr><td>火災報知器の誤作動</td><td>顎で大きな火事が続いていなくても、警報器の感度が上がり、小さな刺激で大きなベルが鳴る。今は火を消すだけでなく、警報感度を戻す練習が必要。</td><td>過敏化と段階的活動の必要性を直感的に説明できる。</td><td>「誤作動」と言い切る前に危険な病態を評価し、末梢入力が残る可能性も認める。</td></tr>
+        </tbody></table></div>
+        <h4>説明の順序</h4>
+        <div class="flow" role="list"><div class="flow-node" role="listitem">痛みの実在を承認</div><div class="flow-arrow">→</div><div class="flow-node" role="listitem">診察・検査で分かったことを共有</div><div class="flow-arrow">→</div><div class="flow-node" role="listitem">危険な損傷と痛みの強さが一致しない理由を説明</div><div class="flow-arrow">→</div><div class="flow-node" role="listitem">神経系の過敏は変化し得ると伝える</div><div class="flow-arrow">→</div><div class="flow-node" role="listitem">具体的な練習・行動計画へつなぐ</div></div>
+        <aside class="callout danger"><strong>説明が逆効果になる場合</strong><div>関係性ができる前に「脳が過敏です」と言うと、患者は「身体の痛みを否定された」と受け取り得る。メタファーは診断の代わりではなく、共有した診療仮説を分かりやすく伝える道具である。</div></aside>
+      </div>
+    </details>
+
+    <details class="module searchable" data-kind="lecture" id="s8-m11">
+      <summary><span>渡邊先生⑤　破局的思考と恐怖回避モデル：患者を責めずに悪循環を見つける</span><span class="badge lecture">講演由来</span></summary>
+      <div class="module-body">
+        <p>痛みの破局的思考は、単なる「悲観的性格」ではなく、講演では次の三要素に整理された。</p>
+        <div class="table-wrap"><table class="evidence-table"><thead><tr><th>要素</th><th>内容</th><th>患者の言葉の例</th></tr></thead><tbody>
+          <tr><td><strong>反芻（rumination）</strong></td><td>痛みのことが頭から離れず、注意が痛みに固定される。</td><td>「一日中、顎のことしか考えられません」</td></tr>
+          <tr><td><strong>無力感（helplessness）</strong></td><td>何をしても治らず、自分には対処できないと感じる。</td><td>「もう何をしても無駄です」</td></tr>
+          <tr><td><strong>拡大視（magnification）</strong></td><td>痛みを最悪の病気・破壊の証拠として大きく捉える。</td><td>「このまま顎が壊れて口が開かなくなる」</td></tr>
+        </tbody></table></div>
+        <h4>恐怖回避の負のループ</h4>
+        <div class="flow" role="list"><div class="flow-node" role="listitem">痛み・違和感</div><div class="flow-arrow">→</div><div class="flow-node" role="listitem">最悪の解釈・破局化</div><div class="flow-arrow">→</div><div class="flow-node" role="listitem">不安・恐怖</div><div class="flow-arrow">→</div><div class="flow-node" role="listitem">開口・咀嚼・活動を回避</div><div class="flow-arrow">→</div><div class="flow-node" role="listitem">廃用・生活障害・抑うつ</div><div class="flow-arrow">→</div><div class="flow-node" role="listitem">痛みへの注意と過敏が増す</div></div>
+        <p>治療の標的は、患者の考えを「間違い」と論破することではない。どのような解釈が恐怖を増やし、どの行動が短期的には安全でも長期的には生活を狭めているかを、患者と一緒に見つけることである。</p>
+        <aside class="callout appraisal"><strong>言葉の扱い</strong><div>「破局的思考があるから痛い」と単純化すると、患者に責任を負わせる。講演での位置づけは、痛みの持続・障害を増幅し得る修正可能な一要素であり、痛みの唯一原因ではない。</div></aside>
+      </div>
+    </details>
+
+    <details class="module searchable" data-kind="lecture" id="s8-m12">
+      <summary><span>渡邊先生⑥　目標は「痛みゼロ」だけでなく、人生のハンドルを取り戻すこと</span><span class="badge lecture">講演由来</span></summary>
+      <div class="module-body">
+        <p>慢性痛では、患者の生活が「痛みがあるか、ないか」に支配される。講演はこれを、痛みに車のハンドルを取られている状態と表現し、患者自身が生活の方向を再び選べるようにすることを目標に置いた。</p>
+        <h4>目標を引き出す質問</h4>
+        <ul>
+          <li>「痛みによって一番困っていることは何ですか」</li>
+          <li>「痛みに邪魔されなければ、何をしたいですか」</li>
+          <li>「以前、楽しみにしていたことは何ですか」</li>
+          <li>「痛みがあっても、少しなら再開できそうなことはありますか」</li>
+        </ul>
+        <p>患者が答えられなければ、治療者が急いで目標を決めない。「次回までに考えてみる」という宿題にし、見つからなかった場合も「これから一緒に探せる」と扱う。痛み強度だけでなく、食事、会話、外出、仕事、睡眠、家族との活動など、患者にとって価値のある機能を指標にする。</p>
+        <aside class="callout key"><strong>重要</strong><div>生活機能を目標にすることは、疼痛治療を諦めることではない。痛みへの適切な身体治療を続けながら、「痛みが完全に消えるまで何もしない」という条件を緩める。</div></aside>
+      </div>
+    </details>
+
+    <details class="module searchable" data-kind="lecture" id="s8-m13">
+      <summary><span>渡邊先生⑦　歯科外来で行うCBTは、本格的心理療法の代用ではない</span><span class="badge lecture">講演由来</span></summary>
+      <div class="module-body">
+        <p>本格的な認知行動療法は、45～60分の面接を週1回、複数回行うことが多い。講演は、歯科医師がその全てを行うのではなく、通常診療へ無理なく組み込める<strong>痛みのマネジメントと行動変容のためのCBT的アプローチ</strong>を示した。</p>
+        <h4>CBTとは何か</h4>
+        <p>出来事そのものが直接感情を決めるのではなく、その出来事をどう受け取るかという認知が、感情・身体反応・行動へ影響するという考えを用いる。顎が痛い時に「悪い病気に違いない」と考えると不安が高まり、「いつもの痛みで、対処法がある」と考えられれば不安は下がり得る。</p>
+        <h4>目標はポジティブ思考ではなく、柔軟で機能的な認知</h4>
+        <div class="course-grid">
+          <aside class="callout danger"><strong>CBTではない</strong><div>「気にしすぎです」「大丈夫です」「絶対に良くなります」「悪く考えないでください」と、根拠なく前向きにさせる。</div></aside>
+          <aside class="callout good"><strong>CBT的</strong><div>「本当に常に悪化していますか」「別の見方はありますか」「痛みが弱かった時は何が違いましたか」「痛みがあっても対処できた経験はありますか」と、一緒に検討する。</div></aside>
+        </div>
+        <aside class="callout danger"><strong>診療範囲</strong><div>講演者自身が「本格的な心理療法を歯科外来で行うわけではない」と線を引いている。歯科で行うのは、疼痛教育、コミュニケーション、セルフケア支援、段階的活動、簡単な認知の検討であり、歯科医師の能力範囲を超える問題は他領域と連携する。</div></aside>
+      </div>
+    </details>
+
+    <details class="module searchable" data-kind="lecture" id="s8-m14">
+      <summary><span>渡邊先生⑧　身体・行動・認知・感情の4領域で症例を整理する</span><span class="badge lecture">講演由来</span></summary>
+      <div class="module-body">
+        <p>認知行動療法では、人の問題を身体、行動、認知、感情の四つに分けて整理する。実際には相互に影響するため、分類の目的は「原因を一つに決める」ことではなく、介入できる入口を見つけることである。</p>
+        <div class="table-wrap"><table class="evidence-table"><thead><tr><th>領域</th><th>TMD慢性痛で見える例</th><th>講演で示された介入</th><th>変化を確認する指標</th></tr></thead><tbody>
+          <tr><td><strong>身体</strong></td><td>顎痛、筋緊張、開口制限、睡眠・頭痛などの併存。</td><td>標準的TMD治療、TCH・筋緊張への対応、理学療法、セルフケア、リラクセーション、全身運動。</td><td>痛み、開口、食事、睡眠、疲労、身体緊張。</td></tr>
+          <tr><td><strong>行動</strong></td><td>顎を何度も触る・確認する、doctor shopping、過度の回避、完璧主義的過活動。</td><td>確認行動を減らす、ペーシング、行動活性化、活動・痛み記録、段階的開口。</td><td>活動量、休憩、外出、食形態、確認回数、反動悪化。</td></tr>
+          <tr><td><strong>認知</strong></td><td>破局化、全か無か思考、「壊れている」「一生治らない」。</td><td>認知再構成、根拠・別解・例外を検討し、対処可能性を広げる。</td><td>確信度、不安、自己効力感、選べる対処法の数。</td></tr>
+          <tr><td><strong>感情</strong></td><td>不安、恐怖、怒り、抑うつ、医療不信。</td><td>感情への気づき、共感的理解、言語化、関係性の修復。</td><td>感情強度、対話継続、治療参加、医療者への信頼。</td></tr>
+        </tbody></table></div>
+        <p>講演では、一般に取り組みやすい順として<strong>行動 → 身体 → 認知 → 感情</strong>が示された。歯科医師はもともと身体・行動への支援に強いため、そこから始め、患者の反応を見ながら認知・感情へ広げる。</p>
+      </div>
+    </details>
+
+    <details class="module searchable" data-kind="lecture" id="s8-m15">
+      <summary><span>渡邊先生⑨　身体への介入：標準治療と神経系の鎮静を対立させない</span><span class="badge lecture">講演由来</span></summary>
+      <div class="module-body">
+        <p>身体領域では、顎関節症の標準的治療を継続しながら、慢性痛の増幅に関わる身体緊張・運動不足・睡眠・併存症にも働きかける。</p>
+        <ul>
+          <li><strong>TCH・クレンチング・筋緊張：</strong>日中の歯牙接触や筋緊張に気づき、弛緩する行動を練習する。</li>
+          <li><strong>理学療法・セルフケア：</strong>開口訓練、温罨法などを病態と許容範囲に合わせて行う。</li>
+          <li><strong>併存症への対応：</strong>睡眠障害、頭痛などがあれば、それらを無視せず診療計画に含める。</li>
+          <li><strong>呼吸法：</strong>深く吸い、吐く時間を吸う時間の約2倍にするような簡便な方法を紹介。</li>
+          <li><strong>リラクセーション：</strong>自律訓練法、漸進的筋弛緩法など。</li>
+          <li><strong>全身運動：</strong>運動習慣がなければ散歩など、実行可能な小さい活動から始める。</li>
+        </ul>
+        <h4>説明すると実行しやすくなる循環</h4>
+        <div class="flow" role="list"><div class="flow-node" role="listitem">痛み・筋緊張</div><div class="flow-arrow">→</div><div class="flow-node" role="listitem">不安・警戒</div><div class="flow-arrow">→</div><div class="flow-node" role="listitem">さらに身体が緊張</div><div class="flow-arrow">→</div><div class="flow-node" role="listitem">リラクセーション・運動</div><div class="flow-arrow">→</div><div class="flow-node" role="listitem">身体が緩む</div><div class="flow-arrow">→</div><div class="flow-node" role="listitem">安心と活動が増える</div></div>
+        <aside class="callout appraisal"><strong>批判的整理</strong><div>講演は複数の方法を紹介したが、各方法の効果量や、どの患者にどれが最適かを比較したものではない。全てを一度に処方するのではなく、患者が実行できる一つを選び、反応を確認する方が講演の「共同実験」という考えに一致する。</div></aside>
+      </div>
+    </details>
+
+    <details class="module searchable" data-kind="lecture" id="s8-m16">
+      <summary><span>渡邊先生⑩　行動への介入：確認行動、過活動、回避を具体的に変える</span><span class="badge lecture">講演由来</span></summary>
+      <div class="module-body">
+        <h4>1．痛みを増幅し得る確認行動</h4>
+        <p>「毎日何度も顎を触る」「鏡で確認する」「動かして痛みを試す」といった行動は、注意を痛みに固定し、神経系の警戒を高め得る。禁止命令だけでなく、いつ・なぜ確認するかを記録し、代替行動を決める。</p>
+        <h4>2．過活動とペーシング</h4>
+        <p>完璧主義的に作業をやり切り、その後寝込むという「boom–bust」のパターンでは、活動量を痛みのその日の強さだけで決めず、一定時間ごとに休憩を入れる。講演では「何分行ったら何分休むか」を患者と具体的に決める方法が示された。</p>
+        <h4>3．行動活性化</h4>
+        <p>「痛みが治ったら外出する」ではなく、痛みがあっても可能な範囲で先に価値ある行動を再開し、その結果として気分・生活・疼痛への注意がどう変わるかを見る。活動・痛み記録表を用いることも紹介された。</p>
+        <div class="table-wrap"><table class="evidence-table"><thead><tr><th>問題行動</th><th>小さな実験</th><th>観察すること</th><th>次回の判断</th></tr></thead><tbody>
+          <tr><td>顎を何度も触る</td><td>確認回数を数え、一部を深呼吸や別作業に置き換える。</td><td>不安、痛みへの注意、確認回数。</td><td>減らしても危険が起きない経験を確認。</td></tr>
+          <tr><td>頑張り過ぎて寝込む</td><td>作業前に休憩時刻を決める。</td><td>当日と翌日の疲労・痛み。</td><td>活動と休憩の比率を調整。</td></tr>
+          <tr><td>外出・会食を避ける</td><td>短時間・安全な条件で価値ある活動を再開。</td><td>予測した悪化と実際の結果。</td><td>成功範囲を少しずつ広げる。</td></tr>
+        </tbody></table></div>
+      </div>
+    </details>
+
+    <details class="module searchable" data-kind="lecture" id="s8-m17">
+      <summary><span>渡邊先生⑪　段階的開口と咀嚼：恐怖を解除し、成功体験を積む4段階</span><span class="badge lecture">講演由来</span></summary>
+      <div class="module-body">
+        <p>開口への恐怖が強い患者に対し、講演では開口訓練を単なる可動域訓練ではなく、<strong>安全学習と行動活性化</strong>として説明した。</p>
+        <div class="table-wrap"><table class="evidence-table"><thead><tr><th>段階</th><th>内容</th><th>患者が学ぶこと</th></tr></thead><tbody>
+          <tr><td><strong>Step 1　安全確認</strong></td><td>術者の監視下で、許容範囲まで動かしても壊れないことを身体で経験する。</td><td>「動かす＝損傷」という予測が常には成立しない。</td></tr>
+          <tr><td><strong>Step 2　段階的運動</strong></td><td>痛みのない、または許容できる範囲から少しずつ開口する。</td><td>自分で調節しながら動ける。</td></tr>
+          <tr><td><strong>Step 3　日常への反映</strong></td><td>食事で徐々に食形態を広げ、会話・あくびなど生活場面へ一般化する。</td><td>診療室外でも機能を使える。</td></tr>
+          <tr><td><strong>Step 4　自信の回復</strong></td><td>「動かしても対処できた」という成功体験を蓄積する。</td><td>脳の過剰な警戒が弱まり、自己効力感が高まる。</td></tr>
+        </tbody></table></div>
+        <h4>引きこもり・活動低下が強い患者への展開</h4>
+        <ol>
+          <li>痛みを忘れられる、または少し楽になる時間・活動を探す。</li>
+          <li>その時間を小さく増やす。</li>
+          <li>痛みへの注意集中を減らし、価値ある活動へ注意を戻す。</li>
+          <li>「痛みがあっても自分らしい生活を送れる」という自己効力感を育てる。</li>
+        </ol>
+        <aside class="callout danger"><strong>安全上の読み方</strong><div>段階的活動は、病態評価を飛ばして無理に動かすことではない。講演でも「術者の監視」「許容できる範囲」「少しずつ」という条件が置かれている。</div></aside>
+      </div>
+    </details>
+
+    <details class="module searchable" data-kind="lecture" id="s8-m18">
+      <summary><span>渡邊先生⑫　感情への介入：内容への同意と、感情への共感を分ける</span><span class="badge lecture">講演由来</span></summary>
+      <div class="module-body">
+        <p>慢性痛患者には、恐怖、不安、怒り、失望、医療不信が重なり得る。感情を無視すると治療関係の「地雷」が残る一方、患者の主張を無条件に事実認定すると別の問題が生じる。講演は、<strong>出来事の評価には同意せず、感情には寄り添う</strong>という実用的な区別を示した。</p>
+        <div class="course-grid">
+          <aside class="callout danger"><strong>避ける返答</strong><div>患者：「前の先生にひどいことをされました」<br>治療者：「それはひどい医師ですね」<br><small>→ 事実関係を確認せず、前医批判へ同調している。</small></div></aside>
+          <aside class="callout good"><strong>講演で推奨された方向</strong><div>「それはつらかったですね」「大変でしたね」「心配でしたね」<br><small>→ 患者の感情体験を承認するが、出来事の事実評価までは断定しない。</small></div></aside>
+        </div>
+        <p>怒りの下に、恐怖、見捨てられ感、無力感、理解されなかった悲しさが隠れている場合がある。患者が示した範囲でそれを言語化し、相互理解を深める。</p>
+        <aside class="callout appraisal"><strong>境界</strong><div>歯科医師が感情を扱うことは、深い心理療法を行うことと同義ではない。診療に必要な感情の理解と、専門的精神療法が必要な問題の境界を意識する。</div></aside>
+      </div>
+    </details>
+
+    <details class="module searchable" data-kind="lecture" id="s8-m19">
+      <summary><span>渡邊先生⑬　認知への介入：考えを否定せず、根拠と別の見方を共同検討する</span><span class="badge lecture">講演由来</span></summary>
+      <div class="module-body">
+        <p>破局的思考に対する介入は、「前向きに考えさせる」ことではない。講演は、患者の考えを丁寧に検討し、より現実的で柔軟な認知を増やす方法を示した。</p>
+        <h4>使える質問</h4>
+        <ul>
+          <li>「本当に毎回、同じように悪化していましたか」</li>
+          <li>「そう考える根拠は何ですか」</li>
+          <li>「別の見方をすると、どんな説明ができますか」</li>
+          <li>「痛みがなかった時間、弱かった時間はありましたか」</li>
+          <li>「痛みがあっても対処できたことはありますか」</li>
+        </ul>
+        <div class="table-wrap"><table class="evidence-table"><thead><tr><th>非機能的な認知</th><th>直接否定しない返し</th><th>目指す認知</th></tr></thead><tbody>
+          <tr><td>「この痛みは一生治らない」</td><td>「そう感じるほど長く続いたのですね。変化した日や時間は本当に一度もありませんでしたか」</td><td>「完全に予測はできないが、変動があり、対処で楽になる時間は作れる」</td></tr>
+          <tr><td>「少し痛いなら開けてはいけない」</td><td>「どの範囲なら安全に動かせたか、一緒に試してみませんか」</td><td>「許容範囲を調節しながら動かせる」</td></tr>
+          <tr><td>「痛みがゼロでなければ治療は失敗」</td><td>「食事、睡眠、外出は以前と比べてどうですか」</td><td>「痛み以外の回復も治療成果として評価できる」</td></tr>
+        </tbody></table></div>
+        <p>講演では、全か無か思考など典型的な「考え方の癖」にも触れた。ただし患者へ「あなたの認知は歪んでいる」と告げるのではなく、非機能的かどうか、すなわちその考えが患者の生活と対処に役立っているかを共同で検討する。</p>
+      </div>
+    </details>
+
+    <details class="module searchable" data-kind="workflow" id="s8-m20" open>
+      <summary><span>Skilling 8を外来へ実装する診療フロー</span><span class="badge workflow">臨床フロー</span></summary>
+      <div class="module-body">
+        <div class="table-wrap"><table class="evidence-table"><thead><tr><th>段階</th><th>実施内容</th><th>患者への言葉</th><th>次へ進む条件</th></tr></thead><tbody>
+          <tr><td><strong>1．鑑別・病態分類</strong></td><td>TMD以外を鑑別し、顎関節痛・咀嚼筋痛などの病態を整理。標準的初期治療の適応を確認。</td><td>「まず、顎のどの組織が関係し、他の病気が隠れていないかを整理します」</td><td>治療仮説を患者と共有できる。</td></tr>
+          <tr><td><strong>2．慢性化の評価</strong></td><td>持続期間、睡眠、活動、仕事、食事、不安、破局化、回避、過活動、医療不信を確認。</td><td>「痛みそのものだけでなく、生活にどんな影響が出ているか教えてください」</td><td>維持因子と困り事が言語化される。</td></tr>
+          <tr><td><strong>3．関係性構築</strong></td><td>挨拶、反映、感情への共感、説明への反応を確認。OFFの兆候で止まる。</td><td>「これまで長くつらかったのですね。私の説明で納得しにくい点はありますか」</td><td>患者が疑問・不安を表現できる。</td></tr>
+          <tr><td><strong>4．疾患教育</strong></td><td>損傷と痛みが一対一でないこと、神経系の過敏、心理社会的影響を、メタファーも使って説明。</td><td>「痛みは本物です。今は顎だけでなく、警報系が敏感になっている可能性も考えます」</td><td>患者が自分の言葉で説明を言い返せる。</td></tr>
+          <tr><td><strong>5．機能目標</strong></td><td>痛みが妨げる価値ある活動を一つ選ぶ。</td><td>「痛みが少しあっても、何を取り戻せたら治療が前進したと言えますか」</td><td>小さく測定可能な目標が決まる。</td></tr>
+          <tr><td><strong>6．一つの介入</strong></td><td>行動または身体から、確認行動減少、ペーシング、呼吸、散歩、段階的開口など一つを選ぶ。</td><td>「一週間の実験として、これだけ試しましょう」</td><td>患者が方法・量・中止条件を説明できる。</td></tr>
+          <tr><td><strong>7．記録と再評価</strong></td><td>痛みだけでなく、活動、睡眠、機能、予測と実際を記録。</td><td>「成功・失敗ではなく、何が分かったかを次回見ます」</td><td>データに基づき継続・調整・変更する。</td></tr>
+          <tr><td><strong>8．連携判断</strong></td><td>歯科で関係性を保ちながら支援できる範囲を見極め、範囲を超える時に心療内科・精神科等と連携。</td><td>「顎の治療を切るのではなく、必要な専門家にも加わってもらいます」</td><td>患者が見捨てられたと感じない紹介計画になる。</td></tr>
+        </tbody></table></div>
+      </div>
+    </details>
+
+    <details class="module searchable" data-kind="appraisal" id="s8-m21" open>
+      <summary><span>セッション8のエビデンス監査：何が講演で示され、何は未証明か</span><span class="badge appraisal">批判的吟味</span></summary>
+      <div class="module-body">
+        <div class="table-wrap"><table class="evidence-table"><thead><tr><th>主張・教材</th><th>講演での根拠の段階</th><th>妥当な読み方</th><th>誤った飛躍</th></tr></thead><tbody>
+          <tr><td>痛みは生物心理社会的な個人的経験</td><td>国際的定義・概念枠組みの紹介</td><td>損傷が見えなくても痛みを否定しない。</td><td>身体評価を省略してよい。</td></tr>
+          <tr><td>痛覚変調性疼痛</td><td>分類概念と臨床グレーディングの紹介</td><td>過敏、広がり、併存症状を含む機序仮説として評価。</td><td>原因不明の慢性痛を全て同分類に入れる。</td></tr>
+          <tr><td>三叉神経から情動系・全身過敏へ</td><td>ラット研究</td><td>人の臨床現象を説明する候補機序。</td><td>個々の患者で同経路が働くと証明したとみなす。</td></tr>
+          <tr><td>40％・30％・15％・15％の治療要因</td><td>説明用のcommon-factors図</td><td>技法だけでなく関係性が重要という教育的メッセージ。</td><td>普遍的な因果割合・個別患者の効果予測に使う。</td></tr>
+          <tr><td>Mehrabian 7–38–55</td><td>コミュニケーション教材</td><td>言葉と非言語情報の整合を意識する。</td><td>医学情報の内容は7％しか重要でないと解釈する。</td></tr>
+          <tr><td>火災報知器・脳センサーの比喩</td><td>臨床説明の実践例</td><td>痛みの過敏化と段階的活動を理解する補助。</td><td>正常画像だけで末梢病態を否定し、「脳の問題」と断定する。</td></tr>
+          <tr><td>CBT的介入</td><td>臨床モデルと実践例</td><td>関係性、教育、行動、認知を通常診療へ組み込む。</td><td>本講演だけから効果量、最適回数、全患者への有効性を確定する。</td></tr>
+          <tr><td>心療内科／精神科への紹介判断</td><td>演者の臨床経験と質疑応答</td><td>標準治療への参加と関係性を見ながら、範囲外で連携する。</td><td>「関係性が難しい患者＝精神科」と機械的に分類する。</td></tr>
+        </tbody></table></div>
+        <aside class="callout danger"><strong>講演から言えないこと</strong><div><ul><li>慢性TMDの全てが心身症または痛覚変調性疼痛である。</li><li>画像が正常なら末梢組織の関与はない。</li><li>CBTが標準的TMD治療の代わりになる。</li><li>動物研究で示された三叉神経回路を、患者ごとに診断できる。</li><li>会話技法だけで難治性疼痛が治る。</li><li>心療内科と精神科の紹介先を、一つの簡便な指標で決定できる。</li></ul></div></aside>
+      </div>
+    </details>
+
+    <details class="module searchable" data-kind="workflow" id="s8-m22">
+      <summary><span>診療室で使える会話テンプレート</span><span class="badge workflow">臨床フロー</span></summary>
+      <div class="module-body">
+        <div class="table-wrap"><table class="evidence-table"><thead><tr><th>場面</th><th>会話例</th><th>目的</th></tr></thead><tbody>
+          <tr><td>痛みの承認</td><td>「検査で大きな異常が見えないことと、痛みがないことは同じではありません。痛みが続いていること自体を一緒に扱います」</td><td>画像正常を痛みの否定に使わない。</td></tr>
+          <tr><td>反映</td><td>「治療を続けたのに痛みが残り、何か見逃されているのではと不安なのですね」</td><td>事実・感情・意味を要約する。</td></tr>
+          <tr><td>心理教育への許可</td><td>「長引く痛みで神経の警報が敏感になる仕組みを説明してもよいですか」</td><td>一方的説明を避ける。</td></tr>
+          <tr><td>共同実験</td><td>「一週間だけ、顎を確認する回数を半分にして、痛みへの注意と生活がどう変わるか見ませんか」</td><td>命令ではなく検証可能な課題にする。</td></tr>
+          <tr><td>失敗の再定義</td><td>「うまくいかなかったことが分かりました。次の方法を選ぶための大切な結果です」</td><td>自己効力感と治療継続を守る。</td></tr>
+          <tr><td>機能目標</td><td>「痛みを0にする以外に、食事・睡眠・外出のどれが少し戻れば前進と言えますか」</td><td>成果指標を広げる。</td></tr>
+          <tr><td>紹介</td><td>「顎の診療をやめるのではありません。痛みを長引かせる別の側面も専門家と一緒に扱うため、連携を提案します」</td><td>見捨てられ感を防ぐ。</td></tr>
+        </tbody></table></div>
+        <p class="source-note">これらは講演で示された会話原則を、臨床で使いやすい日本語へ再構成したものであり、逐語録ではありません。</p>
+      </div>
+    </details>
+
+    <details class="module searchable" data-kind="lecture" id="s8-m23">
+      <summary><span>用語集・文字起こし正規化</span><span class="badge lecture">講演由来</span></summary>
+      <div class="module-body">
+        <dl class="glossary">
+          <div><dt>心身症</dt><dd>身体疾患の発症・経過に心理社会的要因が密接に関与する病態。精神疾患や詐病と同義ではない。</dd></div>
+          <div><dt>生物心理社会モデル</dt><dd>生物学的病態、心理、行動、社会環境を相互作用する要素として扱う臨床モデル。</dd></div>
+          <div><dt>痛覚変調性疼痛</dt><dd>明白な組織損傷または体性感覚系病変だけでは説明しきれず、侵害受容の変化が関与する疼痛機序。</dd></div>
+          <div><dt>中枢性感作</dt><dd>中枢神経系の侵害受容ニューロンの反応性が高まった状態を表す機序概念。痛覚変調性疼痛という分類概念と同じ階層ではない。</dd></div>
+          <div><dt>アロディニア</dt><dd>通常は痛みを起こさない刺激で痛みが生じる現象。</dd></div>
+          <div><dt>破局的思考</dt><dd>反芻、無力感、拡大視からなり、痛みへの恐怖・回避・障害を増幅し得る認知パターン。</dd></div>
+          <div><dt>恐怖回避モデル</dt><dd>痛みを脅威と解釈し、恐怖と回避が廃用・障害・痛み増加へつながる悪循環。</dd></div>
+          <div><dt>共同的実証主義</dt><dd>患者と治療者がチームとなり、仮説と介入を小さな実験として検証するCBTの基本姿勢。</dd></div>
+          <div><dt>ペーシング</dt><dd>痛みが強くなるまで活動して寝込むのではなく、計画的に活動と休憩を配分する方法。</dd></div>
+          <div><dt>行動活性化</dt><dd>気分や痛みが完全に改善するのを待たず、価値ある活動を小さく再開して生活機能を回復する方法。</dd></div>
+          <div><dt>認知再構成</dt><dd>考えを強制的に前向きにするのではなく、根拠・別の見方・例外を検討し、現実的で柔軟な認知を増やす。</dd></div>
+          <div><dt>ON／OFFの対話</dt><dd>講演で用いられた比喩。ONは患者が理解されたと感じ会話が続く状態、OFFは否定・疑念・一方的説明で心を閉じる状態。</dd></div>
+        </dl>
+      </div>
+    </details>
+
+  </div>
+
+  <div class="section-label qna-label"><span>Floor discussion</span><h3>スライド後の総合討論：全Q&amp;A</h3><p>時間の都合で会場質問は1題のみ。質問、追加質問、渡邊先生の回答、村岡座長の補足を一つのカードに統合しています。</p></div>
+  <div class="qna-list">
+    <details class="qna-card searchable" data-kind="qna" id="s8-q1" open>
+      <summary>
+        <span class="qna-number">S8-1</span>
+        <span class="qna-summary">心身症的側面がある患者を、心療内科へ紹介するのか、精神科へ紹介するのか。簡便な見極めはあるか。</span>
+        <span class="badge qna">Q&amp;A</span>
+      </summary>
+      <div class="qna-body">
+        <div class="qna-meta"><span>フロア：鶴見大学放射線科の質問者〔氏名は文字起こしから確定不能〕</span><a href="https://youtu.be/NPiPTu3WqbM?t=3539" target="_blank" rel="noopener">動画 58:59 ↗</a></div>
+        <div class="qa-block question"><strong>質問</strong><p>心身症であれば心療内科が扱うという前半講演を踏まえ、実際には心療内科へ送るのか、精神科を紹介するのか。歯科医師が簡単に使える見極めの指標はあるか。</p></div>
+        <div class="qa-block answer"><strong>渡邊先生</strong><p>非常に難しい問題で、単純な見極めは示せない。最初から「心理的な患者」と色眼鏡で見ず、通常どおり顎関節症の標準治療を提案する。次回来院までに提案を実行できたか、説明が入ったかなどを見ながら、何回か関わることが多い。明らかな精神科疾患を持つ患者は、すでに精神科へ通院していることも多く、心療内科へ新たに紹介する例は自身の診療ではそれほど多くない。</p></div>
+        <div class="qa-block question"><strong>追加質問</strong><p>診療を続けながら、どの時点で専門科へ送るかを判断できる、もう少し具体的な指標はないか。</p></div>
+        <div class="qa-block answer"><strong>渡邊先生</strong><p>一つの実務的な観点は、患者との関係性を作れるかどうかである。関係が完全に破綻していると治療継続は難しい。一方、少しでも改善がある、または「治る」とは限らなくても痛みと付き合えるところまで一緒に経過を見られるなら、歯科でフォローすることも多い。ただし、これは明確な紹介基準ではなく、演者自身も「十分な答えになっていない」と断った。</p></div>
+        <div class="qa-block answer"><strong>村岡座長</strong><p>心身症的側面を理解し、それを把握しながら歯科でフォローできる部分はかなり多い。渡邊先生が示したコミュニケーション・CBT的技法を使いながら診療し、歯科の範囲を超えるところでは精神科等の支援を受けることが重要であるとまとめた。</p></div>
+        <div class="qna-appraisal"><strong>批判的整理：</strong>この質疑では、心療内科／精神科を分ける妥当化済みのcut-off、問診票、紹介基準は提示されなかった。これは曖昧さを残すが、存在しない簡便基準を作らなかった点は正しい。一方、「関係性が作れない」を精神科紹介の単独指標にすると、患者へのレッテル貼りや治療者側のコミュニケーション問題を見逃す危険がある。関係性、標準治療への参加、症状・機能、歯科の能力範囲を総合し、紹介しても歯科が診療関係を維持するという読み方が妥当である。</div>
+      </div>
+    </details>
+  </div>
+
+  <div class="session-end"><a href="#top">ページ上部へ ↑</a></div>
+</section>
+<section class="global-section searchable" id="qna-index" data-kind="qna"><h2>総合討論Q&A索引</h2><p>質問だけでなく、フロアコメントと座長総括も含みます。</p><div class="q-index"><a href="#s1-q1"><span>S1-1</span>遺伝子解析で有意差が出た2つのSNPには、どのような意味があるのか。</a><a href="#s1-q2"><span>S1-2</span>約30年前から続く研究が、遺伝子・ヒアルロン酸・ノックアウトマウスへ発展していることへの期待。</a><a href="#s1-q3"><span>S1-3</span>T2強調MRIで白く見える水分だけをeffusionとして扱うと、ヒアルロン酸低分子化などで信号が暗くなった「dark effusion」を見落とすので…</a><a href="#s1-q4"><span>S1-4</span>下関節腔側の病変が上関節腔より先行し、より重いのではないか。下関節腔へのアプローチを進めるべきではないか。</a><a href="#s1-q5"><span>S1-5</span>現在痛みがあり、変形性顎関節症が進行中と判断される患者の治療方針は。</a><a href="#s1-q6"><span>S1-6</span>疼痛症状がある場合、上関節腔と下関節腔のどちらへ介入するかで意味は違うのか。</a><a href="#s1-q7"><span>S1-7</span>円板転位と軟骨変性は、ミクロにはほぼ同時に起き、臨床像として現れる時期だけがずれるのではないか。</a><a href="#s2-q1"><span>S2-1</span>外側翼突筋は単純な前方走行ではなく内側方向も持つ。学生にはどう教えるか。また牽引仮説で、臨床に多い外側部の部分的前方転位を説明できるのか。</a><a href="#s2-q2"><span>S2-2</span>顎関節痛と咀嚼筋痛では、関与する神経を患者説明にどう使えるか。</a><a href="#s2-q3"><span>S2-3</span>患者は痛い場所を避けて噛み方や下顎位を変える。動物実験の力学を患者へどう説明し、どう指導するか。</a><a href="#s2-q4"><span>S2-4</span>後部結合組織をMRIでどのように評価するか。評価項目が乏しいのではないか。</a><a href="#s3-q1"><span>S3-1</span>側方運動で反対側の筋突起が頬骨へ当たり、筋・骨性の痛みが出る場合、関節痛との鑑別をどう工夫するか。</a><a href="#s3-q2"><span>S3-2</span>一般開業医が、巨細胞性動脈炎など内科疾患を疑ったとき、まず何を準備すべきか。</a><a href="#s3-q3"><span>S3-3</span>MMTAHや巨細胞性動脈炎を知らず、スプリントや開口訓練を続けて改善しなかった過去の経験。</a><a href="#s3-q4"><span>S3-4</span>MMTAHは小学生頃から発症するのか。成人・高齢になって初めて出ることもあるか。</a><a href="#s4-q1"><span>S4-1</span>「保存的治療／外科的治療」という用語は混乱している。パンピングや関節腔洗浄は日本では外科治療に入る一方、国際的には低侵襲・保存的側に置かれる。咬合調整の…</a><a href="#s4-q2"><span>S4-2</span>stabilization applianceは中心位で均等接触させるだけでよいのか。clenchingやgrindingを含む機能運動時の接触をどう調…</a><a href="#s5-q1"><span>S5-1</span>シミュレーターでは、まず皮膚上に骨・関節窩・下顎頭・穿刺点の絵を描かせるべきではないか。</a><a href="#s5-q2"><span>S5-2</span>第2穿刺では、液体の波動を触れ、正しい位置で流出が戻る感覚が重要。次版では波動・returnを再現してほしい。</a><a href="#s5-q3"><span>S5-3</span>表在側頭動脈の触知、外耳道前壁で急に深くなる軟部解剖、血管損傷リスクをモデルに反映し、平均深度などのデータも示してほしい。</a><a href="#s5-q4"><span>S5-4</span>関節造影の経験が減っている。シミュレーターを側臥位・デンタルチェアでも使い、透視や造影の教育へ拡張できないか。</a><a href="#s5-q5"><span>S5-5</span>皮膚パーツには外耳道の開口部まで再現されているか。</a><a href="#s5-q6"><span>S5-6</span>発売される場合、価格はどの程度か。</a><a href="#s5-q7"><span>S5-7</span>肥満などで皮膚・軟部組織が厚い患者では、模型と実際の穿刺をどう工夫するか。</a><a href="#s6-q1"><span>S6-1</span>最小運動軸が下顎孔・下顎小舌付近に集まることは、下歯槽神経を伸展から守る意味があるのか。</a><a href="#s6-q2"><span>S6-2</span>顎変形症手術で大きく骨格・咬合を動かすとき、digital twin／bio-tensegrityで術後の良い位置を事前予測できるか。</a><a href="#s6-q3"><span>S6-3</span>0.x mmの微小な咬合変更と、顎矯正手術のmm単位の移動でも、同じ円板stageの考え方を適用するのか。</a><a href="#s7-q1"><span>S7-1</span>口腔機能異常や習癖が、不正咬合、開咬、疼痛へ順に進む流れはあるのか。患者説明に将来リスクを含めてよいか。</a><a href="#s7-q2"><span>S7-2</span>症状が軽くなった症例にmultibracket治療を行うと、下顎頭変形・吸収が進むリスクを覚悟すべきか。</a><a href="#s7-q3"><span>S7-3</span>小児では症状が分かりにくい。顎関節異常を疑っていなかったのに、MRIで円板・骨異常が見つかる症例は多いか。</a><a href="#s8-q1"><span>S8-1</span>心身症的側面がある患者を、心療内科へ紹介するのか、精神科へ紹介するのか。簡便な見極めはあるか。</a></div></section>
 <section class="global-section searchable" id="glossary" data-kind="overview"><h2>用語集・文字起こし正規化</h2>
 <dl class="glossary">
   <div><dt>顎関節円板転位</dt><dd>関節円板の位置異常。復位性は開口時に戻り、非復位性は戻らない。位置だけで症状を説明しない。</dd></div>
@@ -830,16 +1222,28 @@ html[data-theme="dark"]{--bg:#0e1320;--panel:#161d2b;--panel2:#1d2637;--text:#ee
   <div><dt>ICOP</dt><dd>国際口腔顔面痛分類。歯原性、筋、TMJ、神経障害性、頭痛類似、特発性などを整理する。</dd></div>
   <div><dt>Arthrocentesis</dt><dd>関節腔洗浄療法。日本の分類では外科治療に置かれることがあるが、国際的には低侵襲介入として扱われることもある。</dd></div>
   <div><dt>可逆的trial</dt><dd>スプリント、暫間補綴、プロビジョナル等で予定顎位・治療反応を試し、不可逆処置前に安全性を確認する考え。</dd></div>
+
+  <div><dt>心身症</dt><dd>身体疾患の発症・経過に心理社会的要因が密接に関与する病態。精神疾患や詐病と同義ではない。</dd></div>
+  <div><dt>生物心理社会モデル</dt><dd>生物学的病態、心理、行動、社会環境を相互作用する要素として扱う臨床モデル。</dd></div>
+  <div><dt>痛覚変調性疼痛</dt><dd>明白な組織損傷または体性感覚系病変だけでは説明しきれず、侵害受容の変化が関与する疼痛機序。</dd></div>
+  <div><dt>中枢性感作</dt><dd>中枢神経系の侵害受容ニューロンの反応性が高まった状態。痛覚変調性疼痛と同義ではない。</dd></div>
+  <div><dt>破局的思考</dt><dd>反芻、無力感、拡大視からなり、痛みへの恐怖・回避・障害を増幅し得る認知パターン。</dd></div>
+  <div><dt>恐怖回避モデル</dt><dd>痛みを脅威と解釈し、恐怖と回避が廃用・障害・痛み増加へつながる悪循環。</dd></div>
+  <div><dt>共同的実証主義</dt><dd>患者と治療者がチームとなり、仮説と介入を小さな実験として検証するCBTの基本姿勢。</dd></div>
+  <div><dt>ペーシング</dt><dd>活動し過ぎと反動休息を避け、計画的に活動と休憩を配分する方法。</dd></div>
+  <div><dt>行動活性化</dt><dd>痛みの完全消失を待たず、価値ある活動を小さく再開して生活機能を回復する方法。</dd></div>
+  <div><dt>認知再構成</dt><dd>根拠・別の見方・例外を検討し、現実的で柔軟な認知を増やす方法。</dd></div>
+  <div><dt>ON／OFFの対話</dt><dd>ONは患者が理解されたと感じ会話が続く状態、OFFは否定・疑念・一方的説明で心を閉じる状態。</dd></div>
 </dl></section>
 <section class="global-section searchable" id="research-agenda" data-kind="appraisal"><h2>この8セッションから残る研究課題</h2>
-<ul class=""><li>縦断MRIで、effusion・滑液組成・円板転位・骨変化の時間順序を同時測定する。</li><li>側方転位25%などの閾値を、別施設・別装置・別集団で外部検証し、絶対リスクと意思決定曲線を示す。</li><li>候補SNPを大規模独立コホートで再現し、機能実験と因果推論をつなぐ。</li><li>高分子ヒアルロン酸の製剤、分子量、投与腔、回数、比較対照、長期安全性を標準化する。</li><li>下関節腔介入と上関節腔介入を、技術成功・合併症・患者アウトカムで比較する。</li><li>動物咬合干渉モデルの力学が人の自由咀嚼・疼痛回避にどこまで再現するかを検証する。</li><li>後部結合組織のMRI定量指標と疼痛・予後の関連を標準化する。</li><li>MMTAHの自然歴、家族集積、手術＋訓練の比較効果と再発予測を前向きに研究する。</li><li>顎関節穿刺シミュレーターのconstruct validity、技能移転、合併症低減を検証する。</li><li>最小運動軸・bio-tensegrity指標が補綴・顎矯正手術の患者アウトカムを予測するか検証する。</li><li>click stageモデルの再現性と、咬合変更後acute lock予測の精度を評価する。</li><li>小児の無症候MRI異常の自然歴と、どの選択基準なら画像の利益が害を上回るかを調べる。</li><li>矯正治療と下顎頭吸収の因果を、baseline disease・適応による交絡を調整した縦断研究で検討する。</li><li>DC/TMD Axis II、睡眠、心理社会、神経障害性特徴を統合した層別治療試験を行う。</li></ul></section>
+<ul class=""><li>縦断MRIで、effusion・滑液組成・円板転位・骨変化の時間順序を同時測定する。</li><li>側方転位25%などの閾値を、別施設・別装置・別集団で外部検証し、絶対リスクと意思決定曲線を示す。</li><li>候補SNPを大規模独立コホートで再現し、機能実験と因果推論をつなぐ。</li><li>高分子ヒアルロン酸の製剤、分子量、投与腔、回数、比較対照、長期安全性を標準化する。</li><li>下関節腔介入と上関節腔介入を、技術成功・合併症・患者アウトカムで比較する。</li><li>動物咬合干渉モデルの力学が人の自由咀嚼・疼痛回避にどこまで再現するかを検証する。</li><li>後部結合組織のMRI定量指標と疼痛・予後の関連を標準化する。</li><li>MMTAHの自然歴、家族集積、手術＋訓練の比較効果と再発予測を前向きに研究する。</li><li>顎関節穿刺シミュレーターのconstruct validity、技能移転、合併症低減を検証する。</li><li>最小運動軸・bio-tensegrity指標が補綴・顎矯正手術の患者アウトカムを予測するか検証する。</li><li>click stageモデルの再現性と、咬合変更後acute lock予測の精度を評価する。</li><li>小児の無症候MRI異常の自然歴と、どの選択基準なら画像の利益が害を上回るかを調べる。</li><li>矯正治療と下顎頭吸収の因果を、baseline disease・適応による交絡を調整した縦断研究で検討する。</li><li>DC/TMD Axis II、睡眠、心理社会、神経障害性特徴を統合した層別治療試験を行う。</li><li>慢性TMDで、侵害受容性・神経障害性・痛覚変調性の混合機序を再現性高く層別化する方法を検証する。</li><li>歯科外来の短時間CBT的介入について、どの構成要素が誰に有効か、生活機能・自己効力感を含めて比較する。</li><li>心療内科・精神科との紹介基準と共同診療モデルを、患者の安全性・継続率・満足度で検証する。</li></ul></section>
 <section class="global-section searchable" id="sources" data-kind="overview"><h2>出典・リンク</h2>
 <div class="source-box"><h3>動画</h3><ol class="references"><li><a href="https://youtu.be/XvVc5AZ1Vjk" target="_blank" rel="noopener">Re-skilling 1: 顎関節症 今と未来：顎関節症の疾患概念（診断から治療の流れ）</a></li><li><a href="https://youtu.be/343YGhNKmyU" target="_blank" rel="noopener">Re-skilling 2: 解剖学・生理学・画像検査学的視点からアプローチ</a></li><li><a href="https://youtu.be/t2pLNsu6f68" target="_blank" rel="noopener">Re-skilling 3: 顎関節症の診断（鑑別・症型）</a></li><li><a href="https://youtu.be/6tNhKN6REBM" target="_blank" rel="noopener">Re-skilling 4: 顎関節症の治療1：保存的治療</a></li><li><a href="https://youtu.be/bwE9Oz3KFtw" target="_blank" rel="noopener">Re-skilling 5: 顎関節症の治療2：外科的治療（穿刺から）</a></li><li><a href="https://youtu.be/j6mM4L9Zyg8" target="_blank" rel="noopener">Re-skilling 6: 顎関節症と咬合</a></li><li><a href="https://youtu.be/l0POzOB5swg" target="_blank" rel="noopener">Re-skilling 7: 顎関節症と小児・矯正歯科</a></li><li><a href="https://youtu.be/NPiPTu3WqbM" target="_blank" rel="noopener">Re-skilling 8: 顎関節症と顎顔面痛・心身症</a></li></ol>
 <h3>公式プログラム</h3><ul class="references"><li><a href="https://www.gakkai.co.jp/jstmj39/program.html" target="_blank" rel="noopener">第39回日本顎関節学会 プログラム・日程表</a></li><li><a href="https://kokuhoken.net/jstmj/meeting/congress.html" target="_blank" rel="noopener">日本顎関節学会 総会・学術大会</a></li></ul>
-<h3>第8章の外部一次資料</h3><ul class="references"><li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4478082/" target="_blank" rel="noopener">DC/TMD 2014</a></li><li><a href="https://journals.sagepub.com/doi/10.1177/0333102419893823" target="_blank" rel="noopener">ICOP 2020</a></li><li><a href="https://kokuhoken.net/jstmj/publication/file/guideline/guideline_treatment_tmj_2020.pdf" target="_blank" rel="noopener">顎関節症治療の指針2020</a></li><li><a href="https://www.nationalacademies.org/projects/HMD-HSP-18-21/publication/25652" target="_blank" rel="noopener">National Academies TMD report 2020</a></li><li><a href="https://www.jstage.jst.go.jp/article/jpr/69/4/69_JPR_D_24_00168/_article" target="_blank" rel="noopener">日本顎関節学会 初期治療診療ガイドライン2023改訂版（英語論文）</a></li></ul>
-<p><strong>添付資料：</strong>「新規 テキスト ドキュメント(1).txt」16,366行。8動画URLとRe-skilling 1–7の文字起こしを含む。第3の一講演および第8本文は含まれない。</p></div></section>
+<h3>Skilling 8の補助資料（講演本文の代替ではない）</h3><ul class="references"><li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4478082/" target="_blank" rel="noopener">DC/TMD 2014</a></li><li><a href="https://journals.sagepub.com/doi/10.1177/0333102419893823" target="_blank" rel="noopener">ICOP 2020</a></li><li><a href="https://kokuhoken.net/jstmj/publication/file/guideline/guideline_treatment_tmj_2020.pdf" target="_blank" rel="noopener">顎関節症治療の指針2020</a></li><li><a href="https://www.nationalacademies.org/projects/HMD-HSP-18-21/publication/25652" target="_blank" rel="noopener">National Academies TMD report 2020</a></li><li><a href="https://www.jstage.jst.go.jp/article/jpr/69/4/69_JPR_D_24_00168/_article" target="_blank" rel="noopener">日本顎関節学会 初期治療診療ガイドライン2023改訂版（英語論文）</a></li></ul>
+<p><strong>添付資料：</strong>既存の全体文字起こしに加え、「貼り付けられたテキスト（1 点）(63).txt」2,309行を使用し、Re-skilling 8の2講演と会場Q&Aを追加した。第3セッションの大久保昌和先生の講演本文は引き続き欠落している。</p></div></section>
 </main></div>
-<footer>教育・研究用資料。個別患者の診断・治療は、病歴、診察、画像適応、全身状態、患者価値を踏まえて担当医が判断してください。作成日：2026-08-02（JST）</footer>
+<footer>教育・研究用資料。個別患者の診断・治療は、病歴、診察、画像適応、全身状態、患者価値を踏まえて担当医が判断してください。更新日：2026-08-03（JST）</footer>
 <script>
 const qs=(s,p=document)=>p.querySelector(s), qsa=(s,p=document)=>[...p.querySelectorAll(s)];
 const root=document.documentElement, search=qs('#search'), sessionFilter=qs('#sessionFilter'), kindFilter=qs('#kindFilter'), noResults=qs('#noResults'), count=qs('#searchCount');
