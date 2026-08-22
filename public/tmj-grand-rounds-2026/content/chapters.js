@@ -1,0 +1,1131 @@
+window.TMJ_LECTURE_DATA = {
+  "metadata": {
+    "canonical_title": "Leveraging Collaboration to Advance TMJ Disease Diagnosis and Treatment: The Strength of Intramural-Extramural Multi-Disciplinary Partnerships",
+    "event_type": "NIH Clinical Center Grand Rounds",
+    "event_date": "2026-05-13",
+    "speakers": [
+      "Janice S. Lee, DDS, MD, MS",
+      "Hai Yao, PhD"
+    ],
+    "video_url": "https://www.youtube.com/watch?v=NxNryYuUGis",
+    "nih_event_url": "https://www.cc.nih.gov/events/216",
+    "nih_videocast_url": "https://videocast.nih.gov/watch/6c1f76ab-3780-11f1-82c0-124f0a52e769",
+    "duration_seconds": 3900,
+    "duration_display": "1:05:00",
+    "timestamp_method": "Estimated from transcript word position across the official 65-minute duration; verify against video before publication.",
+    "chapter_count": 43,
+    "content_policy": "Preserve lecture sequence; separate lecture content, explanation, critical reading, and external verification."
+  },
+  "chapters": [
+    {
+      "no": 1,
+      "id": "ch-01",
+      "title_ja": "番組の位置づけ：NIH Clinical Center Grand Rounds",
+      "estimated_start_seconds": 0,
+      "estimated_end_seconds": 38,
+      "estimated_start": "00:00",
+      "estimated_end": "00:38",
+      "timestamp_url": "https://www.youtube.com/watch?v=NxNryYuUGis&t=0s",
+      "speaker": "司会・番組ナレーション",
+      "transcript_lines": "L1–L3",
+      "lecture_content_ja": "動画は、NIH Clinical Center が医師・医療専門職向けに行う週例教育講演「Clinical Center Grand Rounds」の案内から始まる。冒頭では、NIH Clinical Center が臨床研究と研究者育成を担う施設であること、当日の講演がCME対象であることが説明される。",
+      "explanation_ja": "この動画は学会の一般演題や国際会議のセッションではなく、米国NIH Clinical CenterのGrand Roundsである。したがって、ページの表題やメタデータでは「海外のTMJ会議」と曖昧にせず、「NIH Clinical Center Grand Rounds（2026年5月13日）」と明示する。内容は研究紹介であり、診療ガイドラインや標準治療の公式勧告ではない。",
+      "critical_reading_ja": "イベントの形式を誤ると、講演中の研究結果がNIHの公式診療方針であるかのように読まれる。ページ冒頭で「研究講演」「講演時点の内容」と明記する。",
+      "figure_ids": [
+        "fig-01"
+      ],
+      "key_terms": [
+        "NIH Clinical Center",
+        "Grand Rounds",
+        "CME"
+      ],
+      "external_verification": []
+    },
+    {
+      "no": 2,
+      "id": "ch-02",
+      "title_ja": "演者紹介と講演題名",
+      "estimated_start_seconds": 38,
+      "estimated_end_seconds": 278,
+      "estimated_start": "00:38",
+      "estimated_end": "04:38",
+      "timestamp_url": "https://www.youtube.com/watch?v=NxNryYuUGis&t=38s",
+      "speaker": "司会",
+      "transcript_lines": "L5",
+      "lecture_content_ja": "司会はJanice S. Lee医師・歯科医師とHai Yao博士の経歴を紹介し、臨床・頭蓋顔面発生・顎矯正手術を専門とするLee氏と、TMJのバイオメカニクス・メカノバイオロジーを専門とするYao氏の共同講演であることを示す。正式題名は、TMJ疾患の診断・治療を前進させるための学内研究者と学外研究者の多分野連携を扱うものである。",
+      "explanation_ja": "この演者構成自体が講演の主題である。Lee氏は患者、形態、手術、臨床プロトコルを起点にし、Yao氏は計測、AI、力学モデル、組織・細胞レベルの機序を起点にする。HTMLでは、単に二人の研究を並べるのではなく、「臨床の問い→定量計測→計算モデル→生物学的仮説→再び患者評価へ」という往復構造を見せる。",
+      "critical_reading_ja": "文字起こしにはmaxillofacial、craniofacial、Hai Yaoなどの誤認識が多い。人名・所属・肩書は動画スライドとNIH公式ページで照合し、推測で補わない。",
+      "figure_ids": [
+        "fig-01"
+      ],
+      "key_terms": [
+        "Janice S. Lee",
+        "Hai Yao",
+        "intramural",
+        "extramural",
+        "multidisciplinary"
+      ],
+      "external_verification": []
+    },
+    {
+      "no": 3,
+      "id": "ch-03",
+      "title_ja": "利益相反と学習目標",
+      "estimated_start_seconds": 278,
+      "estimated_end_seconds": 340,
+      "estimated_start": "04:38",
+      "estimated_end": "05:40",
+      "timestamp_url": "https://www.youtube.com/watch?v=NxNryYuUGis&t=278s",
+      "speaker": "Janice S. Lee",
+      "transcript_lines": "L7",
+      "lecture_content_ja": "Lee氏は自身に財務上の開示事項がないこと、Yao氏に学術系スタートアップとの関係があることを述べる。学習目標として、共同研究を支える2つの資金機会、TMJ機能を定量化する2つの新しい評価ツール、TMJの多階層メカノバイオロジーと侵害受容の4階層を理解することを掲げる。",
+      "explanation_ja": "この3つの目標はページ全体の索引になる。第1部は連携の仕組み、第2部は臨床計測、第3部はAI・力学・代謝・痛みの多階層モデルである。利益相反は研究内容から切り離さず、ページの冒頭に独立した開示欄を置く。",
+      "critical_reading_ja": "スタートアップ名は文字起こしだけでは確実でない。動画の開示スライドを確認できない限り、企業名を断定して掲載しない。開示があるという事実と、研究結果の妥当性評価は別問題である。",
+      "figure_ids": [
+        "fig-02"
+      ],
+      "key_terms": [
+        "disclosure",
+        "learning objectives",
+        "mechanobiology",
+        "nociception"
+      ],
+      "external_verification": []
+    },
+    {
+      "no": 4,
+      "id": "ch-04",
+      "title_ja": "共同研究を成立させたU01とBench-to-Bedside",
+      "estimated_start_seconds": 340,
+      "estimated_end_seconds": 444,
+      "estimated_start": "05:40",
+      "estimated_end": "07:24",
+      "timestamp_url": "https://www.youtube.com/watch?v=NxNryYuUGis&t=340s",
+      "speaker": "Janice S. Lee",
+      "transcript_lines": "L7",
+      "lecture_content_ja": "Lee氏は、2021年頃に獲得した共同研究助成を起点として、NIH Clinical Centerで既存プロトコル下の患者を新しい方法で評価し、現在の研究基盤を作ったと説明する。講演では、患者をClinical Centerで評価する5年間のU01型共同研究と、より小規模な2年間のBench-to-Bedside資金を、学内外・基礎臨床連携の入口として紹介する。",
+      "explanation_ja": "U01は通常のR01と異なり、NIH側との協働的関与を含むcooperative agreementである。この講演の研究は、単に大学研究室が装置を持ち込んだのではなく、NIHの患者コホート、臨床設備、外部大学の工学技術を制度的に接続した点に価値がある。ページでは助成制度を研究成果の背景として簡潔に説明し、資金獲得指南に脱線しない。",
+      "critical_reading_ja": "講演の「採択率が高い」という表現は、公募年度・母集団・制度で変わる。普遍的な数値として書かない。助成名はU1ではなくU01であり、外部資料ではU01DE031512（ATTRACT）と確認できるが、講演内説明と外部検証を明確に分ける。",
+      "figure_ids": [
+        "fig-03"
+      ],
+      "key_terms": [
+        "U01",
+        "R01",
+        "Bench-to-Bedside",
+        "cooperative agreement"
+      ],
+      "external_verification": [
+        "U01DE031512 / ATTRACT"
+      ]
+    },
+    {
+      "no": 5,
+      "id": "ch-05",
+      "title_ja": "顎関節の構造と運動：回転と滑走を同時に行う関節",
+      "estimated_start_seconds": 444,
+      "estimated_end_seconds": 501,
+      "estimated_start": "07:24",
+      "estimated_end": "08:21",
+      "timestamp_url": "https://www.youtube.com/watch?v=NxNryYuUGis&t=444s",
+      "speaker": "Janice S. Lee",
+      "transcript_lines": "L7",
+      "lecture_content_ja": "Lee氏は、TMJが強い機械的負荷を受けながら、咬む、咀嚼する、話す、表情を作るといった精密な運動を担う複雑な関節であると説明する。TMJは蝶番運動と滑走運動を併せ持ち、左右2つの関節が一つの下顎骨を介して協調して動く。関節面と関節円板は線維軟骨性である。",
+      "explanation_ja": "「synovial ginglymoarthrodial joint」は、単純な蝶番関節でも単純な球関節でもなく、回転と並進が組み合わさる滑膜関節を意味する。開口初期は主として回転、さらに開口すると下顎頭・関節円板複合体が前方へ移動する。左右のTMJは独立して好きに動けるわけではなく、片側の異常が反対側の運動軌跡やタイミングにも影響し得る。",
+      "critical_reading_ja": "「複雑だから障害を起こしやすい」は説明として直観的だが、それ自体は因果証明ではない。解剖学的特徴と疾患頻度を短絡させない。",
+      "figure_ids": [
+        "fig-04"
+      ],
+      "key_terms": [
+        "synovial ginglymoarthrodial joint",
+        "rotation",
+        "translation",
+        "fibrocartilage"
+      ],
+      "external_verification": []
+    },
+    {
+      "no": 6,
+      "id": "ch-06",
+      "title_ja": "TMDの頻度、症状、性差、顎顔面形態との接点",
+      "estimated_start_seconds": 501,
+      "estimated_end_seconds": 641,
+      "estimated_start": "08:21",
+      "estimated_end": "10:41",
+      "timestamp_url": "https://www.youtube.com/watch?v=NxNryYuUGis&t=501s",
+      "speaker": "Janice S. Lee",
+      "transcript_lines": "L7",
+      "lecture_content_ja": "講演では、TMDが米国人口の約10～15%にみられ、関節雑音、疼痛、咀嚼・会話など日常機能の制限を起こし得ると説明される。女性は男性より多く、慢性化しやすいとも述べる。顎顔面変形をもつ患者では頻度が20～30%に達する可能性があり、特に骨格性II級・下顎後退とTMDの関連が臨床上注目される。",
+      "explanation_ja": "ここでいうTMDは単一疾患ではなく、関節内障害、変形性関節疾患、咀嚼筋痛、頭痛関連、心理社会的要因を含む異質な障害群である。関節雑音だけでは疾患重症度を決められず、痛み、機能制限、生活への影響を同時にみる必要がある。負荷は組織維持に必要だが、過大・反復・回復不足の負荷は軟骨、骨、関節円板、周囲組織に不利となり得る。",
+      "critical_reading_ja": "有病率は症例定義と対象集団で大きく変わる。10～15%、35 million、女性2～5倍などは「講演で提示された概数」として示し、現在の一つの確定値として扱わない。骨格性II級との関連も、原因と結果を確定したものではない。",
+      "figure_ids": [
+        "fig-05"
+      ],
+      "key_terms": [
+        "TMD",
+        "joint sounds",
+        "pain",
+        "functional limitation",
+        "sex difference",
+        "Class II malocclusion"
+      ],
+      "external_verification": []
+    },
+    {
+      "no": 7,
+      "id": "ch-07",
+      "title_ja": "画像所見と症状が一致しない：患者を診て、画像だけを診ない",
+      "estimated_start_seconds": 641,
+      "estimated_end_seconds": 725,
+      "estimated_start": "10:41",
+      "estimated_end": "12:05",
+      "timestamp_url": "https://www.youtube.com/watch?v=NxNryYuUGis&t=641s",
+      "speaker": "Janice S. Lee",
+      "transcript_lines": "L9",
+      "lecture_content_ja": "Lee氏は、健康から変性へ一直線に進む図式は正確ではないと強調する。CBCTやMRIで形態変化があっても無症状の人がいる一方、強い口腔顔面痛があっても画像上の明確な変化がない人がいる。したがって、現時点の臨床では痛みなく機能できるかを重視し、「画像ではなく患者を治療する」と述べる。",
+      "explanation_ja": "これは講演全体の中心命題である。構造、機能、痛みは相関しても一対一対応しない。画像は骨変形、関節円板位置、炎症の代理所見などを示せるが、痛みの強さ、生活障害、末梢・中枢感作を単独で説明できない。逆に、画像変化を無視するのでもなく、症状・診察・機能評価と統合する。",
+      "critical_reading_ja": "「画像が正常だから問題がない」「変形があるから痛みの原因はそこだ」という両方向の断定を避ける。HTMLでは画像所見と症状の4象限（画像+/症状+、画像+/症状−、画像−/症状+、画像−/症状−）として視覚化すると理解しやすい。",
+      "figure_ids": [
+        "fig-06"
+      ],
+      "key_terms": [
+        "structure–symptom discordance",
+        "CBCT",
+        "MRI",
+        "patient-centered care"
+      ],
+      "external_verification": []
+    },
+    {
+      "no": 8,
+      "id": "ch-08",
+      "title_ja": "軽症から慢性痛、関節破壊までの臨床的連続体",
+      "estimated_start_seconds": 725,
+      "estimated_end_seconds": 865,
+      "estimated_start": "12:05",
+      "estimated_end": "14:25",
+      "timestamp_url": "https://www.youtube.com/watch?v=NxNryYuUGis&t=725s",
+      "speaker": "Janice S. Lee",
+      "transcript_lines": "L9",
+      "lecture_content_ja": "講演は、時折のクリックや軽い痛みから、反復する症状、6か月以上の慢性痛と機能制限、画像上の変性、さらに全人工顎関節置換を検討するほどの重症例までを連続体として示す。軽症では温罨法、軟食、NSAIDs、顎の休息を挙げ、より局所的な介入として関節腔洗浄、注入、関節鏡を述べる。慢性期では局所だけでなく慢性重複性疼痛を考える。",
+      "explanation_ja": "この図は病態の教育用模式図であり、すべての患者が左から右へ進むわけではない。症状の期間、機能障害、画像変化、心理社会的因子、既治療、患者価値観を統合して判断する。arthrocentesisは針による関節腔洗浄、arthroscopyは内視鏡を用いる手技であり、両者を混同しない。",
+      "critical_reading_ja": "講演の流れをそのまま「治療アルゴリズム」や推奨として掲載するのは不適切である。6か月という期間だけで慢性痛管理や人工関節置換を決めるものではない。顎矯正手術や人工関節をTMD一般の治療として印象づけない。",
+      "figure_ids": [
+        "fig-06"
+      ],
+      "key_terms": [
+        "acute pain",
+        "chronic pain",
+        "arthrocentesis",
+        "arthroscopy",
+        "total joint replacement",
+        "COPCs"
+      ],
+      "external_verification": []
+    },
+    {
+      "no": 9,
+      "id": "ch-09",
+      "title_ja": "2020年NASEM報告が示した研究・診療上の空白",
+      "estimated_start_seconds": 865,
+      "estimated_end_seconds": 965,
+      "estimated_start": "14:25",
+      "estimated_end": "16:05",
+      "timestamp_url": "https://www.youtube.com/watch?v=NxNryYuUGis&t=865s",
+      "speaker": "Janice S. Lee",
+      "transcript_lines": "L9",
+      "lecture_content_ja": "Lee氏は、2020年のNational Academies of Sciences, Engineering, and Medicineの報告を引き、病態進行、予測診断、治療反応の予測、標準的な多職種管理、実践的ガイドラインに大きな空白があると説明する。TMDは硬組織、軟組織、筋筋膜、心理社会的要因を含む異質な集団で、急性から慢性への移行や痛みの個人差も十分に説明できない。",
+      "explanation_ja": "ここで重要なのは、研究不足を単に「画像や手術の精度が足りない」と捉えないことである。TMDは、生物学的組織変化、運動機能、痛覚処理、行動、睡眠、ストレス、他の慢性痛などが交差する。したがって、一つの画像所見や一つの装置では患者を分類しきれず、多領域の表現型を統合する必要がある。",
+      "critical_reading_ja": "「多職種チームが標準化されていない」という問題提起と、「この研究チームのモデルが標準である」という主張は別である。将来計画は仮説生成・実装準備段階として扱う。",
+      "figure_ids": [
+        "fig-07"
+      ],
+      "key_terms": [
+        "NASEM 2020",
+        "heterogeneity",
+        "biopsychosocial model",
+        "chronic overlapping pain conditions"
+      ],
+      "external_verification": []
+    },
+    {
+      "no": 10,
+      "id": "ch-10",
+      "title_ja": "構造・機能・痛みをつなぐ研究課題とNIHの研究目標",
+      "estimated_start_seconds": 965,
+      "estimated_end_seconds": 1078,
+      "estimated_start": "16:05",
+      "estimated_end": "17:58",
+      "timestamp_url": "https://www.youtube.com/watch?v=NxNryYuUGis&t=965s",
+      "speaker": "Janice S. Lee",
+      "transcript_lines": "L11",
+      "lecture_content_ja": "筋骨格痛では、構造異常、運動制限、痛みの関係を明らかにし、どれか一つへの介入が他の進行を防げるかを検討する必要がある。研究チームは、正常TMJの形態・運動・咬合力を定量化すること、顎矯正手術を力学環境の変化モデルとして用いること、画像とAIで健康群とTMD群を区別すること、多階層・多モダリティ枠組みとNIHでの多職種疼痛診療を構築することを目標にする。",
+      "explanation_ja": "講演の研究プログラムは、①測る、②違いを見つける、③機序をモデル化する、④患者分類・予後・治療選択へ戻す、という順序で理解するとよい。HEALやRE-JOINは慢性痛・関節健康研究の背景であり、個々の結果の確実性を保証する名称ではない。",
+      "critical_reading_ja": "「健康群と疾患群を区別できるAI」と「臨床で診断できるAI」は同義ではない。後半の精度は小規模データでの研究性能であり、外部検証、校正、臨床有用性、バイアス評価が必要である。",
+      "figure_ids": [
+        "fig-08"
+      ],
+      "key_terms": [
+        "structure",
+        "function",
+        "pain",
+        "NIH HEAL",
+        "RE-JOIN",
+        "multimodal framework"
+      ],
+      "external_verification": []
+    },
+    {
+      "no": 11,
+      "id": "ch-11",
+      "title_ja": "骨格性I・II・III級と顎顔面発育の多様性",
+      "estimated_start_seconds": 1078,
+      "estimated_end_seconds": 1176,
+      "estimated_start": "17:58",
+      "estimated_end": "19:36",
+      "timestamp_url": "https://www.youtube.com/watch?v=NxNryYuUGis&t=1078s",
+      "speaker": "Janice S. Lee",
+      "transcript_lines": "L11",
+      "lecture_content_ja": "Lee氏は、自身の専門である頭蓋顔面発育の変異と骨格性不正咬合を示す。骨格性I級を基準的な調和したプロファイル、II級を下顎後退を伴うことが多い形態、III級を下顎前突または中顔面低形成を含み得る形態として説明し、軽症では矯正歯科、重症では顎矯正手術が必要となることを示す。",
+      "explanation_ja": "Angle分類の歯性関係と、骨格性Class I/II/IIIは同じではない。講演は顔面骨格と下顎形態がTMJの力学条件を変えるという問いを扱うため、HTMLでは歯列の分類ではなく骨格性表現型であることを明示する。病因は遺伝・発育・環境・咀嚼・気道など多因子である。",
+      "critical_reading_ja": "Class IIやClass IIIを病的な外見として描写しない。機能障害、咬合、気道、患者の困りごとを中心にし、審美だけで手術適応が決まるような表現を避ける。",
+      "figure_ids": [
+        "fig-08"
+      ],
+      "key_terms": [
+        "skeletal Class I",
+        "Class II",
+        "Class III",
+        "retrognathia",
+        "prognathism",
+        "dentofacial deformity"
+      ],
+      "external_verification": []
+    },
+    {
+      "no": 12,
+      "id": "ch-12",
+      "title_ja": "顎矯正手術を「力学環境への介入モデル」として使う",
+      "estimated_start_seconds": 1176,
+      "estimated_end_seconds": 1261,
+      "estimated_start": "19:36",
+      "estimated_end": "21:01",
+      "timestamp_url": "https://www.youtube.com/watch?v=NxNryYuUGis&t=1176s",
+      "speaker": "Janice S. Lee",
+      "transcript_lines": "L11",
+      "lecture_content_ja": "研究チームは、標準診療として行われる顎矯正手術を、下顎・顔面形態と力学環境を急に変化させる自然実験に近いモデルとして利用する。講演では、上顎Le Fort I前方移動と下顎後方移動を行った症例を示し、術前から術後1年まで形態、機能、疼痛を追跡する。",
+      "explanation_ja": "手術で関節そのものを操作しなくても、咬合、筋の作用線、下顎運動、左右の協調が変われば、関節負荷や下顎頭軌跡が変化し得る。この点が研究上の魅力である。ただし、無作為化された介入ではなく、手術適応をもつ患者の前後比較であるため、回復、矯正治療、学習効果、時間経過なども影響する。",
+      "critical_reading_ja": "顎矯正手術がTMDを治療する、あるいは予防するという一般化は認められない。ここでの手術は顎変形症への標準治療であり、TMJ結果は探索的・機序的評価である。",
+      "figure_ids": [
+        "fig-09"
+      ],
+      "key_terms": [
+        "orthognathic surgery",
+        "Le Fort I",
+        "mandibular setback",
+        "natural experiment",
+        "virtual surgical planning"
+      ],
+      "external_verification": []
+    },
+    {
+      "no": 13,
+      "id": "ch-13",
+      "title_ja": "患者のdeep phenotyping：形態・機能・患者報告を一つにする",
+      "estimated_start_seconds": 1261,
+      "estimated_end_seconds": 1328,
+      "estimated_start": "21:01",
+      "estimated_end": "22:08",
+      "timestamp_url": "https://www.youtube.com/watch?v=NxNryYuUGis&t=1261s",
+      "speaker": "Janice S. Lee",
+      "transcript_lines": "L11",
+      "lecture_content_ja": "NIHでは、医学・歯科歴、頭蓋顔面・口腔診察、歯科・顔面計測、顔面筋機能、2D/3D顔貌・口腔写真、口腔内スキャン、CBCT、患者報告アウトカム、各種質問票を組み合わせて患者を詳細に表現型化する。今後はTMJと口腔顔面組織の健康、疼痛に関する評価を増やす方針が述べられる。",
+      "explanation_ja": "deep phenotypingは検査を大量に行うこと自体が目的ではない。異なるデータを同じ患者・同じ時点にそろえ、どの構造・機能・症状の組合せが予後や治療反応に関係するかを解析できる形にすることが目的である。患者報告は画像や機器の「主観的な補助」ではなく、痛みと生活機能を直接測る不可欠な領域である。",
+      "critical_reading_ja": "検査項目の多さは臨床有用性を保証しない。負担、欠測、再現性、多重比較、データ漏洩、過学習を管理しなければ、データ量が多いほど誤ったパターンも見つかりやすい。",
+      "figure_ids": [
+        "fig-10"
+      ],
+      "key_terms": [
+        "deep phenotyping",
+        "patient-reported outcomes",
+        "intraoral scan",
+        "CBCT",
+        "3D photography"
+      ],
+      "external_verification": []
+    },
+    {
+      "no": 14,
+      "id": "ch-14",
+      "title_ja": "4台のカメラを用いた顎運動・筋電図・咬合力の統合計測",
+      "estimated_start_seconds": 1328,
+      "estimated_end_seconds": 1467,
+      "estimated_start": "22:08",
+      "estimated_end": "24:27",
+      "timestamp_url": "https://www.youtube.com/watch?v=NxNryYuUGis&t=1328s",
+      "speaker": "Janice S. Lee",
+      "transcript_lines": "L11",
+      "lecture_content_ja": "Yao研究室が開発しNIHで評価している装置は、複数カメラ、放射線不透過性の眼鏡、口腔内のfiducial、筋電図、咬合力センサーを用いて、患者が開閉口や前方・側方運動などの課題を行う間のデータを取得する。取得した運動を患者固有のCBCTに重ね、骨格が実際に動く様子をリアルタイムに近い形で可視化する。最新版では不快感・痛みを患者が押すボタンや即時フィードバックも加えられる。",
+      "explanation_ja": "通常の最大開口量は切歯点の距離しか示さないが、この装置は左右下顎頭の軌跡、回転、並進、タイミング、筋活動、咬合力を同一座標系で扱う。fiducialはカメラ座標とCBCT座標を対応させる基準点である。患者が正しく課題を実施できているかを画面で確認できる点も、計測誤差の低減に重要である。",
+      "critical_reading_ja": "動画の印象だけで「リアルタイム」「正確」と断定しない。測定精度、校正、検者間再現性、装着による運動変化、臨床所要時間は別途検証が必要である。2026年7月のプレプリントは講演後の資料なので、追加する場合は明確に「講演後の関連報告」とする。",
+      "figure_ids": [
+        "fig-11",
+        "fig-12"
+      ],
+      "key_terms": [
+        "motion capture",
+        "fiducial marker",
+        "EMG",
+        "bite force",
+        "patient-specific CBCT",
+        "real-time feedback"
+      ],
+      "external_verification": []
+    },
+    {
+      "no": 15,
+      "id": "ch-15",
+      "title_ja": "切歯点だけでは見えない下顎頭運動を測る",
+      "estimated_start_seconds": 1467,
+      "estimated_end_seconds": 1525,
+      "estimated_start": "24:27",
+      "estimated_end": "25:25",
+      "timestamp_url": "https://www.youtube.com/watch?v=NxNryYuUGis&t=1467s",
+      "speaker": "Janice S. Lee",
+      "transcript_lines": "L11",
+      "lecture_content_ja": "研究では、切歯点の運動範囲に加え、左右の下顎頭頂部の変位、関節内での移動量、左右のピーク時刻の遅れ、運動の対称性・非対称性を評価する。講演は、骨格性I・II・III級で切歯軌跡のパターンが異なる例を示す。",
+      "explanation_ja": "同じ最大開口量でも、左右の下顎頭が滑らかに同期して動く場合と、一方が遅れたり過剰に移動したりする場合がある。したがって、切歯点は結果として見える運動、下顎頭軌跡は関節で起きている運動をより直接に表す。タイミング遅延や非対称性は、痛み、関節雑音、回避運動、形態差など複数の原因を反映し得る。",
+      "critical_reading_ja": "運動差が検出されたことと、病的であることは同義ではない。正常変動範囲、測定誤差、課題依存性を示さずに個人を異常判定してはならない。",
+      "figure_ids": [
+        "fig-13"
+      ],
+      "key_terms": [
+        "incisor trajectory",
+        "condylar apex",
+        "kinematics",
+        "timing delay",
+        "symmetry"
+      ],
+      "external_verification": []
+    },
+    {
+      "no": 16,
+      "id": "ch-16",
+      "title_ja": "術前後で切歯運動は似ていても、下顎頭変位は変わり得る",
+      "estimated_start_seconds": 1525,
+      "estimated_end_seconds": 1621,
+      "estimated_start": "25:25",
+      "estimated_end": "27:01",
+      "timestamp_url": "https://www.youtube.com/watch?v=NxNryYuUGis&t=1525s",
+      "speaker": "Janice S. Lee",
+      "transcript_lines": "L11",
+      "lecture_content_ja": "術前と術後1年を比較した例では、切歯点の運動範囲は大きく変わらない一方、左右下顎頭の変位は術前にばらつきが大きく、術後に小さく安定したように見えた。Lee氏は関節に直接手術をしていないにもかかわらず、下顎形態と咬合を変えたことで関節運動が改善した可能性を示す。",
+      "explanation_ja": "この結果は、末端の見かけの運動が同じでも、内部の運動戦略が変わることを示す好例である。咬合の安定、筋作用線、下顎のレバーアーム、左右の協調が変化し、同じ開口量をより小さな関節変位で達成した可能性がある。",
+      "critical_reading_ja": "前後比較だけで手術の因果効果を確定できない。「改善した」と断定せず、講演が提示した観察・仮説として記載する。症例数、解析単位、欠測、臨床的に意味のある差は原著で確認する。",
+      "figure_ids": [
+        "fig-14"
+      ],
+      "key_terms": [
+        "preoperative",
+        "postoperative",
+        "condylar displacement",
+        "within-person comparison"
+      ],
+      "external_verification": []
+    },
+    {
+      "no": 17,
+      "id": "ch-17",
+      "title_ja": "軽い症状と左右タイミング遅延：35例の探索的所見",
+      "estimated_start_seconds": 1621,
+      "estimated_end_seconds": 1696,
+      "estimated_start": "27:01",
+      "estimated_end": "28:16",
+      "timestamp_url": "https://www.youtube.com/watch?v=NxNryYuUGis&t=1621s",
+      "speaker": "Janice S. Lee",
+      "transcript_lines": "L11",
+      "lecture_content_ja": "35例の約3分の1に、生活の質を大きく損なわないクリックや時折の疼痛があった。症状をもつ群では、開口や前方運動で左右のピーク時刻の遅れが大きかった。さらに小規模な術後追跡では、顎矯正手術後に左右非対称のタイミング遅延が小さくなり、Class Iの運動に近づく方向が示された。",
+      "explanation_ja": "タイミング遅延は、左右の下顎頭または切歯点が同じ運動課題でピークに達する時差である。痛み回避、筋協調、関節の引っかかり、形態差などの複合指標になり得る。個人内変化を追える点は強みだが、小さなサブセットでは偶然変動の影響が大きい。",
+      "critical_reading_ja": "これは探索的であり、症状群と無症状群の診断性能や予後予測を確立したものではない。n=35と、術後追跡のさらに小さいnを混同しない。関連研究の学会抄録では術後サブセットn=6が示されるが、HTMLでは外部資料として分ける。",
+      "figure_ids": [
+        "fig-15"
+      ],
+      "key_terms": [
+        "symptomatic",
+        "asymptomatic",
+        "bilateral timing delay",
+        "exploratory analysis"
+      ],
+      "external_verification": []
+    },
+    {
+      "no": 18,
+      "id": "ch-18",
+      "title_ja": "咬合力の「最大値」ではなく、目標値に合わせる制御能力を測る",
+      "estimated_start_seconds": 1696,
+      "estimated_end_seconds": 1832,
+      "estimated_start": "28:16",
+      "estimated_end": "30:32",
+      "timestamp_url": "https://www.youtube.com/watch?v=NxNryYuUGis&t=1696s",
+      "speaker": "Janice S. Lee",
+      "transcript_lines": "L11",
+      "lecture_content_ja": "患者は左右それぞれで段階的な目標咬合力に合わせて咬み、目標の橙色バーと実測の黒い軌跡のずれを評価される。スコアは低いほど目標力を正確に維持できる。講演ではClass I群の誤差が小さく狭い一方、Class II・III群はばらつきが大きく、術後にはClass Iに近い制御パターンへ移る例が示される。",
+      "explanation_ja": "最大咬合力はどれだけ強く咬めるかを測るが、日常の咀嚼では食品や歯根膜感覚に応じて力を細かく調整する能力が重要である。目標値への追従誤差、左右差、持続中の力低下は、感覚運動制御を表す。術前に左右差や段階課題での力低下があり、術後に目標へ近づくという図は直観的に理解しやすい。",
+      "critical_reading_ja": "スコアの定義、単位、反復回数、学習効果、術後の筋力回復時期を示さずに「正常化」と言わない。学会抄録レベルの結果であり、確立した臨床検査の基準値ではない。",
+      "figure_ids": [
+        "fig-16"
+      ],
+      "key_terms": [
+        "bite force control",
+        "target tracking",
+        "control deviation score",
+        "sensorimotor control"
+      ],
+      "external_verification": []
+    },
+    {
+      "no": 19,
+      "id": "ch-19",
+      "title_ja": "動的関節隙と多モダリティ予測へ",
+      "estimated_start_seconds": 1832,
+      "estimated_end_seconds": 1932,
+      "estimated_start": "30:32",
+      "estimated_end": "32:12",
+      "timestamp_url": "https://www.youtube.com/watch?v=NxNryYuUGis&t=1832s",
+      "speaker": "Janice S. Lee",
+      "transcript_lines": "L11",
+      "lecture_content_ja": "CBCTに顎運動を重ねることで、安静位や運動中に関節隙がどのように変わるかを推定する。講演ではClass Iで比較的一貫した関節円板・関節隙パターンが見られ、Class II・IIIでは変動が大きいと説明する。最終的には形態、運動、咬合力、症状の組合せから病的変化や将来のTMDを予測することを目指す。",
+      "explanation_ja": "静止画像の関節隙は一時点の幾何学であり、動作中の接近・離開、左右差、負荷時の変化を捉えない。動的解析は、いつ・どの課題で関節隙が最小になるかを示せる可能性がある。ただしCBCTは硬組織画像であり、関節円板の実像ではない。軟組織位置はMRIやモデル仮定との統合が必要である。",
+      "critical_reading_ja": "関節隙の狭さをそのまま圧力、円板転位、疼痛の代用にしない。予測モデルを作る前に、測定妥当性と臨床アウトカムとの前向き関連を示す必要がある。",
+      "figure_ids": [
+        "fig-17"
+      ],
+      "key_terms": [
+        "dynamic joint space",
+        "multimodal phenotype",
+        "risk prediction"
+      ],
+      "external_verification": []
+    },
+    {
+      "no": 20,
+      "id": "ch-20",
+      "title_ja": "工学側から見た問い：形態は機能と病態をどこまで予測できるか",
+      "estimated_start_seconds": 1932,
+      "estimated_end_seconds": 2060,
+      "estimated_start": "32:12",
+      "estimated_end": "34:20",
+      "timestamp_url": "https://www.youtube.com/watch?v=NxNryYuUGis&t=1932s",
+      "speaker": "Hai Yao",
+      "transcript_lines": "L13",
+      "lecture_content_ja": "Yao氏は、工学者として関節の構造と機能の関係を明らかにし、その知識を生理・病態、診断、治療へつなげる立場を説明する。まず、頭蓋顔面形態がTMJの力学を規定するなら、画像の形態特徴だけで健康群とTMD群を区別できるか、そしてAIが人間の仮説に依存せず重要特徴を見つけられるかを問う。",
+      "explanation_ja": "Lee氏の前半が「患者を精密に測る」段階なら、Yao氏の後半は「測った差を機序へ変換する」段階である。データ駆動モデルは多変量の形態パターンを探索できるが、分類できた理由を説明しなければ臨床的信頼につながらない。そこで説明可能AIと力学モデルを組み合わせる。",
+      "critical_reading_ja": "分類性能と病因解明は別である。患者と健常者を見分ける特徴が、発症前の危険因子とは限らず、疾患の結果である可能性もある。",
+      "figure_ids": [
+        "fig-18"
+      ],
+      "key_terms": [
+        "structure–function relationship",
+        "data-driven model",
+        "etiology",
+        "prediction"
+      ],
+      "external_verification": []
+    },
+    {
+      "no": 21,
+      "id": "ch-21",
+      "title_ja": "MRI形態計測：TMD群では下顎頭が小さいという観察",
+      "estimated_start_seconds": 2060,
+      "estimated_end_seconds": 2238,
+      "estimated_start": "34:20",
+      "estimated_end": "37:18",
+      "timestamp_url": "https://www.youtube.com/watch?v=NxNryYuUGis&t=2060s",
+      "speaker": "Hai Yao",
+      "transcript_lines": "L13",
+      "lecture_content_ja": "Yao氏はMUSCでの後ろ向き研究として、健康群とTMD群のMRIから下顎頭の長径、短径、高さなどを選択的に計測した結果を示す。講演では、男女ともTMD群の下顎頭が相対的に小さく、一般に女性の下顎頭が小さいことが女性の高いTMDリスクの一部を説明し得ると述べる。",
+      "explanation_ja": "これは研究者が事前に選んだ特徴を測る仮説駆動型解析である。形態差が群レベルであっても、個人の下顎頭サイズだけでTMDを診断できるわけではない。性差には体格、頭蓋顔面サイズ、ホルモン、疼痛感受性、医療利用など多くの交絡があり、サイズだけで説明できない。",
+      "critical_reading_ja": "「小さい下顎頭→TMD」という単純因果にしない。研究デザインが横断・後ろ向きなら、疾患によるリモデリングで小さく見える可能性も除けない。画像モダリティ、症例定義、左右の相関処理を原著で確認する。",
+      "figure_ids": [
+        "fig-18"
+      ],
+      "key_terms": [
+        "MRI morphometry",
+        "condylar size",
+        "sex differences",
+        "retrospective study"
+      ],
+      "external_verification": []
+    },
+    {
+      "no": 22,
+      "id": "ch-22",
+      "title_ja": "CBCT全体を読む3D畳み込みニューラルネットワーク",
+      "estimated_start_seconds": 2238,
+      "estimated_end_seconds": 2311,
+      "estimated_start": "37:18",
+      "estimated_end": "38:31",
+      "timestamp_url": "https://www.youtube.com/watch?v=NxNryYuUGis&t=2238s",
+      "speaker": "Hai Yao",
+      "transcript_lines": "L13",
+      "lecture_content_ja": "選択した少数の計測値だけでなく、下顎骨全体の3D形態から偏りなく特徴を探索するため、研究チームはCBCTを分割・ボクセル化し、3D convolutional neural networkで健康群とTMD群を分類した。講演では訓練データでほぼ100%、検証データで80%を超える精度と説明する。",
+      "explanation_ja": "2D投影では失われる奥行きと左右・曲面情報を、3D CNNはボクセルの空間配置として扱える。外部論文では、訓練80名（TMD40、健康40）、検証24名（各12）で、訓練精度100%、検証精度83%、AUC 0.952と報告される。これらは研究用データセット内の性能であり、地域や装置、撮影条件が異なる患者での外部妥当性は別問題である。",
+      "critical_reading_ja": "訓練精度100%は優秀さの証明ではなく、過学習を疑う数字でもある。小規模検証でのAUC、感度、特異度には不確実性があり、患者単位のデータ分割、左右画像の漏洩、症例スペクトラムを確認する必要がある。",
+      "figure_ids": [
+        "fig-19"
+      ],
+      "key_terms": [
+        "CBCT",
+        "3D CNN",
+        "voxelization",
+        "training set",
+        "validation set",
+        "AUC"
+      ],
+      "external_verification": [
+        "JCI Insight 2024: training n=80, validation n=24"
+      ]
+    },
+    {
+      "no": 23,
+      "id": "ch-23",
+      "title_ja": "ブラックボックスを越える説明可能AI",
+      "estimated_start_seconds": 2311,
+      "estimated_end_seconds": 2382,
+      "estimated_start": "38:31",
+      "estimated_end": "39:42",
+      "timestamp_url": "https://www.youtube.com/watch?v=NxNryYuUGis&t=2311s",
+      "speaker": "Hai Yao",
+      "transcript_lines": "L13",
+      "lecture_content_ja": "分類器が高い精度を示しても、どの形態を根拠に判定したかが分からなければ臨床で信頼しにくい。そこで研究チームはgradient-weighted class activation mapping（Grad-CAM）を用い、各症例でモデルが強く参照した領域をsaliency mapとして可視化した。",
+      "explanation_ja": "Grad-CAMは、最終分類に対する特徴マップの勾配から重要領域を色で示す。赤や黄の「hot spot」は温度ではなく、モデル出力への寄与が相対的に大きい領域である。症例ごとに重要領域の組合せが異なる点は、TMDの形態リスクが単一特徴でなく多因子であることと整合する。",
+      "critical_reading_ja": "saliency mapは因果説明ではなく、モデルの注目位置を近似する可視化である。位置が強調されたから、その部位が病因であるとは言えない。背景、分割形状、撮影装置などの人工的特徴を拾う可能性もある。",
+      "figure_ids": [
+        "fig-20"
+      ],
+      "key_terms": [
+        "explainable AI",
+        "Grad-CAM",
+        "saliency map",
+        "black box"
+      ],
+      "external_verification": []
+    },
+    {
+      "no": 24,
+      "id": "ch-24",
+      "title_ja": "AIが注目した3領域：下顎頭、下顎枝、オトガイ",
+      "estimated_start_seconds": 2382,
+      "estimated_end_seconds": 2486,
+      "estimated_start": "39:42",
+      "estimated_end": "41:26",
+      "timestamp_url": "https://www.youtube.com/watch?v=NxNryYuUGis&t=2382s",
+      "speaker": "Hai Yao",
+      "transcript_lines": "L13",
+      "lecture_content_ja": "Grad-CAMは、下顎頭、下顎枝、オトガイという3つの領域を重要領域として示した。研究者は、これらが下顎骨の離れた端点に位置し、全体の長さ、高さ、幅などのサイズを反映すると解釈した。講演では、予想していた下顎頭だけでなく下顎枝とオトガイが現れたことを、AIが新しい観察点を提示した例として扱う。",
+      "explanation_ja": "3領域は独立した3個の病変というより、下顎全体の幾何学を表すランドマークと考えられる。モデルの可視化を、3D下顎長、2D下顎長、下顎枝高、下顎枝幅など臨床的に理解できる計測へ翻訳したことが重要である。",
+      "critical_reading_ja": "モデルが注目した領域を後付けで都合よく解釈する危険がある。独立データで同じ領域が再現するか、Grad-CAM++など別手法でも一致するか、形態計測が事前規定されていたかを確認する。",
+      "figure_ids": [
+        "fig-20"
+      ],
+      "key_terms": [
+        "condyle",
+        "ramus",
+        "chin",
+        "landmarks",
+        "saliency"
+      ],
+      "external_verification": []
+    },
+    {
+      "no": 25,
+      "id": "ch-25",
+      "title_ja": "形態計測とPCA：小さい下顎骨、小さい・平坦な下顎頭",
+      "estimated_start_seconds": 2486,
+      "estimated_end_seconds": 2637,
+      "estimated_start": "41:26",
+      "estimated_end": "43:57",
+      "timestamp_url": "https://www.youtube.com/watch?v=NxNryYuUGis&t=2486s",
+      "speaker": "Hai Yao",
+      "transcript_lines": "L13",
+      "lecture_content_ja": "AIが示した領域から下顎骨の3D長、2D長、下顎枝高・幅を計測すると、TMD群で小さい傾向が示された。主成分分析では第一主成分が主として「サイズ」を表し、3D下顎長が強く関与した。さらに下顎頭に注目すると、TMD群は下顎頭面積が小さく、関節面がより平坦であると説明される。",
+      "explanation_ja": "PCAは相関する複数計測を少数の合成軸にまとめる手法である。第一主成分がサイズを表すなら、個々の長さ・高さを別々の原因と扱うより、全体的に小さい下顎形態という共通因子で理解できる。外部論文では、左右を含む測定の相関を混合効果モデルで扱っている。",
+      "critical_reading_ja": "小さい・平坦という群差は、個人診断のカットオフではない。下顎頭平坦化は正常な適応性リモデリング、加齢、荷重、既存疾患の結果でもあり得る。P値が有意でも効果量、分布の重なり、測定再現性を示さなければ臨床判定には使えない。",
+      "figure_ids": [
+        "fig-21"
+      ],
+      "key_terms": [
+        "morphometrics",
+        "PCA",
+        "mandibular size",
+        "condylar area",
+        "condylar flatness",
+        "mixed-effects model"
+      ],
+      "external_verification": []
+    },
+    {
+      "no": 26,
+      "id": "ch-26",
+      "title_ja": "多階層メカノバイオロジー：形態から細胞代謝まで",
+      "estimated_start_seconds": 2637,
+      "estimated_end_seconds": 2715,
+      "estimated_start": "43:57",
+      "estimated_end": "45:15",
+      "timestamp_url": "https://www.youtube.com/watch?v=NxNryYuUGis&t=2637s",
+      "speaker": "Hai Yao",
+      "transcript_lines": "L15",
+      "lecture_content_ja": "Yao氏は、下顎の形態が筋・咬合・関節力を規定し、関節力が関節円板の応力・ひずみと栄養輸送を変え、最終的に細胞のエネルギー代謝や組織リモデリングへつながる多階層モデルを示す。特にTMJ円板は無血管組織であり、栄養供給を拡散に依存するため、機械的負荷が生物学に直結する。",
+      "explanation_ja": "階層は、概ね①身体・頭蓋顔面形態、②関節力学、③組織内の応力・ひずみと物質輸送、④細胞代謝・組織変性である。同じ「負荷」でも、力の大きさだけでなく接触面積、時間、周波数、回復、組織透過性が重要になる。機械刺激は正常な恒常性にも必要で、負荷は一律に悪いわけではない。",
+      "critical_reading_ja": "多階層モデルは機序を一貫して説明する強力な仮説だが、各階層の誤差が積み重なる。モデルが生物学を直接観察したかのように書かず、予測・シミュレーションと実測を区別する。",
+      "figure_ids": [
+        "fig-22"
+      ],
+      "key_terms": [
+        "multiscale model",
+        "mechanobiology",
+        "TMJ disc",
+        "avascular tissue",
+        "diffusion",
+        "energy metabolism"
+      ],
+      "external_verification": []
+    },
+    {
+      "no": 27,
+      "id": "ch-27",
+      "title_ja": "筋骨格モデル：同じ咬合力でも小さい下顎骨では関節力が増える可能性",
+      "estimated_start_seconds": 2715,
+      "estimated_end_seconds": 2775,
+      "estimated_start": "45:15",
+      "estimated_end": "46:15",
+      "timestamp_url": "https://www.youtube.com/watch?v=NxNryYuUGis&t=2715s",
+      "speaker": "Hai Yao",
+      "transcript_lines": "L15",
+      "lecture_content_ja": "患者固有形態、顎運動、筋電図、咬合力を多体系筋骨格モデルに入れ、口腔課題中の筋力と関節面力を推定する。講演では、同じ咬合力を生み出す条件で下顎骨が小さいほどTMJ関節力が大きくなる傾向を示す。",
+      "explanation_ja": "下顎はレバーとして働くため、筋付着部、歯列上の咬合点、関節中心の距離が変わると、同じ歯の力でも関節反力は変わる。これは「小さい顎ほど弱い」という話ではなく、幾何学的なモーメントアームの違いで関節に必要な反力が変わるという説明である。",
+      "critical_reading_ja": "関節力は直接測定値ではなく、筋力分配、筋断面積、関節中心、境界条件などの仮定に依存する。モデルで同じ咬合力を与えた比較を、日常で常に同じ力を出す患者の事実と取り違えない。",
+      "figure_ids": [
+        "fig-22"
+      ],
+      "key_terms": [
+        "multibody musculoskeletal model",
+        "inverse dynamics",
+        "joint reaction force",
+        "moment arm"
+      ],
+      "external_verification": []
+    },
+    {
+      "no": 28,
+      "id": "ch-28",
+      "title_ja": "有限要素・栄養輸送・ATPモデル：力学から組織変性の仮説へ",
+      "estimated_start_seconds": 2775,
+      "estimated_end_seconds": 2847,
+      "estimated_start": "46:15",
+      "estimated_end": "47:27",
+      "timestamp_url": "https://www.youtube.com/watch?v=NxNryYuUGis&t=2775s",
+      "speaker": "Hai Yao",
+      "transcript_lines": "L15",
+      "lecture_content_ja": "有限要素モデルで関節円板の応力、ひずみ、ひずみエネルギー密度を推定し、さらに力学条件を栄養輸送・細胞代謝モデルへ接続する。講演では、小さい下顎骨と平坦な下顎頭の組合せが高い関節力・円板負荷を生み、グルコース供給やATP産生を低下させ、変性へ向かう機序を示す。Class IIの小さい下顎形態との整合性も論じる。",
+      "explanation_ja": "有限要素法は複雑な円板形状を小要素に分け、材料特性と境界条件から局所のひずみ・応力を計算する。無血管円板では圧縮による液体移動と拡散が酸素・グルコース供給に影響し、乳酸排出やATP産生に波及し得る。形態→力→物質輸送→代謝という鎖を数式で接続した点が研究の独自性である。",
+      "critical_reading_ja": "講演の図は説得的だが、グルコース濃度やATPを患者円板で直接測ったわけではない。外部論文では平坦度の一部効果が小さい、または統計的に一貫しない解析もあるため、「平坦な下顎頭が必ず代謝不全を起こす」と単純化しない。",
+      "figure_ids": [
+        "fig-22"
+      ],
+      "key_terms": [
+        "finite element model",
+        "strain",
+        "stress",
+        "strain energy density",
+        "glucose",
+        "ATP",
+        "lactate"
+      ],
+      "external_verification": []
+    },
+    {
+      "no": 29,
+      "id": "ch-29",
+      "title_ja": "痛みを追加する：構造変化と疼痛が一致しない理由を力学で考える",
+      "estimated_start_seconds": 2847,
+      "estimated_end_seconds": 2947,
+      "estimated_start": "47:27",
+      "estimated_end": "49:07",
+      "timestamp_url": "https://www.youtube.com/watch?v=NxNryYuUGis&t=2847s",
+      "speaker": "Hai Yao",
+      "transcript_lines": "L17",
+      "lecture_content_ja": "Yao氏は、ここまでの形態・機能・変性モデルに痛みが欠けていると指摘する。TMJ組織には侵害受容性神経終末が分布し、口腔運動で生じる組織変形が機械感受性イオンチャネルを刺激し、三叉神経節での修飾を経て中枢神経系へ伝わり、疼痛知覚につながるという枠組みを示す。",
+      "explanation_ja": "侵害受容は有害刺激を神経信号へ変換する過程であり、疼痛はその信号を脳が文脈・情動・注意・既往経験と統合した主観的体験である。したがって、局所の変形が同じでも痛みは同じとは限らない。末梢入力と中枢増幅・抑制の双方を扱う必要がある。",
+      "critical_reading_ja": "侵害受容モデルを疼痛そのものと同一視しない。局所の神経発火予測は、患者が報告する痛みの強さ・不快さ・生活障害を直接予測するものではない。",
+      "figure_ids": [
+        "fig-23"
+      ],
+      "key_terms": [
+        "nociception",
+        "pain perception",
+        "mechanosensitive ion channel",
+        "trigeminal ganglion",
+        "central nervous system"
+      ],
+      "external_verification": []
+    },
+    {
+      "no": 30,
+      "id": "ch-30",
+      "title_ja": "計算侵害受容モデル：組織ひずみから活動電位を推定する",
+      "estimated_start_seconds": 2947,
+      "estimated_end_seconds": 3014,
+      "estimated_start": "49:07",
+      "estimated_end": "50:14",
+      "timestamp_url": "https://www.youtube.com/watch?v=NxNryYuUGis&t=2947s",
+      "speaker": "Hai Yao",
+      "transcript_lines": "L17",
+      "lecture_content_ja": "既存の基礎研究を用い、組織の機械的ひずみが機械感受性イオンチャネルを開き、神経終末の膜電位変化と活動電位発生へ至る過程を生物物理モデルで表す。講演では、神経ネットワークの活動電位を計算できる可能性を示す一方、TMJ内の神経終末の三次元分布データが不足していることを課題とする。",
+      "explanation_ja": "モデル化には、刺激閾値、チャネル動態、神経線維径、伝導、受容野、神経終末密度などが必要である。組織力学モデルから各位置のひずみを取り出し、神経分布へ重ねることで、どの形態・運動条件が強い末梢入力を作るかを比較できる。",
+      "critical_reading_ja": "活動電位の数や頻度を、そのまま患者の疼痛スコアへ換算してはならない。パラメータの出所、動物種、組織、感度分析、検証データが不可欠である。",
+      "figure_ids": [
+        "fig-23"
+      ],
+      "key_terms": [
+        "biophysical model",
+        "action potential",
+        "mechanotransduction",
+        "nerve network"
+      ],
+      "external_verification": []
+    },
+    {
+      "no": 31,
+      "id": "ch-31",
+      "title_ja": "全関節透明化とlight-sheet microscopyで神経・血管を三次元地図化する",
+      "estimated_start_seconds": 3014,
+      "estimated_end_seconds": 3105,
+      "estimated_start": "50:14",
+      "estimated_end": "51:45",
+      "timestamp_url": "https://www.youtube.com/watch?v=NxNryYuUGis&t=3014s",
+      "speaker": "Hai Yao",
+      "transcript_lines": "L17",
+      "lecture_content_ja": "神経分布データの不足を補うため、研究チームは全関節組織透明化と大視野light-sheet microscopyを開発し、TMJ組織内の微小血管と侵害受容関連神経線維を三次元で可視化する。講演では、関節組織の周辺部に豊富な微小血管と神経支配が見える例を提示する。",
+      "explanation_ja": "透明化は組織の光散乱を減らし、薄切を繰り返さずに大きな組織を立体撮影する方法である。light-sheet microscopyは薄い光シートで断面を連続撮影し、神経・血管ネットワークを3D再構成する。講演音声の「CGPS」はCGRP陽性神経線維を指す可能性が高いが、最終HTMLではスライドを見て確認する。",
+      "critical_reading_ja": "動物組織とヒト組織、健康と疾患、末梢部と中央部を混同しない。免疫染色で陽性の線維が、実際にどの刺激で発火し、どの程度の痛みを生むかは別の検証が必要である。",
+      "figure_ids": [
+        "fig-24"
+      ],
+      "key_terms": [
+        "tissue clearing",
+        "light-sheet microscopy",
+        "microvasculature",
+        "innervation",
+        "CGRP"
+      ],
+      "external_verification": [
+        "2025 whole-joint cellular and molecular mapping paper"
+      ]
+    },
+    {
+      "no": 32,
+      "id": "ch-32",
+      "title_ja": "変性を生むひずみと、侵害受容を生むひずみは一致しないかもしれない",
+      "estimated_start_seconds": 3105,
+      "estimated_end_seconds": 3179,
+      "estimated_start": "51:45",
+      "estimated_end": "52:59",
+      "timestamp_url": "https://www.youtube.com/watch?v=NxNryYuUGis&t=3105s",
+      "speaker": "Hai Yao",
+      "transcript_lines": "L17",
+      "lecture_content_ja": "神経分布を力学モデルへ重ねると、特定の空間・時間パターンのひずみが侵害受容を誘発し、別のひずみパターンが栄養障害や組織変性に関係する可能性がある。二つが重なる患者では変性と痛みが併存し、重ならない患者では変性があっても痛みがない、または痛みがあっても明瞭な変性がないという仮説が示される。",
+      "explanation_ja": "この発想は、講演冒頭の画像—症状の不一致を、単なる例外ではなく別経路の重なりとして説明する。構造変性の閾値、侵害受容の閾値、神経分布、中枢修飾が異なれば、同じ画像所見でも痛みは異なる。将来は個人ごとの形態・運動・神経分布を統合する必要がある。",
+      "critical_reading_ja": "現時点では説明モデルであり、臨床で痛みの有無を予測できることを示したわけではない。後付けの整合的物語にならないよう、前向き検証可能な予測を明示すべきである。",
+      "figure_ids": [
+        "fig-24"
+      ],
+      "key_terms": [
+        "degeneration–pain dissociation",
+        "strain pattern",
+        "mechanical threshold",
+        "hypothesis"
+      ],
+      "external_verification": []
+    },
+    {
+      "no": 33,
+      "id": "ch-33",
+      "title_ja": "局所関節からwhole-personへ：TMJ SYMPHONYとbedside-to-bench-to-bedside",
+      "estimated_start_seconds": 3179,
+      "estimated_end_seconds": 3250,
+      "estimated_start": "52:59",
+      "estimated_end": "54:10",
+      "timestamp_url": "https://www.youtube.com/watch?v=NxNryYuUGis&t=3179s",
+      "speaker": "Janice S. Lee / Hai Yao",
+      "transcript_lines": "L17",
+      "lecture_content_ja": "講演は、形態・力学だけでは神経、免疫、心理社会的因子、全身の慢性痛を説明できないため、whole-body・whole-personの視点が必要だとする。Lee氏は、全国の専門家ネットワークをTMJ SYMPHONYと呼び、ベッドサイドの問題を基礎・工学研究へ戻し、その成果を再び患者評価へ返す構想を示す。",
+      "explanation_ja": "TMJ SYMPHONYは、一つの万能検査を作る計画ではなく、構造、機能、痛み、患者経験、データ科学を同じ枠組みに置く研究ネットワークである。NIHをパイロット拠点として、実施可能性と効率の高い表現型評価を選び、全国ネットワークへ還元する狙いがある。",
+      "critical_reading_ja": "ネットワーク名や助成採択を、方法の妥当性の証明として扱わない。研究構想、実装、臨床有用性は段階が異なる。",
+      "figure_ids": [
+        "fig-25"
+      ],
+      "key_terms": [
+        "TMJ SYMPHONY",
+        "bedside-to-bench",
+        "whole-person health",
+        "network science"
+      ],
+      "external_verification": [
+        "NIDCR R34-DE033593"
+      ]
+    },
+    {
+      "no": 34,
+      "id": "ch-34",
+      "title_ja": "将来のNIHパイロット：深い表現型、多omics、multimodal machine learning",
+      "estimated_start_seconds": 3250,
+      "estimated_end_seconds": 3305,
+      "estimated_start": "54:10",
+      "estimated_end": "55:05",
+      "timestamp_url": "https://www.youtube.com/watch?v=NxNryYuUGis&t=3250s",
+      "speaker": "Janice S. Lee",
+      "transcript_lines": "L17",
+      "lecture_content_ja": "NIHの新しいパイロットでは、地域でも利用できる標準的評価を基礎に、疼痛、心理社会的特性、バイオメカニクスを加え、バイオ試料とmulti-omicsも統合する計画が説明される。患者ごとに大量のデータが生じるため、multimodal machine learningで診断、予後、治療選択、新規治療標的へつなげることを目指す。",
+      "explanation_ja": "multimodal machine learningは画像、時系列運動、筋電図、咬合力、質問票、omicsなど尺度の異なるデータを統合する。重要なのは、欠測処理、時点整合、特徴量の標準化、外部検証、説明可能性、患者数に対する特徴数の制御である。",
+      "critical_reading_ja": "「大量データ」だけでは精密医療にならない。症例数が少ないまま高次元データを入れると、見かけの精度は上がっても再現しない。事前登録、独立検証、臨床意思決定への増分価値を要求する。",
+      "figure_ids": [
+        "fig-25"
+      ],
+      "key_terms": [
+        "multi-omics",
+        "multimodal machine learning",
+        "prognosis",
+        "precision medicine"
+      ],
+      "external_verification": []
+    },
+    {
+      "no": 35,
+      "id": "ch-35",
+      "title_ja": "TMD自然歴プロトコル：DC/TMDで診断し、構造を追う",
+      "estimated_start_seconds": 3305,
+      "estimated_end_seconds": 3360,
+      "estimated_start": "55:05",
+      "estimated_end": "56:00",
+      "timestamp_url": "https://www.youtube.com/watch?v=NxNryYuUGis&t=3305s",
+      "speaker": "Janice S. Lee",
+      "transcript_lines": "L17",
+      "lecture_content_ja": "Lee氏は、Rafaela Stocker Salbego氏が中心となるTMD自然歴プロトコルを準備し、講演時点では同年秋の登録開始を目指していると説明する。主に関節内TMDを対象とし、DC/TMDで診断した上で、標準画像と新しい超音波評価を用いて構造を検討する。",
+      "explanation_ja": "自然歴研究は、治療介入の効果だけでなく、症状・画像・機能が時間とともにどう変わるか、どの患者が改善・持続・悪化するかを明らかにする。DC/TMDは痛み関連診断と関節内診断を標準化する枠組みである。超音波は非電離放射線で動的評価が可能だが、TMJ円板・滑膜・関節包の描出と解釈の標準化が課題になる。",
+      "critical_reading_ja": "登録開始やプロトコル内容は「2026年5月13日の講演時点の計画」と表示する。現在の募集状況を推測しない。超音波をMRIの代替として確立済みと書かない。",
+      "figure_ids": [
+        "fig-26"
+      ],
+      "key_terms": [
+        "natural history study",
+        "DC/TMD",
+        "intra-articular TMD",
+        "ultrasound",
+        "longitudinal cohort"
+      ],
+      "external_verification": []
+    },
+    {
+      "no": 36,
+      "id": "ch-36",
+      "title_ja": "機能と痛みの表現型：bruxism、QST、conditioned pain modulation",
+      "estimated_start_seconds": 3360,
+      "estimated_end_seconds": 3436,
+      "estimated_start": "56:00",
+      "estimated_end": "57:16",
+      "timestamp_url": "https://www.youtube.com/watch?v=NxNryYuUGis&t=3360s",
+      "speaker": "Janice S. Lee",
+      "transcript_lines": "L17",
+      "lecture_content_ja": "自然歴研究では、臨床診察・患者報告に加え、口腔行動やbruxismを含む機能、構造変化と機能障害の関係を評価する。疼痛領域では質問票、quantitative sensory testing（QST）、conditioned pain modulation（CPM）を用い、局所の関節痛だけでなく筋筋膜痛、末梢・中枢機序、慢性化、他の慢性痛との重なりを調べる。",
+      "explanation_ja": "QSTは圧、温度、機械刺激などへの検出閾値・疼痛閾値・時間的加重を定量化する。CPMは「痛みが別の痛みを抑える」内因性疼痛抑制機能を試験する。これらは患者の痛みが心理的という意味ではなく、末梢入力と中枢処理の表現型を測る。",
+      "critical_reading_ja": "QST/CPMは診断名そのものではなく、試験条件、部位、注意、薬剤、睡眠、情動に影響される。単回測定で中枢感作を断定しない。bruxismも自己申告、臨床所見、機器測定を区別する。",
+      "figure_ids": [
+        "fig-26"
+      ],
+      "key_terms": [
+        "QST",
+        "conditioned pain modulation",
+        "central sensitization",
+        "myofascial pain",
+        "bruxism"
+      ],
+      "external_verification": []
+    },
+    {
+      "no": 37,
+      "id": "ch-37",
+      "title_ja": "多職種TMD疼痛診療チームの構築",
+      "estimated_start_seconds": 3436,
+      "estimated_end_seconds": 3483,
+      "estimated_start": "57:16",
+      "estimated_end": "58:03",
+      "timestamp_url": "https://www.youtube.com/watch?v=NxNryYuUGis&t=3436s",
+      "speaker": "Janice S. Lee",
+      "transcript_lines": "L17",
+      "lecture_content_ja": "新しい自然歴プロトコルと連動して、NIHで多職種TMD疼痛診療チームを構築する計画が示される。Miroslav “Misha” Bačkonja氏とRafaela Stocker Salbego氏が中心となり、顎関節・口腔顔面痛、疼痛医学、画像、リハビリテーション、心理・行動領域などの専門家が包括的評価と診療に関わる。",
+      "explanation_ja": "複雑なTMDでは、歯科・口腔外科だけでなく、疼痛医学、理学療法、心理学、睡眠、神経科学などが必要になることがある。多職種化の目的は紹介先を増やすことではなく、共通の症例定義、情報共有、治療目標、過剰介入回避を実現することである。",
+      "critical_reading_ja": "「多職種」は自動的に良質な診療を意味しない。責任主体、紹介基準、治療の重複、患者負担、アウトカム測定を設計しなければ、従来の専門医巡りを再現するだけになる。",
+      "figure_ids": [
+        "fig-27"
+      ],
+      "key_terms": [
+        "multidisciplinary care",
+        "orofacial pain",
+        "pain medicine",
+        "care pathway"
+      ],
+      "external_verification": []
+    },
+    {
+      "no": 38,
+      "id": "ch-38",
+      "title_ja": "患者パートナーとTerrie Cowley氏の遺産",
+      "estimated_start_seconds": 3483,
+      "estimated_end_seconds": 3525,
+      "estimated_start": "58:03",
+      "estimated_end": "58:45",
+      "timestamp_url": "https://www.youtube.com/watch?v=NxNryYuUGis&t=3483s",
+      "speaker": "Janice S. Lee",
+      "transcript_lines": "L17",
+      "lecture_content_ja": "Lee氏は、研究を患者中心に保つ原動力として患者パートナーを称え、2024年に亡くなったThe TMJ Associationの共同創設者・会長Terrie Cowley氏の患者擁護活動に言及する。研究ネットワークや診療体制が、患者の苦痛を減らすという目的から離れないよう結ぶ。",
+      "explanation_ja": "患者参画は、研究対象として意見を聞くだけでなく、優先順位、負担、アウトカム、説明、結果還元に患者が関与することを意味する。画像やAIの精度が高くても、患者が困っている痛み、食事、会話、就労、生活の不確実性を改善しなければ価値は限定的である。",
+      "critical_reading_ja": "患者中心という言葉を装飾的に置かない。HTMLには、研究成果の指標と患者にとっての意味を対応させる欄を設ける。",
+      "figure_ids": [
+        "fig-27"
+      ],
+      "key_terms": [
+        "patient partnership",
+        "Terrie Cowley",
+        "TMJ Association",
+        "patient-centered research"
+      ],
+      "external_verification": [
+        "Terrie Cowley died July 22, 2024"
+      ]
+    },
+    {
+      "no": 39,
+      "id": "ch-39",
+      "title_ja": "質疑前の振り返り：臨床語と工学語を翻訳するのに数年かかった",
+      "estimated_start_seconds": 3525,
+      "estimated_end_seconds": 3628,
+      "estimated_start": "58:45",
+      "estimated_end": "60:28",
+      "timestamp_url": "https://www.youtube.com/watch?v=NxNryYuUGis&t=3525s",
+      "speaker": "司会 / Janice S. Lee",
+      "transcript_lines": "L19–L23",
+      "lecture_content_ja": "司会は、学内・学外連携が標準診療を前進させる可能性を評価する。Lee氏は、臨床家と工学者が異なる言語を話し、互いの用語を理解するまで数年かかったと述べ、若手研究者に対して多分野協働には時間が必要だと伝える。",
+      "explanation_ja": "この発言は方法論上重要である。同じ「function」でも臨床家は食べる・話す能力、工学者は運動軌跡や力、患者は生活上の困難を意味し得る。研究開始時に概念、測定単位、臨床的に意味のある差、患者にとって重要なアウトカムをすり合わせる必要がある。",
+      "critical_reading_ja": "連携の美談だけにしない。専門用語の翻訳、データ所有、解析の前提、否定的結果の扱い、著者責任まで明示して初めて再現可能な協働になる。",
+      "figure_ids": [],
+      "key_terms": [
+        "interdisciplinary translation",
+        "team science",
+        "clinical relevance"
+      ],
+      "external_verification": []
+    },
+    {
+      "no": 40,
+      "id": "ch-40",
+      "title_ja": "質問：CBCTと4カメラの統合で軟組織まで分かるのか",
+      "estimated_start_seconds": 3628,
+      "estimated_end_seconds": 3664,
+      "estimated_start": "60:28",
+      "estimated_end": "61:04",
+      "timestamp_url": "https://www.youtube.com/watch?v=NxNryYuUGis&t=3628s",
+      "speaker": "聴衆",
+      "transcript_lines": "L25",
+      "lecture_content_ja": "聴衆は、4カメラの運動評価とCBCTを統合したモデルで、硬組織だけでなく関節円板などの軟組織の動きも分かるのか、それとも硬組織に限定されるのかを質問する。",
+      "explanation_ja": "これは装置の臨床的限界を突く本質的な質問である。CBCTは骨形態に優れるが、関節円板、滑膜、関節包、筋などの軟組織コントラストは十分でない。硬組織の間隙から円板位置を推定することはできても、実測とモデル推定を区別しなければならない。",
+      "critical_reading_ja": "最終ページでは、CBCTの骨モデル上に円板が描かれている場合、それがMRI由来か、統計形状モデルか、有限要素モデルかを図注に明記する。",
+      "figure_ids": [
+        "fig-28"
+      ],
+      "key_terms": [
+        "hard tissue",
+        "soft tissue",
+        "CBCT limitation",
+        "articular disc"
+      ],
+      "external_verification": []
+    },
+    {
+      "no": 41,
+      "id": "ch-41",
+      "title_ja": "回答：MRIを参照標準にし、動的超音波とAIを研究する",
+      "estimated_start_seconds": 3664,
+      "estimated_end_seconds": 3740,
+      "estimated_start": "61:04",
+      "estimated_end": "62:20",
+      "timestamp_url": "https://www.youtube.com/watch?v=NxNryYuUGis&t=3664s",
+      "speaker": "Janice S. Lee",
+      "transcript_lines": "L25",
+      "lecture_content_ja": "Lee氏は、現在のCBCT統合では硬組織しか直接見えないと明答する。軟組織にはMRIが標準的だが、予約、保険、アクセス、動的評価の難しさがあるため、放射線を使わず動的に撮像できる超音波を検討し、MRIを参照標準としてAIで解釈を支援するBench-to-Bedside研究を進めていると説明する。",
+      "explanation_ja": "超音波はリアルタイム性、反復性、低コストの可能性がある一方、骨による音響窓制限、深部構造、プローブ角度、検者依存性が課題である。AIは画像の認識を補助できるが、MRIとの一致だけでなく、再現性、病態分類、臨床意思決定への有用性を検証する必要がある。",
+      "critical_reading_ja": "「MRIは動的でない」は日常診療での標準的な静的MRIを指す講演表現として扱う。cine MRI等の研究技術まで存在しないと断定しない。超音波を確立済みの診断法として掲載しない。",
+      "figure_ids": [
+        "fig-28"
+      ],
+      "key_terms": [
+        "MRI",
+        "ultrasound",
+        "dynamic imaging",
+        "ground truth",
+        "AI interpretation"
+      ],
+      "external_verification": []
+    },
+    {
+      "no": 42,
+      "id": "ch-42",
+      "title_ja": "計算モデルから軟組織運動を推定するという補足",
+      "estimated_start_seconds": 3740,
+      "estimated_end_seconds": 3831,
+      "estimated_start": "62:20",
+      "estimated_end": "63:51",
+      "timestamp_url": "https://www.youtube.com/watch?v=NxNryYuUGis&t=3740s",
+      "speaker": "Hai Yao",
+      "transcript_lines": "L27",
+      "lecture_content_ja": "Yao氏は、超音波・MRIの研究に加え、硬組織間の動的関節隙、形状、MRIで得た円板情報を用い、円板が関節隙へ適合してどのように動くかを計算モデルで推定できると補足する。",
+      "explanation_ja": "これは軟組織を直接撮影する方法ではなく、境界条件と材料特性から最もあり得る変形を計算するinverse problemに近い。モデルは連続した動きを補間できる利点があるが、円板の付着、摩擦、異方性、粘弾性、変性による材料差に影響される。",
+      "critical_reading_ja": "推定画像をMRI実像と同じ見た目で表示すると誤解を招く。図には「model-derived」「predicted disc position」と明示し、実測との検証誤差を併記する。",
+      "figure_ids": [
+        "fig-28"
+      ],
+      "key_terms": [
+        "computational inference",
+        "disc motion",
+        "boundary conditions",
+        "model-derived image"
+      ],
+      "external_verification": []
+    },
+    {
+      "no": 43,
+      "id": "ch-43",
+      "title_ja": "heat mapは熱画像ではない：AIの注目領域を示す可視化",
+      "estimated_start_seconds": 3831,
+      "estimated_end_seconds": 3900,
+      "estimated_start": "63:51",
+      "estimated_end": "65:00",
+      "timestamp_url": "https://www.youtube.com/watch?v=NxNryYuUGis&t=3831s",
+      "speaker": "司会 / Hai Yao / Janice S. Lee",
+      "transcript_lines": "L27",
+      "lecture_content_ja": "オンラインからthermal imagingに関するコメントが出るが、演者はこの研究では熱画像を使っていないと説明する。講演中のheat mapはAIのsaliency mapであり、モデルが健康群とTMD群を区別する際に重みを置いた下顎頭、下顎枝、オトガイを色で示したものである。司会が講演を締めくくる。",
+      "explanation_ja": "heat mapは値の大小を色で表す一般的な図であり、温度測定を意味しない。Grad-CAMの赤色は「高温」ではなく分類への寄与が大きい領域である。この質疑は、視覚表現が専門外の読者に誤解を生む典型例なので、HTMLでは図の直下に一文で説明する。",
+      "critical_reading_ja": "色の強さを病変の重症度、炎症温度、疼痛部位と解釈しない。凡例、対象、モデル出力、可視化手法を必ず図注に含める。",
+      "figure_ids": [
+        "fig-29"
+      ],
+      "key_terms": [
+        "heat map",
+        "thermal imaging",
+        "saliency",
+        "visual explanation"
+      ],
+      "external_verification": []
+    }
+  ]
+};

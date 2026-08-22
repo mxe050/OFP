@@ -19,6 +19,7 @@ const AAOP_ARCHIVE_PATH = './aaop2026/index.html';
 const IAOFP_GUIDE_PATH = './IAOFP_global_orofacial_pain_complete_guide_v3_axisII.html';
 const SCHIFFMAN_GUIDE_PATH = './2026_tmj_eric_schiffman_dc_tmd.html';
 const TMD_RESKILLING_GUIDE_PATH = './2026_tmj_tmd_reskilling_complete_guide.html';
+const NIH_TMJ_GRAND_ROUNDS_PATH = './tmj-grand-rounds-2026/index.html';
 
 type ContentSection = SubSection & {
   group: '講演' | 'メーリングリスト記録';
@@ -47,6 +48,10 @@ const menuDescriptions: Record<string, [string, string]> = {
   '2026-tmj-tmd-overview': [
     '第39回日本顎関節学会のRe-skilling 1〜8を、診断・保存療法・外科・咬合・小児・口腔顔面痛まで横断して読み解く完全解説です。',
     '全セッションの要点、臨床的含意、批判的吟味、総合討論Q&A索引を検索しながら確認できます。',
+  ],
+  '2026-nih-tmj-grand-rounds': [
+    'NIH Clinical Center Grand RoundsのTMD講演を、研究の導入から最終討論まで43章で丁寧に追う資料です。',
+    '構造・機能・痛みを結ぶ研究、AI解析、多職種・患者連携を、公式映像の静止画とともに確認できます。',
   ],
   'iaofp-global-orofacial-pain': [
     'IAOFP\u30df\u30c3\u30c9\u30b5\u30de\u30fc\u30fb\u30e9\u30a6\u30f3\u30c9\u30c6\u30fc\u30d6\u30eb\u3092\u3001\u4e16\u754c\u5404\u5730\u57df\u306e\u81e8\u5e8a\u30fb\u6559\u80b2\u30fb\u8a8d\u5b9a\u30fb\u7814\u7a76\u304b\u3089\u8aad\u307f\u89e3\u304f\u5b8c\u5168\u89e3\u8aac\u3067\u3059\u3002',
@@ -154,6 +159,12 @@ export default function App() {
       title: '2026TMJ学会TMD全体',
       description: menuDescriptions['2026-tmj-tmd-overview'],
       href: TMD_RESKILLING_GUIDE_PATH,
+    },
+    {
+      id: '2026-nih-tmj-grand-rounds',
+      title: '2026年8月：NIHグランドラウンド「顎関節症（TMD）の診断と治療の進展に向けた連携の活用：所内・所外の多角的分野によるパートナーシップの力」',
+      description: menuDescriptions['2026-nih-tmj-grand-rounds'],
+      href: NIH_TMJ_GRAND_ROUNDS_PATH,
     },
     {
       id: 'iaofp-global-orofacial-pain',

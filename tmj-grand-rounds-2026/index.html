@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="NIH Clinical Center Grand Rounds 2026のTMD講演を、講演順に43章で詳説する資料">
+  <title>NIH Grand Rounds 2026 TMD 完全解説</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">本文へ移動</a>
+  <div class="tmj-lecture-app" id="tmj-lecture-app">
+    <div class="reading-progress" aria-hidden="true"><span id="reading-progress-bar"></span></div>
+
+    <header class="hero">
+      <div class="hero__inner">
+        <p class="eyebrow">2026年8月収載 · NIH Clinical Center Grand Rounds · 2026-05-13</p>
+        <h1>顎関節症（TMD）の診断と治療を前進させる多分野連携</h1>
+        <p class="hero__title-en">Leveraging Collaboration to Advance TMJ Disease Diagnosis and Treatment: The Strength of Intramural-Extramural Multi-Disciplinary Partnerships</p>
+        <p class="hero__lead">Janice S. Lee, DDS, MD, MS と Hai Yao, PhD によるNIH講演を、導入から質疑まで講演順に43章で解説します。</p>
+        <div class="hero__actions">
+          <a class="button button--primary" href="https://videocast.nih.gov/watch/6c1f76ab-3780-11f1-82c0-124f0a52e769" target="_blank" rel="noopener noreferrer">公式動画を開く</a>
+          <a class="button" href="#ch-01">解説を読み始める</a>
+          <a class="button" href="../index.html">講演一覧へ戻る</a>
+        </div>
+        <p class="hero__notice">研究講演の解説であり、診療ガイドラインや治療推奨ではありません。静止画は説明・批評に必要な最小限を、公式公開映像から引用しています。</p>
+      </div>
+    </header>
+
+    <section class="legend" aria-labelledby="legend-title">
+      <div class="section-shell">
+        <h2 id="legend-title">このページの読み方</h2>
+        <div class="legend__grid">
+          <article class="legend-card legend-card--lecture"><strong>講演内容</strong><span>動画・文字起こしに基づく記述</span></article>
+          <article class="legend-card legend-card--explain"><strong>解説</strong><span>概念・方法・臨床的意味</span></article>
+          <article class="legend-card legend-card--critical"><strong>注意</strong><span>過剰解釈を防ぐ批判的吟味</span></article>
+          <article class="legend-card legend-card--external"><strong>外部確認</strong><span>NIH公式情報・原著による照合</span></article>
+        </div>
+      </div>
+    </section>
+
+    <button class="mobile-toc-button" id="mobile-toc-button" type="button" aria-expanded="false" aria-controls="lecture-sidebar">
+      章一覧
+    </button>
+
+    <div class="layout section-shell">
+      <aside class="sidebar" id="lecture-sidebar" aria-label="章一覧">
+        <div class="sidebar__inner">
+          <label class="search-label" for="chapter-search">ページ内検索</label>
+          <input id="chapter-search" type="search" placeholder="例：Grad-CAM、QST、顎矯正手術">
+          <p id="search-status" class="search-status" aria-live="polite"></p>
+          <nav aria-label="講演の目次">
+            <ol id="chapter-toc" class="toc"></ol>
+          </nav>
+        </div>
+      </aside>
+
+      <main id="main-content" class="content" tabindex="-1">
+        <div id="chapter-list"></div>
+
+        <section class="starter-note" aria-labelledby="starter-note-title">
+          <h2 id="starter-note-title">出典と読み方</h2>
+          <p>本文は講演の流れを保ちつつ、「講演で述べられたこと」「完全解説」「読み違えてはいけない点」「外部確認候補」を分けて示しています。各章の時刻は視聴を助ける目安です。</p>
+          <p>一次資料は <a href="https://videocast.nih.gov/watch/6c1f76ab-3780-11f1-82c0-124f0a52e769" target="_blank" rel="noopener noreferrer">NIH Clinical Center Grand Rounds の公式VideoCast</a> と、<a href="https://www.cc.nih.gov/events/216" target="_blank" rel="noopener noreferrer">NIH Clinical Center の講演案内</a>です。</p>
+        </section>
+      </main>
+    </div>
+
+    <footer class="footer">
+      <div class="section-shell">
+        <p>Primary source: NIH Clinical Center Grand Rounds, 2026-05-13.</p>
+      </div>
+    </footer>
+  </div>
+  <script src="./content/chapters.js"></script>
+  <script src="./content/figures.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
