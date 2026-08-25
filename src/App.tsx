@@ -20,6 +20,7 @@ const IAOFP_GUIDE_PATH = './IAOFP_global_orofacial_pain_complete_guide_v3_axisII
 const SCHIFFMAN_GUIDE_PATH = './2026_tmj_eric_schiffman_dc_tmd.html';
 const TMD_RESKILLING_GUIDE_PATH = './2026_tmj_tmd_reskilling_complete_guide.html';
 const NIH_TMJ_GRAND_ROUNDS_PATH = './tmj-grand-rounds-2026/index.html';
+const KEIO_DENTAL_HEADACHE_PATH = './keio-ofp-dental-headache-2026/index.html';
 
 type ContentSection = SubSection & {
   group: '講演' | 'メーリングリスト記録';
@@ -48,6 +49,10 @@ const menuDescriptions: Record<string, [string, string]> = {
   '2026-tmj-tmd-overview': [
     '第39回日本顎関節学会のRe-skilling 1〜8を、診断・保存療法・外科・咬合・小児・口腔顔面痛まで横断して読み解く完全解説です。',
     '全セッションの要点、臨床的含意、批判的吟味、総合討論Q&A索引を検索しながら確認できます。',
+  ],
+  'keio-ofp-dental-headache-2026-08': [
+    '歯痛を入口に、片頭痛・緊張型頭痛・TACs・神経痛までを臨床推論の順序で読み解く慶應OFPオープンセミナーです。',
+    '62場面の実講演画面、詳細解説、検証・補正、分類と一次研究への根拠リンクを確認できます。',
   ],
   '2026-nih-tmj-grand-rounds': [
     'NIH Clinical Center Grand RoundsのTMD講演を、研究の導入から最終討論まで43章で丁寧に追う資料です。',
@@ -159,6 +164,12 @@ export default function App() {
       title: '2026TMJ学会TMD全体',
       description: menuDescriptions['2026-tmj-tmd-overview'],
       href: TMD_RESKILLING_GUIDE_PATH,
+    },
+    {
+      id: 'keio-ofp-dental-headache-2026-08',
+      title: '2026年8月の慶應OFPオープンセミナー：臨床推論で考える歯痛と頭痛',
+      description: menuDescriptions['keio-ofp-dental-headache-2026-08'],
+      href: KEIO_DENTAL_HEADACHE_PATH,
     },
     {
       id: '2026-nih-tmj-grand-rounds',
